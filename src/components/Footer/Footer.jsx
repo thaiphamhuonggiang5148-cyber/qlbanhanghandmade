@@ -53,20 +53,12 @@ const Footer = () => {
         {/* Right Section: Social Media */}
         <div className="footer-right">
           <h3 className="footer-column-title">THEO DÕI CHÚNG TÔI</h3>
-          <div className="footer-social-icons">
-            <a href="https://facebook.com" className="social-icon" aria-label="Facebook">
-              <i className="fab fa-facebook-f"></i>
-            </a>
-            <a href="https://instagram.com" className="social-icon" aria-label="Instagram">
-              <i className="fab fa-instagram"></i>
-            </a>
-            <a href="https://youtube.com" className="social-icon" aria-label="YouTube">
-              <i className="fab fa-youtube"></i>
-            </a>
-            <a href="https://tiktok.com" className="social-icon" aria-label="TikTok">
-              <i className="fab fa-tiktok"></i>
-            </a>
-          </div>
+          <ul className="footer-social-icons">
+            <a href="https://facebook.com" target="_blank" rel="noreferrer" className="social-icon">f</a>
+            <a href="https://instagram.com" target="_blank" rel="noreferrer" className="social-icon">ig</a>
+            <a href="https://youtube.com" target="_blank" rel="noreferrer" className="social-icon">yt</a>
+            <a href="https://tiktok.com" target="_blank" rel="noreferrer" className="social-icon">tk</a>
+          </ul>
 
           <div className="footer-map">
             <iframe

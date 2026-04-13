@@ -9,6 +9,14 @@ const Header = () => {
   const [currentUser, setCurrentUser] = useState(null);
   const navigate = useNavigate();
 
+  // Danh mục menu con cho đồ handmade
+  const handmadeMenuItems = [
+    { text: 'Quà tặng đan len', href: '/products/dan-len' },
+    { text: 'Phụ kiện thủ công', href: '/products/phu-kien' },
+    { text: 'Set quà tự làm (DIY)', href: '/products/diy' },
+    { text: 'Thiệp trang trí', href: '/products/thiep' }
+  ];
+
   useEffect(() => {
     const updateCartCount = () => {
       const savedCart = localStorage.getItem('cart');
@@ -17,13 +25,9 @@ const Header = () => {
       } else {
         try {
           const cart = JSON.parse(savedCart);
-          const totalItems = cart.reduce(
-            (sum, item) => sum + (item.quantity || 0),
-            0
-          );
+          const totalItems = cart.reduce((sum, item) => sum + (item.quantity || 0), 0);
           setCartCount(totalItems);
         } catch (error) {
-          console.error('Lỗi đọc giỏ hàng:', error);
           setCartCount(0);
         }
       }
@@ -31,17 +35,12 @@ const Header = () => {
 
     const updateCurrentUser = () => {
       const savedUser = localStorage.getItem('currentUser');
-      if (!savedUser) {
-        setCurrentUser(null);
-        return;
-      }
-
-      try {
-        const user = JSON.parse(savedUser);
-        setCurrentUser(user);
-      } catch (error) {
-        console.error('Lỗi đọc thông tin người dùng:', error);
-        setCurrentUser(null);
+      if (savedUser) {
+        try {
+          setCurrentUser(JSON.parse(savedUser));
+        } catch (error) {
+          setCurrentUser(null);
+        }
       }
     };
 
@@ -61,34 +60,24 @@ const Header = () => {
     };
   }, []);
 
-  // Đổi danh mục menu con cho đồ handmade
-  const handmadeMenuItems = [
-    { text: 'Quà tặng đan len', href: '/products/dan-len' },
-    { text: 'Phụ kiện thủ công', href: '/products/phu-kien' },
-    { text: 'Set quà tự làm (DIY)', href: '/products/diy' }
-  ];
-
   return (
     <header className="phuclong-header">
       <div className="header-top-bar">
         <div className="header-top-content">
           <div className="header-delivery-info">
-            <span className="delivery-text">Fee Delivery</span>
-            <i className="fas fa-phone delivery-icon"></i>
-            <span className="delivery-phone">0918 865 148</span>
+            <span className="delivery-text">Free Delivery</span>
+            <i className="fas fa-heart delivery-icon" style={{ marginLeft: '5px', color: '#ff69b4' }}></i>
+            <span className="delivery-phone"> 0918 865 148</span>
           </div>
 
           <div className="header-logo-container">
-            <div className="phuclong-logo">
+            <div className="phuclong-logo" onClick={() => navigate('/')} style={{ cursor: 'pointer' }}>
               <img src={logoImage} alt="SoulMade Logo" className="header-logo-image" />
             </div>
           </div>
 
           <div className="header-user-actions">
-            <button
-              className="login-link"
-              onClick={() => navigate('/login')}
-            >
+            <button className="login-link" onClick={() => navigate('/login')} style={{ background: 'none', border: 'none', cursor: 'pointer' }}>
               {currentUser ? (currentUser.name || currentUser.user) : 'Đăng nhập'}
             </button>
             <span className="action-separator">|</span>
@@ -97,11 +86,8 @@ const Header = () => {
               <span className="lang-separator"> | </span>
               <span className="lang-option">EN</span>
             </div>
-            <button
-              className="cart-button"
-              onClick={() => navigate('/cart')}
-            >
-              <i className="fas fa-shopping-cart"></i>
+            <button className="cart-button" onClick={() => navigate('/cart')}>
+              <i className="fas fa-shopping-bag"></i>
               <span>Giỏ hàng</span>
               <span className="cart-badge">{cartCount}</span>
             </button>
@@ -113,28 +99,28 @@ const Header = () => {
         <div className="nav-content">
           <a href="/" className="nav-link">TRANG CHỦ</a>
 
-          <div
-            className="nav-item-with-dropdown"
-            onMouseEnter={() => setHoveredMenu('handmade')}
+          {/* FIX: Thêm dropdown cho SẢN PHẨM */}
+          <div 
+            className="nav-item-with-dropdown" 
+            onMouseEnter={() => setHoveredMenu('handmade')} 
             onMouseLeave={() => setHoveredMenu(null)}
+            style={{ position: 'relative' }} // Quan trọng để menu con bám theo
           >
             <a href="/products" className={`nav-link ${hoveredMenu === 'handmade' ? 'active' : ''}`}>
-              SẢN PHẨM
+              SẢN PHẨM <i className="fas fa-chevron-down" style={{ fontSize: '10px', marginLeft: '5px' }}></i>
             </a>
+            
             {hoveredMenu === 'handmade' && (
               <div className="dropdown-menu">
                 {handmadeMenuItems.map((item, index) => (
-                  <a
-                    key={index}
-                    href={item.href}
-                    className="dropdown-item"
-                  >
+                  <a key={index} href={item.href} className="dropdown-item">
                     {item.text}
                   </a>
                 ))}
               </div>
             )}
           </div>
+
           <a href="/combo" className="nav-link">COMBO QUÀ TẶNG</a>
           <a href="/promotions" className="nav-link">KHUYẾN MÃI</a>
           <a href="/about" className="nav-link">GIỚI THIỆU</a>
