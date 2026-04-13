@@ -1,0 +1,185 @@
+/* --- PHIÊN BẢN 2: MODERN FLOATING & SOFT MINIMALIST --- */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+.phuclong-header {
+    background-color: transparent; /* Nền trong suốt để lộ lớp kem phía dưới */
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* 1. TOP BAR: Tối giản và tinh tế hơn */
+.header-top-bar {
+    background-color: #F2EDE4;
+    padding: 10px 5%;
+    border-bottom: 1px dashed #D9D2C5; /* Đường kẻ đứt đoạn tạo cảm giác handmade */
+}
+
+.header-top-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.delivery-text {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #347A5C;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.header-logo-image {
+    height: 75px;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.header-logo-image:hover {
+    transform: translateY(5px) scale(1.1);
+}
+
+.header-user-actions {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+/* Nút đăng nhập tối giản */
+.login-link {
+    background: none;
+    border: none;
+    color: #3C3C3B;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.login-link:hover {
+    background-color: white;
+    color: #347A5C;
+}
+
+/* Cart Button dạng bong bóng (Bubble) */
+.cart-button {
+    background-color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: #3C3C3B;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s;
+}
+
+.cart-button i {
+    color: #347A5C;
+    font-size: 18px;
+}
+
+.cart-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(52, 122, 92, 0.15);
+}
+
+.cart-badge {
+    background-color: #347A5C;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 11px;
+}
+
+/* 2. NAVIGATION: Dạng thanh trôi (Floating Pill) */
+.header-navigation {
+    padding: 15px 0;
+    background-color: transparent;
+}
+
+.nav-content {
+    background-color: white;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 8px 15px;
+    border-radius: 100px; /* Bo tròn hoàn toàn */
+    display: flex;
+    gap: 5px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+    border: 1px solid rgba(217, 210, 197, 0.5);
+}
+
+.nav-link {
+    color: #3C3C3B;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    background-color: #347A5C;
+    color: white;
+}
+
+/* Dropdown Menu dạng bo góc cực lớn */
+.dropdown-menu {
+    position: absolute;
+    top: calc(100% + 15px);
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    min-width: 200px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    padding: 15px;
+    border: none;
+    overflow: hidden;
+}
+
+.dropdown-item {
+    border-radius: 12px;
+    margin-bottom: 5px;
+    font-size: 13px;
+    transition: all 0.3s;
+}
+
+.dropdown-item:last-child { margin-bottom: 0; }
+
+.dropdown-item:hover {
+    background-color: #F2EDE4;
+    color: #347A5C;
+    transform: scale(1.02);
+}
+
+/* Hiệu ứng ẩn hiện mượt mà cho dropdown */
+.nav-item-with-dropdown {
+    position: relative;
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateX(-50%) translateY(15px); }
+    to { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+.dropdown-menu {
+    animation: slideUp 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@media (max-width: 768px) {
+    .nav-content {
+        width: 90%;
+        overflow-x: auto;
+        justify-content: flex-start;
+        border-radius: 20px;
+    }
+}

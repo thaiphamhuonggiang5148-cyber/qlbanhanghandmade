@@ -1,0 +1,142 @@
+.highlands-footer {
+    background-color: #F2EDE4;
+    color: #3C3C3B;
+    padding: 50px 20px 70px;
+    position: relative;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* line trên */
+.footer-green-strip {
+    width: 100%;
+    height: 4px;
+    background-color: #347A5C;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* layout */
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1.2fr;
+    gap: 50px;
+}
+
+/* logo */
+.footer-logo-img {
+    width: 120px;
+    transition: 0.3s;
+}
+.footer-logo-img:hover {
+    transform: scale(1.05);
+}
+
+/* tiêu đề */
+.footer-column-title {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #347A5C;
+}
+
+/* link */
+.footer-links a {
+    color: #3C3C3B;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.footer-links a:hover {
+    color: #347A5C;
+    padding-left: 5px;
+}
+
+/* social */
+.footer-social-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #347A5C;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.25s;
+}
+
+.social-icon:hover {
+    background-color: #285f47;
+    transform: scale(1.1);
+}
+
+/* map */
+.footer-map__iframe {
+    width: 100%;
+    height: 170px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.footer-map__link {
+    display: inline-block;
+    margin-top: 6px;
+    font-size: 12px;
+    color: #347A5C;
+}
+
+/* copyright */
+.footer-copyright {
+    font-size: 12px;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+/* chat button */
+.footer-chat-icon {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    width: 55px;
+    height: 55px;
+    background-color: #347A5C;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer-chat-icon:hover {
+    transform: scale(1.15);
+    background-color: #285f47;
+}
+
+.footer-chat-icon i {
+    font-size: 24px;
+    color: white;
+}
+
+/* responsive */
+@media (max-width: 1024px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-middle {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,157 @@
+/* --- PHIÊN BẢN 3: MINIMALIST BORDER & ECO-FRIENDLY --- */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+.phuclong-header {
+    background-color: #F2EDE4; 
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+    border-bottom: 2px solid #3C3C3B; /* Đường viền đen đậm tạo sự phân chia rõ ràng */
+}
+
+/* 1. TOP BAR: Chia khối hiện đại */
+.header-top-bar {
+    padding: 20px 5%;
+}
+
+.header-top-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Delivery info dạng nhãn dán */
+.header-delivery-info {
+    border: 1px solid #3C3C3B;
+    padding: 5px 15px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.delivery-text {
+    font-size: 12px;
+    font-weight: 700;
+    color: #8da14e; /* Màu xanh lá mạ */
+}
+
+.header-logo-image {
+    height: 80px;
+    /* Hiệu ứng zoom nhẹ nhàng */
+    transition: transform 0.3s ease-out;
+}
+
+.header-logo-image:hover {
+    transform: scale(1.05);
+}
+
+/* User Actions: Thay icon bằng chữ tối giản */
+.header-user-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.login-link {
+    background: none;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #3C3C3B;
+    position: relative;
+    padding: 0;
+}
+
+/* Giỏ hàng dạng khung vuông (Minimalist Box) */
+.cart-button {
+    background: transparent;
+    border: 1px solid #3C3C3B;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.cart-button:hover {
+    background-color: #3C3C3B;
+    color: #F2EDE4;
+}
+
+.cart-button i {
+    font-size: 16px;
+}
+
+.cart-badge {
+    background-color: #347A5C;
+    color: white;
+    width: 18px;
+    height: 18px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 2. NAVIGATION: Chữ mảnh và khoảng cách lớn */
+.header-navigation {
+    border-top: 1px solid rgba(60, 60, 59, 0.1);
+    padding: 10px 0;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nav-link {
+    color: #3C3C3B;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 8px 0;
+    transition: all 0.3s;
+    opacity: 0.7;
+}
+
+.nav-link:hover, .nav-link.active {
+    opacity: 1;
+    color: #347A5C;
+    /* Gạch dưới dạng dấu chấm độc đáo */
+    border-bottom: 2px dotted #347A5C;
+}
+
+/* Dropdown Menu phẳng (Flat Design) */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    background-color: #F2EDE4;
+    border: 1px solid #3C3C3B;
+    min-width: 180px;
+    padding: 10px 0;
+    box-shadow: 4px 4px 0px #3C3C3B; /* Đổ bóng cứng kiểu retro */
+}
+
+.dropdown-item {
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.dropdown-item:hover {
+    background-color: #347A5C;
+    color: #F2EDE4;
+}
+
+@media (max-width: 768px) {
+    .header-top-bar { flex-direction: column; gap: 15px; }
+    .nav-content { gap: 10px; flex-wrap: wrap; }
+    .header-delivery-info { display: none; }
+}

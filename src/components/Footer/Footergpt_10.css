@@ -1,0 +1,137 @@
+.highlands-footer {
+    background: #F2EDE4;
+    padding: 100px 20px 60px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+/* bỏ strip */
+.footer-green-strip {
+    display: none;
+}
+
+/* layout */
+.footer-content {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 80px;
+
+    border-top: 1px solid rgba(0,0,0,0.08);
+    padding-top: 50px;
+}
+
+/* logo */
+.footer-logo-img {
+    width: 100px;
+    opacity: 0.9;
+}
+
+/* tiêu đề */
+.footer-column-title {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+    color: #888;
+}
+
+/* links */
+.footer-links a {
+    display: block;
+    font-size: 14px;
+    color: #222;
+    margin-bottom: 10px;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+.footer-links a:hover {
+    color: #347A5C;
+    transform: translateX(3px);
+}
+
+/* social */
+.footer-social-icons {
+    display: flex;
+    gap: 14px;
+}
+
+.social-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    transition: 0.3s;
+}
+
+.social-icon:hover {
+    border-color: #347A5C;
+    color: #347A5C;
+    transform: scale(1.1);
+}
+
+/* map */
+.footer-map__iframe {
+    width: 100%;
+    height: 150px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    margin-top: 15px;
+}
+
+/* link map */
+.footer-map__link {
+    font-size: 12px;
+    color: #999;
+}
+
+/* copyright */
+.footer-copyright {
+    font-size: 12px;
+    color: #999;
+    margin-top: 20px;
+}
+
+/* chat button – ultra minimal */
+.footer-chat-icon {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+
+    width: 50px;
+    height: 50px;
+
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer-chat-icon:hover {
+    border-color: #347A5C;
+    color: #347A5C;
+}
+
+.footer-chat-icon i {
+    font-size: 20px;
+}
+
+/* responsive */
+@media (max-width: 1024px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}

@@ -1,0 +1,187 @@
+/* --- PHIÊN BẢN 4: SOFT GLASSMORPHISM & FLOATING (ĐỘC ĐÁO & PHÁ CÁCH) --- */
+
+.highlands-footer {
+    background-color: #F2EDE4; /* Nền kem làm phông nền */
+    padding: 100px 20px 40px 20px;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Dải trang trí biến thành một hình sóng hoặc bo tròn mềm mại */
+.footer-green-strip {
+    width: 120%;
+    height: 150px;
+    background: linear-gradient(135deg, #347A5C, #8da14e);
+    position: absolute;
+    top: -80px;
+    left: -10%;
+    border-radius: 50%; /* Tạo đường cong mềm mại ở đỉnh footer */
+    z-index: 0;
+}
+
+.footer-content {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    gap: 30px;
+}
+
+/* Cột bên trái như một tấm card nổi */
+.footer-left {
+    background: white;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(52, 122, 92, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-logo-img {
+    width: 100px;
+    margin-bottom: 15px;
+    transition: transform 0.5s ease;
+}
+
+.footer-left:hover .footer-logo-img {
+    transform: rotate(360deg);
+}
+
+.footer-copyright {
+    font-size: 11px;
+    color: #347A5C;
+    font-weight: 600;
+}
+
+/* Cột giữa và phải gộp lại thành một vùng thông tin hiện đại */
+.footer-middle {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px); /* Hiệu ứng kính mờ */
+    padding: 30px;
+    border-radius: 30px;
+    border: 1px solid white;
+}
+
+.footer-column-title {
+    font-size: 14px;
+    color: #3C3C3B;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Thêm một dấu chấm nhỏ trước tiêu đề */
+.footer-column-title::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: #8da14e;
+    border-radius: 50%;
+}
+
+.footer-links a {
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 12px;
+    transition: all 0.3s;
+}
+
+.footer-links a:hover {
+    color: #347A5C;
+    transform: scale(1.05);
+}
+
+/* Khu vực Social & Map bên phải */
+.footer-right {
+    grid-column: span 3; /* Đẩy xuống dưới hoặc trải dài */
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px dashed rgba(52, 122, 92, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 45px;
+    height: 45px;
+    background: #347A5C;
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+
+.social-icon:hover {
+    background: #3C3C3B;
+    border-radius: 50%;
+}
+
+.footer-map {
+    width: 250px;
+}
+
+.footer-map__iframe {
+    height: 80px; /* Map siêu nhỏ, tối giản */
+    border-radius: 15px;
+}
+
+.footer-chat-icon {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 65px;
+    height: 65px;
+    background: linear-gradient(135deg, #347A5C, #8da14e);
+    border-radius: 50% 50% 0 50%; /* Dạng bong bóng chat */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 20px rgba(52, 122, 92, 0.3);
+    color: white;
+    font-size: 28px;
+}
+
+/* Hiệu ứng nhịp thở cho nút chat */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.footer-chat-icon {
+    animation: pulse 2s infinite;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    .footer-middle {
+        grid-template-columns: 1fr;
+    }
+    .footer-right {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

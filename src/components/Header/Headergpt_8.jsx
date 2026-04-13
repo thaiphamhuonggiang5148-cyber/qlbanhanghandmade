@@ -1,0 +1,148 @@
+import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import './Header.css';
+import logoImage from '../../img/logo.png';
+
+const Header = () => {
+  const [hoveredMenu, setHoveredMenu] = useState(null);
+  const [cartCount, setCartCount] = useState(0);
+  const [currentUser, setCurrentUser] = useState(null);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const updateCartCount = () => {
+      const savedCart = localStorage.getItem('cart');
+      if (!savedCart) {
+        setCartCount(0);
+      } else {
+        try {
+          const cart = JSON.parse(savedCart);
+          const totalItems = cart.reduce(
+            (sum, item) => sum + (item.quantity || 0),
+            0
+          );
+          setCartCount(totalItems);
+        } catch (error) {
+          console.error('Lỗi đọc giỏ hàng:', error);
+          setCartCount(0);
+        }
+      }
+    };
+
+    const updateCurrentUser = () => {
+      const savedUser = localStorage.getItem('currentUser');
+      if (!savedUser) {
+        setCurrentUser(null);
+        return;
+      }
+
+      try {
+        const user = JSON.parse(savedUser);
+        setCurrentUser(user);
+      } catch (error) {
+        console.error('Lỗi đọc thông tin người dùng:', error);
+        setCurrentUser(null);
+      }
+    };
+
+    updateCartCount();
+    updateCurrentUser();
+
+    window.addEventListener('cartUpdated', updateCartCount);
+    window.addEventListener('userUpdated', updateCurrentUser);
+    window.addEventListener('storage', () => {
+      updateCartCount();
+      updateCurrentUser();
+    });
+
+    return () => {
+      window.removeEventListener('cartUpdated', updateCartCount);
+      window.removeEventListener('userUpdated', updateCurrentUser);
+    };
+  }, []);
+
+  // Đổi danh mục menu con cho đồ handmade
+  const handmadeMenuItems = [
+    { text: 'Quà tặng đan len', href: '/products/dan-len' },
+    { text: 'Phụ kiện thủ công', href: '/products/phu-kien' },
+    { text: 'Set quà tự làm (DIY)', href: '/products/diy' }
+  ];
+
+  return (
+    <header className="phuclong-header">
+      <div className="header-top-bar">
+        <div className="header-top-content">
+          <div className="header-delivery-info">
+            <span className="delivery-text">Fee Delivery</span>
+            <i className="fas fa-phone delivery-icon"></i>
+            <span className="delivery-phone">0918 865 148</span>
+          </div>
+
+          <div className="header-logo-container">
+            <div className="phuclong-logo">
+              <img src={logoImage} alt="SoulMade Logo" className="header-logo-image" />
+            </div>
+          </div>
+
+          <div className="header-user-actions">
+            <button
+              className="login-link"
+              onClick={() => navigate('/login')}
+            >
+              {currentUser ? (currentUser.name || currentUser.user) : 'Đăng nhập'}
+            </button>
+            <span className="action-separator">|</span>
+            <div className="language-selector">
+              <span className="lang-active">VN</span>
+              <span className="lang-separator"> | </span>
+              <span className="lang-option">EN</span>
+            </div>
+            <button
+              className="cart-button"
+              onClick={() => navigate('/cart')}
+            >
+              <i className="fas fa-shopping-cart"></i>
+              <span>Giỏ hàng</span>
+              <span className="cart-badge">{cartCount}</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <nav className="header-navigation">
+        <div className="nav-content">
+          <a href="/" className="nav-link">TRANG CHỦ</a>
+
+          <div
+            className="nav-item-with-dropdown"
+            onMouseEnter={() => setHoveredMenu('handmade')}
+            onMouseLeave={() => setHoveredMenu(null)}
+          >
+            <a href="/products" className={`nav-link ${hoveredMenu === 'handmade' ? 'active' : ''}`}>
+              SẢN PHẨM
+            </a>
+            {hoveredMenu === 'handmade' && (
+              <div className="dropdown-menu">
+                {handmadeMenuItems.map((item, index) => (
+                  <a
+                    key={index}
+                    href={item.href}
+                    className="dropdown-item"
+                  >
+                    {item.text}
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
+          <a href="/combo" className="nav-link">COMBO QUÀ TẶNG</a>
+          <a href="/promotions" className="nav-link">KHUYẾN MÃI</a>
+          <a href="/about" className="nav-link">GIỚI THIỆU</a>
+          <a href="/about-us" className="nav-link">VỀ CHÚNG TÔI</a>
+        </div>
+      </nav>
+    </header>
+  );
+};
+
+export default Header;

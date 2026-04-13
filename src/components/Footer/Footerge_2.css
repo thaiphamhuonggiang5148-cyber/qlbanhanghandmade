@@ -1,0 +1,209 @@
+/* --- PHIÊN BẢN 2: MODERN DARK & ELEGANCE (NỀN XANH CHỮ KEM) --- */
+
+.highlands-footer {
+    /* Lấy màu xanh thương hiệu làm nền chủ đạo */
+    background-color: #347A5C;
+    /* Chữ chuyển sang màu kem để nổi bật trên nền đậm */
+    color: #F2EDE4; 
+    padding: 70px 20px 40px 20px;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 350px;
+    overflow: hidden;
+}
+
+/* Tạo một dải trang trí tinh tế bằng màu nâu đen mộc mạc */
+.footer-green-strip {
+    width: 100%;
+    height: 6px;
+    background-color: #3C3C3B; 
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.2fr 2fr 1.2fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-logo-img {
+    width: 150px;
+    height: auto;
+    /* Làm logo nổi bật hơn trên nền xanh bằng cách thêm độ sáng nếu cần */
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+    margin-bottom: 10px;
+}
+
+.footer-copyright {
+    font-size: 12px;
+    color: rgba(242, 237, 228, 0.7); /* Màu kem nhưng làm mờ đi một chút */
+    margin-top: 20px;
+    letter-spacing: 0.5px;
+}
+
+.footer-middle {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.footer-column-title {
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    color: #F2EDE4; /* Tiêu đề màu kem sáng */
+    position: relative;
+    display: inline-block;
+}
+
+/* Thêm gạch chân trang trí dưới tiêu đề */
+.footer-column-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 30px;
+    height: 2px;
+    background-color: #3C3C3B;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    color: rgba(242, 237, 228, 0.8);
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #FFFFFF;
+    text-shadow: 0 0 10px rgba(255,255,255,0.3);
+    transform: translateX(8px);
+    display: inline-block;
+}
+
+.footer-right {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 42px;
+    height: 42px;
+    border: 1px solid rgba(242, 237, 228, 0.3);
+    border-radius: 8px; /* Bo góc nhẹ thay vì hình tròn để trông hiện đại */
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F2EDE4;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #F2EDE4;
+    color: #347A5C;
+    transform: rotate(-10deg) scale(1.1);
+}
+
+.footer-map__iframe {
+    width: 100%;
+    height: 160px;
+    border: none;
+    border-radius: 4px; /* Vuông vức hơn bản 1 */
+    filter: grayscale(0.5) contrast(1.1); /* Làm bản đồ trông nghệ thuật hơn */
+    transition: filter 0.3s ease;
+}
+
+.footer-map__iframe:hover {
+    filter: grayscale(0);
+}
+
+.footer-map__link {
+    margin-top: 10px;
+    font-size: 12px;
+    color: rgba(242, 237, 228, 0.6);
+    text-decoration: underline;
+}
+
+.footer-chat-icon {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    background-color: #F2EDE4; /* Nút chat màu kem nổi bật trên trang */
+    border-radius: 20px; /* Bo góc kiểu "Squircle" hiện đại */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+.footer-chat-icon i {
+    font-size: 28px;
+    color: #347A5C;
+}
+
+.footer-chat-icon:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .footer-middle {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-middle {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .footer-column-title::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .footer-left, .footer-right {
+        align-items: center;
+    }
+}

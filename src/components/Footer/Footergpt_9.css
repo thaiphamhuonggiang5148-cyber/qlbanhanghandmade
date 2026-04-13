@@ -1,0 +1,179 @@
+/* nền chung */
+.highlands-footer {
+    background: #F2EDE4;
+    padding: 80px 20px;
+    position: relative;
+}
+
+/* card footer nổi */
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 20px;
+
+    /* glass effect */
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(12px);
+
+    /* shadow mềm */
+    box-shadow: 
+        0 10px 30px rgba(0,0,0,0.1),
+        inset 0 1px 1px rgba(255,255,255,0.4);
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 1.2fr;
+    gap: 40px;
+}
+
+/* bỏ strip cũ */
+.footer-green-strip {
+    display: none;
+}
+
+/* logo */
+.footer-logo-img {
+    width: 110px;
+    transition: 0.3s;
+}
+.footer-logo-img:hover {
+    transform: rotate(-3deg) scale(1.05);
+}
+
+/* tiêu đề */
+.footer-column-title {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #347A5C;
+    letter-spacing: 1px;
+}
+
+/* links */
+.footer-links a {
+    color: #3C3C3B;
+    font-size: 13px;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 6px;
+    position: relative;
+}
+
+/* underline animation */
+.footer-links a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #347A5C;
+    left: 0;
+    bottom: -2px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover::after {
+    width: 100%;
+}
+
+/* social */
+.footer-social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 12px;
+    background: white;
+    color: #347A5C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.social-icon:hover {
+    transform: translateY(-5px) rotate(5deg);
+    background: #347A5C;
+    color: white;
+}
+
+/* map */
+.footer-map__iframe {
+    width: 100%;
+    height: 160px;
+    border-radius: 12px;
+    border: none;
+    margin-top: 10px;
+    filter: grayscale(20%);
+}
+
+.footer-map__iframe:hover {
+    filter: grayscale(0%);
+}
+
+/* map link */
+.footer-map__link {
+    font-size: 12px;
+    color: #347A5C;
+}
+
+/* copyright */
+.footer-copyright {
+    font-size: 12px;
+    margin-top: 10px;
+    opacity: 0.7;
+}
+
+/* chat button kiểu glass */
+.footer-chat-icon {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 55px;
+    height: 55px;
+
+    background: rgba(255,255,255,0.7);
+    backdrop-filter: blur(10px);
+
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer-chat-icon:hover {
+    transform: scale(1.15);
+    background: #347A5C;
+}
+
+.footer-chat-icon:hover i {
+    color: white;
+}
+
+.footer-chat-icon i {
+    font-size: 22px;
+    color: #347A5C;
+}
+
+/* responsive */
+@media (max-width: 1024px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-middle {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}

@@ -1,0 +1,201 @@
+/* --- PHIÊN BẢN 1: CHỦ ĐỀ KEM MỘC & XANH THƯƠNG HIỆU --- */
+
+.highlands-footer {
+    /* Màu nền kem mộc mạc */
+    background-color: #F2EDE4;
+    /* Chữ màu nâu đen để dễ đọc trên nền kem */
+    color: #3C3C3B; 
+    padding: 60px 20px;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 300px;
+    border-top: 1px solid rgba(52, 122, 92, 0.1); /* Đường kẻ mờ phía trên */
+}
+
+.footer-green-strip {
+    width: 100%;
+    height: 5px;
+    /* Màu xanh thương hiệu */
+    background-color: #347A5C;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-logo-img {
+    width: 140px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    /* Loại bỏ các filter cũ nếu có */
+    filter: none; 
+}
+
+.footer-copyright {
+    font-size: 13px;
+    color: #6d6d6b; /* Màu chữ nhạt hơn một chút cho copyright */
+    margin-top: 15px;
+    font-style: italic;
+}
+
+.footer-middle {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.footer-column-title {
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    /* Tiêu đề dùng màu xanh thương hiệu để tạo điểm nhấn */
+    color: #347A5C;
+    letter-spacing: 1px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: #3C3C3B;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    /* Khi hover đổi sang màu xanh thương hiệu */
+    color: #347A5C;
+    padding-left: 5px; /* Hiệu ứng dịch chuyển nhẹ */
+}
+
+.footer-right {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 12px;
+    margin-top: 5px;
+}
+
+.social-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    /* Nền màu xanh thương hiệu, icon trắng */
+    background-color: #347A5C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-5px);
+    background-color: #3C3C3B; /* Đổi sang nâu đen khi hover */
+    box-shadow: 0 4px 10px rgba(52, 122, 92, 0.2);
+}
+
+.footer-map {
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.footer-map__iframe {
+    width: 100%;
+    height: 150px;
+    border: 2px solid #347A5C; /* Viền màu xanh cho bản đồ */
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.footer-map__link {
+    display: inline-block;
+    margin-top: 0.8rem;
+    font-size: 12px;
+    color: #347A5C;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-map__link:hover {
+    text-decoration: underline;
+}
+
+.footer-chat-icon {
+    position: fixed; /* Đổi sang fixed để luôn nổi trên màn hình */
+    bottom: 30px;
+    right: 30px;
+    width: 55px;
+    height: 55px;
+    background-color: #347A5C;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(52, 122, 92, 0.3);
+    z-index: 100;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.footer-chat-icon:hover {
+    transform: scale(1.1) rotate(10deg);
+    background-color: #3C3C3B;
+}
+
+.footer-chat-icon i {
+    font-size: 24px;
+    color: #F2EDE4; /* Màu icon khớp với màu nền trang */
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .footer-left, .footer-right {
+        align-items: center;
+    }
+    .footer-middle {
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-middle {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,242 @@
+/* --- PHIÊN BẢN 1: ELEGANT CRAFTMANSHIP --- */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+.phuclong-header {
+    background-color: #F2EDE4; 
+    width: 100%;
+    box-shadow: 0 4px 20px rgba(52, 122, 92, 0.08); /* Đổ bóng màu xanh nhẹ */
+    font-family: 'Quicksand', sans-serif; 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Thanh top bar phía trên */
+.header-top-bar {
+    background-color: #F2EDE4;
+    padding: 12px 40px;
+    border-bottom: 1px solid rgba(52, 122, 92, 0.1);
+}
+
+.header-top-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* Thông tin liên hệ bên trái */
+.header-delivery-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 1;
+}
+
+.delivery-text {
+    background-color: #347A5C;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.delivery-phone {
+    font-weight: 600;
+    color: #3C3C3B;
+    font-size: 14px;
+}
+
+.delivery-icon {
+    color: #347A5C;
+}
+
+/* Logo ở giữa - Trái tim của header */
+.header-logo-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.header-logo-image {
+    height: 90px; 
+    width: auto;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+}
+
+.header-logo-image:hover {
+    transform: scale(1.15) rotate(-3deg);
+}
+
+/* Actions bên phải */
+.header-user-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.login-link {
+    background: none;
+    border: none;
+    color: #3C3C3B;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.login-link:hover {
+    color: #347A5C;
+}
+
+/* Giỏ hàng được thiết kế lại trông cao cấp hơn */
+.cart-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 20px;
+    border: 2px solid #347A5C;
+    border-radius: 25px;
+    background-color: #347A5C;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(52, 122, 92, 0.2);
+}
+
+.cart-button:hover {
+    background-color: transparent;
+    color: #347A5C;
+    transform: translateY(-2px);
+}
+
+.cart-badge {
+    background-color: #F2EDE4;
+    color: #347A5C;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 11px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Navigation Menu */
+.header-navigation {
+    background-color: #F2EDE4;
+    padding: 10px 0;
+}
+
+.nav-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.nav-link {
+    color: #3C3C3B;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 12px 25px;
+    position: relative;
+    transition: all 0.3s;
+}
+
+/* Hiệu ứng gạch chân hiện đại khi hover */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #347A5C;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after, .nav-link.active::after {
+    width: 30px;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #347A5C;
+}
+
+/* Dropdown Menu được làm lại mượt mà */
+.nav-item-with-dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    background-color: white;
+    min-width: 240px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(52, 122, 92, 0.1);
+    padding: 15px 0;
+    animation: fadeInSlide 0.3s ease forwards;
+}
+
+@keyframes fadeInSlide {
+    from { opacity: 0; transform: translateX(-50%) translateY(20px); }
+    to { opacity: 1; transform: translateX(-50%) translateY(10px); }
+}
+
+.dropdown-item {
+    padding: 12px 25px;
+    color: #3C3C3B;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(52, 122, 92, 0.05);
+    color: #347A5C;
+    padding-left: 35px;
+}
+
+/* Ngôn ngữ selector */
+.language-selector {
+    font-size: 12px;
+    font-weight: 700;
+    color: #D9D2C5;
+}
+
+.lang-active { color: #347A5C; }
+.lang-option { cursor: pointer; transition: color 0.3s; }
+.lang-option:hover { color: #3C3C3B; }
+
+@media (max-width: 768px) {
+    .header-top-bar { padding: 10px 15px; }
+    .header-delivery-info, .language-selector { display: none; }
+    .header-logo-image { height: 60px; }
+    .nav-content { flex-wrap: wrap; gap: 0; }
+    .nav-link { padding: 10px; font-size: 10px; }
+}
