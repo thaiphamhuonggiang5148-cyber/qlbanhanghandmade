@@ -121,7 +121,7 @@ const Header = () => {
             )}
           </div>
 
-          <a href="/combo" className="nav-link">COMBO QUÀ TẶNG</a>
+          <a href="/combo" className="nav-link">COMBO QUÀ TẶN</a>
           <a href="/promotions" className="nav-link">KHUYẾN MÃI</a>
           <a href="/about" className="nav-link">GIỚI THIỆU</a>
           <a href="/about-us" className="nav-link">VỀ CHÚNG TÔI</a>
