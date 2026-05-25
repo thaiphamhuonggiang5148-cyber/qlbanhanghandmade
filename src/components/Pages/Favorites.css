@@ -1,0 +1,87 @@
+.favorites-container {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px 40px;
+}
+
+.favorites-title {
+  font-size: 28px;
+  color: #1e293b;
+  margin-bottom: 30px;
+  font-weight: 800;
+  text-transform: uppercase;
+  border-left: 4px solid #f59e0b;
+  padding-left: 12px;
+}
+
+/* UI Trạng thái trống (Tái sử dụng style nút của Cart) */
+.favorites-empty {
+  text-align: center;
+  padding: 80px 20px;
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid #f1f5f9;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+.favorites-empty h2 {
+  color: #1e293b;
+  margin-bottom: 12px;
+}
+
+.favorites-empty p {
+  color: #64748b;
+  margin-bottom: 24px;
+}
+
+.continue-shopping-btn.primary {
+  background: #f59e0b;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 16px 24px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  max-width: 250px;
+  margin: 0 auto;
+  display: block;
+}
+
+.continue-shopping-btn.primary:hover {
+  background: #d97706;
+  transform: translateY(-2px);
+}
+
+/* Grid Layout hiển thị sản phẩm */
+.favorites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .favorites-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .favorites-grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .favorites-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  .favorites-title {
+    font-size: 22px;
+  }
+}

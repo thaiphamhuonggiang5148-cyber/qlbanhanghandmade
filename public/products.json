@@ -1,1302 +1,3603 @@
 [
-    {
-        "id": 1,
-        "name": "Trâm cài tóc gỗ tua rua hoa hồng trắng",
-        "imageKey": "sp1",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "118.000₫",
+  {
+    "id": 1,
+    "categoryid": 1,
+    "name": "Trâm Cài Tóc Gỗ Tua Rua Hoa Hồng Trắng",
+    "imageKey": "sp1",
+    "description": "Trâm cài tóc gỗ kết hợp tua rua, mang lại vẻ đẹp cổ điển và tinh tế.",
+    "specs": {
+      "Chất liệu": "Gỗ",
+      "Phong cách": "Cổ trang",
+      "Phụ kiện": "Tua rua"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "118.000₫",
         "originalPrice": "130.000₫",
-        "discount": "-13,75%",
-        "rating": "5",
-        "sold": "5,9k"
+        "discount": "-13,75%"
+      },
+      {
+        "name": "Size M",
+        "price": "135.000₫",
+        "originalPrice": "130.000₫",
+        "discount": "-13,75%"
+      },
+      {
+        "name": "Size L",
+        "price": "153.000₫",
+        "originalPrice": "130.000₫",
+        "discount": "-13,75%"
+      }
+    ],
+    "currentPrice": "118.000₫",
+    "originalPrice": "130.000₫",
+    "discount": "-13,75%",
+    "rating": "5",
+    "sold": "5,9k"
+  },
+  {
+    "id": 2,
+    "categoryid": 1,
+    "name": "Kẹp Tóc Linen Thêu Tên",
+    "imageKey": "sp2",
+    "description": "Kẹp tóc vải linen xinh xắn, có thể thêu tên theo yêu cầu.",
+    "specs": {
+      "Chất liệu": "Vải linen",
+      "Đặc điểm": "Thêu tên"
     },
-    {
-        "id": 2,
-        "name": "Kẹp tóc linn thêu tên",
-        "imageKey": "sp2",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "67.000₫",
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "67.000₫",
         "originalPrice": "90.000₫",
-        "discount": "-8%",
-        "rating": "5",
-        "sold": "117"
+        "discount": "-8%"
+      },
+      {
+        "name": "Size M",
+        "price": "77.000₫",
+        "originalPrice": "90.000₫",
+        "discount": "-8%"
+      },
+      {
+        "name": "Size L",
+        "price": "87.000₫",
+        "originalPrice": "90.000₫",
+        "discount": "-8%"
+      }
+    ],
+    "currentPrice": "67.000₫",
+    "originalPrice": "90.000₫",
+    "discount": "-8%",
+    "rating": "5",
+    "sold": "117"
+  },
+  {
+    "id": 3,
+    "categoryid": 1,
+    "name": "Băng Đô Móc Len Daisy Hoạ Tiết Hoa Cúc",
+    "imageKey": "sp3",
+    "description": "Băng đô len handmade họa tiết hoa cúc tươi tắn.",
+    "specs": {
+      "Chất liệu": "Len",
+      "Họa tiết": "Hoa cúc"
     },
-    {
-        "id": 3,
-        "name": "Băng đô móc len daisy hoạ tiết hoa cúc",
-        "imageKey": "sp3",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "21.000₫",
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "21.000₫",
         "originalPrice": "30.000₫",
-        "discount": "-7,14%",
-        "rating": "4.9",
-        "sold": "27k"
+        "discount": "-7,14%"
+      },
+      {
+        "name": "Size M",
+        "price": "24.000₫",
+        "originalPrice": "30.000₫",
+        "discount": "-7,14%"
+      },
+      {
+        "name": "Size L",
+        "price": "27.000₫",
+        "originalPrice": "30.000₫",
+        "discount": "-7,14%"
+      }
+    ],
+    "currentPrice": "21.000₫",
+    "originalPrice": "30.000₫",
+    "discount": "-7,14%",
+    "rating": "4.9",
+    "sold": "27k"
+  },
+  {
+    "id": 4,
+    "categoryid": 1,
+    "name": "Nơ Cột Tóc Caro Đỏ",
+    "imageKey": "sp4",
+    "description": "Nơ cột tóc họa tiết caro đỏ nổi bật.",
+    "specs": {
+      "Họa tiết": "Caro",
+      "Màu sắc": "Đỏ"
     },
-    {
-        "id": 4,
-        "name": "Nơ cột tóc caro đỏ",
-        "imageKey": "sp4",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "27.000₫",
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "27.000₫",
         "originalPrice": "35.000₫",
-        "discount": "-14%",
-        "rating": "5",
-        "sold": "45"
+        "discount": "-14%"
+      },
+      {
+        "name": "Size M",
+        "price": "31.000₫",
+        "originalPrice": "35.000₫",
+        "discount": "-14%"
+      },
+      {
+        "name": "Size L",
+        "price": "35.000₫",
+        "originalPrice": "35.000₫",
+        "discount": "-14%"
+      }
+    ],
+    "currentPrice": "27.000₫",
+    "originalPrice": "35.000₫",
+    "discount": "-14%",
+    "rating": "5",
+    "sold": "45"
+  },
+  {
+    "id": 5,
+    "categoryid": 1,
+    "name": "Móc Khoá Da Vẽ Tay Candle In Red",
+    "imageKey": "sp5",
+    "description": "Móc khóa da vẽ tay độc đáo với hình ảnh candle in red.",
+    "specs": {
+      "Chất liệu": "Da",
+      "Đặc điểm": "Vẽ tay"
     },
-    {
-        "id": 5,
-        "name": "Móc khoá da vẽ tay candle in red",
-        "imageKey": "sp5",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "110.000₫",
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "110.000₫",
         "originalPrice": "140.000₫",
-        "discount": "-8%",
-        "rating": "5",
-        "sold": "12"
+        "discount": "-8%"
+      },
+      {
+        "name": "Size M",
+        "price": "126.000₫",
+        "originalPrice": "140.000₫",
+        "discount": "-8%"
+      },
+      {
+        "name": "Size L",
+        "price": "143.000₫",
+        "originalPrice": "140.000₫",
+        "discount": "-8%"
+      }
+    ],
+    "currentPrice": "110.000₫",
+    "originalPrice": "140.000₫",
+    "discount": "-8%",
+    "rating": "5",
+    "sold": "12"
+  },
+  {
+    "id": 6,
+    "categoryid": 1,
+    "name": "Nhẫn Thép Đêm Đầy Sao Vẽ Tay",
+    "imageKey": "sp6",
+    "description": "Nhẫn thép không gỉ với họa tiết đêm đầy sao vẽ tay.",
+    "specs": {
+      "Chất liệu": "Thép",
+      "Họa tiết": "Đêm đầy sao"
     },
-    {
-        "id": 6,
-        "name": "Nhẫn thép đêm đầy sao vẽ tay",
-        "imageKey": "sp6",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "50.000₫",
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "50.000₫",
         "originalPrice": "110.000₫",
-        "discount": "-9%",
-        "rating": "4.8",
-        "sold": "89"
+        "discount": "-9%"
+      },
+      {
+        "name": "Size M",
+        "price": "57.000₫",
+        "originalPrice": "110.000₫",
+        "discount": "-9%"
+      },
+      {
+        "name": "Size L",
+        "price": "65.000₫",
+        "originalPrice": "110.000₫",
+        "discount": "-9%"
+      }
+    ],
+    "currentPrice": "50.000₫",
+    "originalPrice": "110.000₫",
+    "discount": "-9%",
+    "rating": "4.8",
+    "sold": "89"
+  },
+  {
+    "id": 7,
+    "categoryid": 1,
+    "name": "Khăn Lụa Tơ Tằm Twilly Hoạ Tiết Cung Đình Triều Nguyễn",
+    "imageKey": "sp7",
+    "description": "Khăn lụa tơ tằm họa tiết cung đình sang trọng.",
+    "specs": {
+      "Chất liệu": "Lụa tơ tằm",
+      "Họa tiết": "Cung đình"
     },
-    {
-        "id": 7,
-        "name": "Khăn lụa tơ tằm twilly hoạ tiết cung đình triều Nguyễn",
-        "imageKey": "sp7",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "390.000₫",
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "390.000₫",
         "originalPrice": "450.000₫",
-        "discount": "-8%",
-        "rating": "5",
-        "sold": "23"
+        "discount": "-8%"
+      },
+      {
+        "name": "Size M",
+        "price": "448.000₫",
+        "originalPrice": "450.000₫",
+        "discount": "-8%"
+      },
+      {
+        "name": "Size L",
+        "price": "507.000₫",
+        "originalPrice": "450.000₫",
+        "discount": "-8%"
+      }
+    ],
+    "currentPrice": "390.000₫",
+    "originalPrice": "450.000₫",
+    "discount": "-8%",
+    "rating": "5",
+    "sold": "23"
+  },
+  {
+    "id": 8,
+    "categoryid": 1,
+    "name": "Ghim Cài Áo Đất Sét",
+    "imageKey": "sp8",
+    "description": "Ghim cài áo thủ công làm từ đất sét.",
+    "specs": {
+      "Chất liệu": "Đất sét",
+      "Loại": "Ghim cài"
     },
-    {
-        "id": 8,
-        "name": "Ghim cài áo đất sét",
-        "imageKey": "sp8",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "25.000₫",
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "25.000₫",
         "originalPrice": "50.000₫",
-        "discount": "-7%",
-        "rating": "4.9",
-        "sold": "156"
+        "discount": "-7%"
+      },
+      {
+        "name": "Size M",
+        "price": "28.000₫",
+        "originalPrice": "50.000₫",
+        "discount": "-7%"
+      },
+      {
+        "name": "Size L",
+        "price": "32.000₫",
+        "originalPrice": "50.000₫",
+        "discount": "-7%"
+      }
+    ],
+    "currentPrice": "25.000₫",
+    "originalPrice": "50.000₫",
+    "discount": "-7%",
+    "rating": "4.9",
+    "sold": "156"
+  },
+  {
+    "id": 9,
+    "categoryid": 1,
+    "name": "Móc Khoá Đất Sét Khắc Tên",
+    "imageKey": "sp9",
+    "description": "Móc khóa đất sét có thể khắc tên theo yêu cầu.",
+    "specs": {
+      "Chất liệu": "Đất sét",
+      "Đặc điểm": "Khắc tên"
     },
-    {
-        "id": 9,
-        "name": "Móc khoá đất sét khắc tên",
-        "imageKey": "sp9",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "45.000₫",
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "45.000₫",
         "originalPrice": "90.000₫",
-        "discount": "-15%",
-        "rating": "5",
-        "sold": "1.2k"
+        "discount": "-15%"
+      },
+      {
+        "name": "Size M",
+        "price": "51.000₫",
+        "originalPrice": "90.000₫",
+        "discount": "-15%"
+      },
+      {
+        "name": "Size L",
+        "price": "58.000₫",
+        "originalPrice": "90.000₫",
+        "discount": "-15%"
+      }
+    ],
+    "currentPrice": "45.000₫",
+    "originalPrice": "90.000₫",
+    "discount": "-15%",
+    "rating": "5",
+    "sold": "1.2k"
+  },
+  {
+    "id": 10,
+    "categoryid": 1,
+    "name": "Scrunchies Nơ Tai Thỏ Thêu Hoa Tuyết Mù Đông",
+    "imageKey": "sp10",
+    "description": "Scrunchies nơ tai thỏ thêu hoa xinh xắn.",
+    "specs": {
+      "Chất liệu": "Vải",
+      "Họa tiết": "Hoa tuyết"
     },
-    {
-        "id": 10,
-        "name": "Scrunchies nơ tai thỏ thêu hoa tuyết mù đông",
-        "imageKey": "sp10",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "20.000₫",
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "20.000₫",
         "originalPrice": "45.000₫",
-        "discount": "-17%",
-        "rating": "5",
-        "sold": "342"
-    },
-    {
-        "id": 11,
-        "name": "Túi lưới macrame handmade",
-        "imageKey": "sp11",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "205.000₫",
-        "originalPrice": "220.000₫",
-        "discount": "-10%",
-        "rating": "4.7",
-        "sold": "56"
-    },
-    {
-        "id": 12,
-        "name": "Ví da nam basic",
-        "imageKey": "sp12",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "168.000₫",
-        "originalPrice": "190.000₫",
-        "discount": "-11%",
-        "rating": "4.9",
-        "sold": "210"
-    },
-    {
-        "id": 13,
-        "name": "Túi bucket vải jean tái chế lót da",
-        "imageKey": "sp13",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "115.000₫",
-        "originalPrice": "250.000₫",
-        "discount": "-5%",
-        "rating": "5",
-        "sold": "18"
-    },
-    {
-        "id": 14,
-        "name": "Túi canvas thêu tên hoa cỏ",
-        "imageKey": "sp14",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "110.000₫",
-        "originalPrice": "130.000₫",
-        "discount": "-8%",
-        "rating": "5",
-        "sold": "89"
-    },
-    {
-        "id": 15,
-        "name": "Túi dây rút mini vải linen thêu hoa cỏ",
-        "imageKey": "sp15",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "160.000₫",
-        "originalPrice": "180.000₫",
-        "discount": "-11%",
-        "rating": "4.8",
-        "sold": "120"
-    },
-    {
-        "id": 16,
-        "name": "Ví da đựng hộ chiếu",
-        "imageKey": "sp16",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "100.000₫",
-        "originalPrice": "250.000₫",
-        "discount": "-8%",
-        "rating": "5",
-        "sold": "34"
-    },
-    {
-        "id": 17,
-        "name": "Túi đựng điện thoại vải lanh thêu tay",
-        "imageKey": "sp17",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "100.000₫",
-        "originalPrice": "120.000₫",
-        "discount": "-9%",
-        "rating": "4.9",
-        "sold": "67"
-    },
-    {
-        "id": 18,
-        "name": "Túi tote len móc caro",
-        "imageKey": "sp18",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "100.000₫",
-        "originalPrice": "130.000₫",
-        "discount": "-9%",
-        "rating": "4.7",
-        "sold": "45"
-    },
-    {
-        "id": 19,
-        "name": "Balo mini số 2 từ jeans tái chế",
-        "imageKey": "sp19",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "150.000₫",
-        "originalPrice": "200.000₫",
-        "discount": "-10%",
-        "rating": "5",
-        "sold": "12"
-    },
-    {
-        "id": 20,
-        "name": "Túi Len Nơ",
-        "imageKey": "sp20",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "150.000₫",
-        "originalPrice": "180.000₫",
-        "discount": "-8%",
-        "rating": "4.9",
-        "sold": "29"
-    },
-    {
-        "id": 21,
-        "name": "Khung tranh gỗ ép hoa khô Đà Lạt ô cửa sổ",
-        "imageKey": "sp21",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "165.000₫",
-        "originalPrice": "190.000₫",
-        "discount": "-9%",
-        "rating": "5",
-        "sold": "54"
-    },
-    {
-        "id": 22,
-        "name": "Nến thơm vỏ sò thủ công",
-        "imageKey": "sp22",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "260.000₫",
-        "originalPrice": "285.000₫",
-        "discount": "-9%",
-        "rating": "4.8",
-        "sold": "112"
-    },
-    {
-        "id": 23,
-        "name": "Giỏ mây hình cá độc đáo",
-        "imageKey": "sp23",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "80.000₫",
-        "originalPrice": "100.000₫",
-        "discount": "-16%",
-        "rating": "4.6",
-        "sold": "37"
-    },
-    {
-        "id": 24,
-        "name": "Tấm trải bàn thổ cẩm vải bông dày",
-        "imageKey": "sp24",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "100.000₫",
-        "originalPrice": "150.000₫",
-        "discount": "-8%",
-        "rating": "5",
-        "sold": "15"
-    },
-    {
-        "id": 25,
-        "name": "Mành treo tường macrame",
-        "imageKey": "sp25",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "100.000₫",
-        "originalPrice": "280.000₫",
-        "discount": "-12%",
-        "rating": "5",
-        "sold": "9"
-    },
-    {
-        "id": 26,
-        "name": "Dây treo đá tự nhiên thắt nút thủ công",
-        "imageKey": "sp26",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "150.000₫",
-        "originalPrice": "190.000₫",
-        "discount": "-8%",
-        "rating": "4.9",
-        "sold": "21"
-    },
-    {
-        "id": 27,
-        "name": "Lót ly macrame thủ công",
-        "imageKey": "sp27",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "25.000₫",
-        "originalPrice": "30.000₫",
-        "discount": "-17%",
-        "rating": "5",
-        "sold": "850"
-    },
-    {
-        "id": 28,
-        "name": "Set 2 bông tuyết thắt macrame",
-        "imageKey": "sp28",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "40.000₫",
-        "originalPrice": "55.000₫",
-        "discount": "-20%",
-        "rating": "5",
-        "sold": "145"
-    },
-    {
-        "id": 29,
-        "name": "Khay đựng đồ 3 ngăn màu trắng",
-        "imageKey": "sp29",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "185.000₫",
-        "originalPrice": "210.000₫",
-        "discount": "-12%",
-        "rating": "4.7",
-        "sold": "62"
-    },
-    {
-        "id": 30,
-        "name": "Xà phòng thủ công hình cá",
-        "imageKey": "sp30",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "45.000₫",
-        "originalPrice": "55.000₫",
-        "discount": "-18%",
-        "rating": "4.9",
-        "sold": "320"
-    },
-    {
-        "id": 31,
-        "name": "Dĩa gốm quả trứng ốp la",
-        "imageKey": "sp31",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "288.000₫",
-        "originalPrice": "310.000₫",
-        "discount": "-7%",
-        "rating": "5",
-        "sold": "43"
-    },
-    {
-        "id": 32,
-        "name": "Gác đũa sứ tráng men tinh xảo",
-        "imageKey": "sp32",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "35.000₫",
+        "discount": "-17%"
+      },
+      {
+        "name": "Size M",
+        "price": "23.000₫",
         "originalPrice": "45.000₫",
-        "discount": "-22%",
-        "rating": "5",
-        "sold": "1.1k"
+        "discount": "-17%"
+      },
+      {
+        "name": "Size L",
+        "price": "26.000₫",
+        "originalPrice": "45.000₫",
+        "discount": "-17%"
+      }
+    ],
+    "currentPrice": "20.000₫",
+    "originalPrice": "45.000₫",
+    "discount": "-17%",
+    "rating": "5",
+    "sold": "342"
+  },
+  {
+    "id": 11,
+    "categoryid": 2,
+    "name": "Túi Lưới Macrame Handmade",
+    "imageKey": "sp11",
+    "description": "Túi lưới phong cách bohemian, đan thủ công tỉ mỉ.",
+    "specs": {
+      "Chất liệu": "Dây cotton",
+      "Phong cách": "Bohemian"
     },
-    {
-        "id": 33,
-        "name": "Bình hoa gốm sứ dáng cao",
-        "imageKey": "sp33",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "210.000₫",
-        "originalPrice": "240.000₫",
-        "discount": "-12.5%",
-        "rating": "4.8",
-        "sold": "27"
-    },
-    {
-        "id": 34,
-        "name": "Đèn đốt tinh dầu gốm thủ công",
-        "imageKey": "sp34",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "300.000₫",
-        "originalPrice": "340.000₫",
-        "discount": "-12%",
-        "rating": "5",
-        "sold": "19"
-    },
-    {
-        "id": 35,
-        "name": "Bộ 4 món chén bát sứ",
-        "imageKey": "sp35",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "150.000₫",
-        "originalPrice": "180.000₫",
-        "discount": "-17%",
-        "rating": "4.9",
-        "sold": "135"
-    },
-    {
-        "id": 36,
-        "name": "Cốc gốm cá đàn thủ công",
-        "imageKey": "sp36",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "395.000₫",
-        "originalPrice": "420.000₫",
-        "discount": "-6%",
-        "rating": "5",
-        "sold": "8"
-    },
-    {
-        "id": 37,
-        "name": "Chén chấm gốm sứ dáng thuyền mộc mạc",
-        "imageKey": "sp37",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "380.000₫",
-        "originalPrice": "410.000₫",
-        "discount": "-7%",
-        "rating": "4.9",
-        "sold": "56"
-    },
-    {
-        "id": 38,
-        "name": "Bộ ấm trà gốm sứ bát giác Wattle Green",
-        "imageKey": "sp38",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "1.157.400₫",
-        "originalPrice": "1.250.000₫",
-        "discount": "-7%",
-        "rating": "5",
-        "sold": "4"
-    },
-    {
-        "id": 39,
-        "name": "Cốc cà phê gốm sứ chân cao Harvest Gold",
-        "imageKey": "sp39",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "101.700₫",
-        "originalPrice": "120.000₫",
-        "discount": "-15%",
-        "rating": "4.8",
-        "sold": "92"
-    },
-    {
-        "id": 40,
-        "name": "Cốc sứ mạ vàng danh lam thắng cảnh",
-        "imageKey": "sp40",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "550.000₫",
-        "originalPrice": "600.000₫",
-        "discount": "-8%",
-        "rating": "5",
-        "sold": "14"
-    },
-    {
-        "id": 41,
-        "name": "Nến thơm cupcake",
-        "imageKey": "sp41",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "120.000₫",
-        "originalPrice": "140.000₫",
-        "discount": "-14%",
-        "rating": "5",
-        "sold": "215"
-    },
-    {
-        "id": 42,
-        "name": "Nến thơm concrete",
-        "imageKey": "sp42",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "130.000₫",
-        "originalPrice": "150.000₫",
-        "discount": "-13%",
-        "rating": "4.7",
-        "sold": "88"
-    },
-    {
-        "id": 43,
-        "name": "Nến thơm thông điệp ẩn theo yêu cầu",
-        "imageKey": "sp43",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "380.000₫",
-        "originalPrice": "420.000₫",
-        "discount": "-10%",
-        "rating": "5",
-        "sold": "56"
-    },
-    {
-        "id": 44,
-        "name": "Sáp thơm hoa khô nghệ thuật",
-        "imageKey": "sp44",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "180.000₫",
-        "originalPrice": "200.000₫",
-        "discount": "-10%",
-        "rating": "4.9",
-        "sold": "112"
-    },
-    {
-        "id": 45,
-        "name": "Sáp thơm treo tủ tinh dầu đính hoa khô",
-        "imageKey": "sp45",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "90.000₫",
-        "originalPrice": "110.000₫",
-        "discount": "-18%",
-        "rating": "5",
-        "sold": "420"
-    },
-    {
-        "id": 46,
-        "name": "Nến thơm tạo hình hoa hồng",
-        "imageKey": "sp46",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "110.000₫",
-        "originalPrice": "130.000₫",
-        "discount": "-15%",
-        "rating": "5",
-        "sold": "178"
-    },
-    {
-        "id": 47,
-        "name": "Nến thơm tạo hình chó con puppy",
-        "imageKey": "sp47",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "600.000₫",
-        "originalPrice": "650.000₫",
-        "discount": "-8%",
-        "rating": "5",
-        "sold": "31"
-    },
-    {
-        "id": 48,
-        "name": "Tinh dầu thơm mùi thông",
-        "imageKey": "sp48",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "430.000₫",
-        "originalPrice": "480.000₫",
-        "discount": "-10%",
-        "rating": "4.8",
-        "sold": "64"
-    },
-    {
-        "id": 49,
-        "name": "Tinh dầu thơm hoa hồng",
-        "imageKey": "sp49",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "690.000₫",
-        "originalPrice": "750.000₫",
-        "discount": "-8%",
-        "rating": "4.9",
-        "sold": "42"
-    },
-    {
-        "id": 50,
-        "name": "Tinh dầu thơm cam",
-        "imageKey": "sp50",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "480.000₫",
-        "originalPrice": "520.000₫",
-        "discount": "-8%",
-        "rating": "4.7",
-        "sold": "95"
-    },
-    {
-        "id": 51,
-        "name": "Mèo nhồi bông len handmade",
-        "imageKey": "sp51",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "160.000₫",
-        "originalPrice": "190.000₫",
-        "discount": "-16%",
-        "rating": "5",
-        "sold": "114"
-    },
-    {
-        "id": 52,
-        "name": "Túi len móc hình bông hoa",
-        "imageKey": "sp52",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "150.000₫",
-        "originalPrice": "175.000₫",
-        "discount": "-14%",
-        "rating": "4.9",
-        "sold": "82"
-    },
-    {
-        "id": 53,
-        "name": "Túi len móc hoa hình hoa Tulip",
-        "imageKey": "sp53",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "100.000₫",
-        "originalPrice": "230.000₫",
-        "discount": "-13%",
-        "rating": "5",
-        "sold": "45"
-    },
-    {
-        "id": 54,
-        "name": "Mũ len beanie",
-        "imageKey": "sp54",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "100.000₫",
-        "originalPrice": "150.000₫",
-        "discount": "-20%",
-        "rating": "4.8",
-        "sold": "210"
-    },
-    {
-        "id": 55,
-        "name": "Túi len hoạ tiết mặt cười",
-        "imageKey": "sp55",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "195.000₫",
-        "originalPrice": "320.000₫",
-        "discount": "-8%",
-        "rating": "5",
-        "sold": "28"
-    },
-    {
-        "id": 56,
-        "name": "Chậu hoa len hướng dương mini",
-        "imageKey": "sp56",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "180.000₫",
-        "originalPrice": "200.000₫",
-        "discount": "-10%",
-        "rating": "5",
-        "sold": "167"
-    },
-    {
-        "id": 57,
-        "name": "Giỏ hoa gấu len",
-        "imageKey": "sp57",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "350.000₫",
-        "originalPrice": "520.000₫",
-        "discount": "-9%",
-        "rating": "5",
-        "sold": "14"
-    },
-    {
-        "id": 58,
-        "name": "Túi len hoạ tiết hoa",
-        "imageKey": "sp58",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "155.000₫",
-        "originalPrice": "285.000₫",
-        "discount": "-11%",
-        "rating": "4.9",
-        "sold": "39"
-    },
-    {
-        "id": 59,
-        "name": "Túi handmade tự đan phong cách Hàn Quốc",
-        "imageKey": "sp59",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "365.000₫",
-        "originalPrice": "400.000₫",
-        "discount": "-9%",
-        "rating": "5",
-        "sold": "52"
-    },
-    {
-        "id": 60,
-        "name": "Bikini bằng len cho bé thiết kế tiên cá",
-        "imageKey": "sp60",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "195.000₫",
-        "originalPrice": "350.000₫",
-        "discount": "-6%",
-        "rating": "5",
-        "sold": "7"
-    },
-    {
-        "id": 61,
-        "name": "Túi xách nữ da bò Togo cao cấp",
-        "imageKey": "sp61",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "580.000₫",
-        "originalPrice": "800.000₫",
-        "discount": "-8%",
-        "rating": "5",
-        "sold": "21"
-    },
-    {
-        "id": 62,
-        "name": "Túi xách nữ da bò",
-        "imageKey": "sp62",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "2.200.000₫",
-        "originalPrice": "2.400.000₫",
-        "discount": "-8%",
-        "rating": "5",
-        "sold": "13"
-    },
-    {
-        "id": 63,
-        "name": "Túi Tote da bò sáp",
-        "imageKey": "sp63",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "350.000₫",
-        "originalPrice": "600.000₫",
-        "discount": "-10%",
-        "rating": "4.9",
-        "sold": "18"
-    },
-    {
-        "id": 64,
-        "name": "Dây đồng hồ da cá sấu thủ công patina",
-        "imageKey": "sp64",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "700.000₫",
-        "originalPrice": "800.000₫",
-        "discount": "-13%",
-        "rating": "5",
-        "sold": "45"
-    },
-    {
-        "id": 65,
-        "name": "Dây lưng da bò Epsom",
-        "imageKey": "sp65",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "500.000₫",
-        "originalPrice": "580.000₫",
-        "discount": "-14%",
-        "rating": "4.8",
-        "sold": "32"
-    },
-    {
-        "id": 66,
-        "name": "Túi da bò du lịch",
-        "imageKey": "sp66",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "450.000₫",
-        "originalPrice": "800.000₫",
-        "discount": "-9%",
-        "rating": "5",
-        "sold": "5"
-    },
-    {
-        "id": 67,
-        "name": "Túi đeo chéo nam Gento",
-        "imageKey": "sp67",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "300.000₫",
-        "originalPrice": "400.000₫",
-        "discount": "-11%",
-        "rating": "4.9",
-        "sold": "27"
-    },
-    {
-        "id": 68,
-        "name": "Túi xách da nữ handmade",
-        "imageKey": "sp68",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "430.000₫",
-        "originalPrice": "500.000₫",
-        "discount": "-8%",
-        "rating": "5",
-        "sold": "11"
-    },
-    {
-        "id": 69,
-        "name": "Bao da đựng macbook 12 inch Gento",
-        "imageKey": "sp69",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "490.000₫",
-        "originalPrice": "1.150.000₫",
-        "discount": "-17%",
-        "rating": "5",
-        "sold": "16"
-    },
-    {
-        "id": 70,
-        "name": "Túi da cầm tay cao cấp Gento",
-        "imageKey": "sp70",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "600.000₫",
-        "originalPrice": "1.200.000₫",
-        "discount": "-17%",
-        "rating": "4.8",
-        "sold": "24"
-    },
-    {
-        "id": 71,
-        "name": "Hoa tai pha lê dây dài",
-        "imageKey": "sp71",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "120.000₫",
-        "originalPrice": "350.000₫",
-        "discount": "-9%",
-        "rating": "5",
-        "sold": "67"
-    },
-    {
-        "id": 72,
-        "name": "Vòng cổ pha lê bện ngọc trai 3 dây",
-        "imageKey": "sp72",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "150.000₫",
-        "originalPrice": "180.000₫",
-        "discount": "-17%",
-        "rating": "4.9",
-        "sold": "42"
-    },
-    {
-        "id": 73,
-        "name": "Cài áo pha lê mix cườm và vỏ ốc xà cừ kết hình hoa 6 cánh",
-        "imageKey": "sp73",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "150.000₫",
-        "originalPrice": "280.000₫",
-        "discount": "-11%",
-        "rating": "5",
-        "sold": "19"
-    },
-    {
-        "id": 74,
-        "name": "Vòng cổ xích mix cườm Delica ngũ giác",
-        "imageKey": "sp74",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "185.000₫",
-        "originalPrice": "210.000₫",
-        "discount": "-12%",
-        "rating": "4.8",
-        "sold": "31"
-    },
-    {
-        "id": 75,
-        "name": "Lắc chân cườm Delica macrame",
-        "imageKey": "sp75",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "110.000₫",
-        "originalPrice": "240.000₫",
-        "discount": "-13%",
-        "rating": "5",
-        "sold": "84"
-    },
-    {
-        "id": 76,
-        "name": "Vòng cổ cườm mix charm cườm Delica, khóa GF",
-        "imageKey": "sp76",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "135.000₫",
-        "originalPrice": "160.000₫",
-        "discount": "-16%",
-        "rating": "5",
-        "sold": "56"
-    },
-    {
-        "id": 77,
-        "name": "Hoa tai cườm kết hình bán nguyệt",
-        "imageKey": "sp77",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "150.000₫",
-        "originalPrice": "280.000₫",
-        "discount": "-11%",
-        "rating": "4.9",
-        "sold": "23"
-    },
-    {
-        "id": 78,
-        "name": "Vòng cổ cườm bọc mặt Ruby thiên nhiên",
-        "imageKey": "sp78",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "280.000₫",
-        "originalPrice": "400.000₫",
-        "discount": "-8%",
-        "rating": "5",
-        "sold": "3"
-    },
-    {
-        "id": 79,
-        "name": "Hoa tai nơ đính đá",
-        "imageKey": "sp79",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "120.000₫",
-        "originalPrice": "280.000₫",
-        "discount": "-10%",
-        "rating": "5",
-        "sold": "112"
-    },
-    {
-        "id": 80,
-        "name": "Vòng tay charm heo",
-        "imageKey": "sp80",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "185.000₫",
-        "originalPrice": "210.000₫",
-        "discount": "-8%",
-        "rating": "4.9",
-        "sold": "45"
-    },
-    {
-        "id": 81,
-        "name": "Tranh cuộn giấy handmade - Vịnh Hạ Long",
-        "imageKey": "sp81",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "120.000₫",
-        "originalPrice": "150.000₫",
-        "discount": "-9%",
-        "rating": "5",
-        "sold": "18"
-    },
-    {
-        "id": 82,
-        "name": "Tranh cuộn giấy handmade Cầu Thê Húc",
-        "imageKey": "sp82",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "100.000₫",
-        "originalPrice": "130.000₫",
-        "discount": "-9%",
-        "rating": "5",
-        "sold": "24"
-    },
-    {
-        "id": 83,
-        "name": "Tranh cuộn giấy handmade - Phố Cổ",
-        "imageKey": "sp83",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "150.000₫",
-        "originalPrice": "190.000₫",
-        "discount": "-8%",
-        "rating": "4.8",
-        "sold": "12"
-    },
-    {
-        "id": 84,
-        "name": "Tranh cuộn giấy handmade - Chùa Một Cột",
-        "imageKey": "sp84",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "150.000₫",
-        "originalPrice": "190.000₫",
-        "discount": "-8%",
-        "rating": "5",
-        "sold": "31"
-    },
-    {
-        "id": 85,
-        "name": "Tranh cuộn giấy handmade - Hồ Gươm",
-        "imageKey": "sp85",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "150.000₫",
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "205.000₫",
         "originalPrice": "220.000₫",
-        "discount": "-10%",
-        "rating": "5",
-        "sold": "9"
+        "discount": "-10%"
+      },
+      {
+        "name": "Size M",
+        "price": "235.000₫",
+        "originalPrice": "220.000₫",
+        "discount": "-10%"
+      },
+      {
+        "name": "Size L",
+        "price": "266.000₫",
+        "originalPrice": "220.000₫",
+        "discount": "-10%"
+      }
+    ],
+    "currentPrice": "205.000₫",
+    "originalPrice": "220.000₫",
+    "discount": "-10%",
+    "rating": "4.7",
+    "sold": "56"
+  },
+  {
+    "id": 12,
+    "categoryid": 2,
+    "name": "Ví Da Nam Basic",
+    "imageKey": "sp12",
+    "description": "Ví da nam thiết kế đơn giản, bền bỉ và sang trọng.",
+    "specs": {
+      "Chất liệu": "Da",
+      "Phong cách": "Basic"
     },
-    {
-        "id": 86,
-        "name": "Tranh cuộn giấy handmade - Thôn Quê Việt Nam",
-        "imageKey": "sp86",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "150.000₫",
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "168.000₫",
+        "originalPrice": "190.000₫",
+        "discount": "-11%"
+      },
+      {
+        "name": "Size M",
+        "price": "193.000₫",
+        "originalPrice": "190.000₫",
+        "discount": "-11%"
+      },
+      {
+        "name": "Size L",
+        "price": "218.000₫",
+        "originalPrice": "190.000₫",
+        "discount": "-11%"
+      }
+    ],
+    "currentPrice": "168.000₫",
+    "originalPrice": "190.000₫",
+    "discount": "-11%",
+    "rating": "4.9",
+    "sold": "210"
+  },
+  {
+    "id": 13,
+    "categoryid": 2,
+    "name": "Túi Bucket Vải Jean Tái Chế Lót Da",
+    "imageKey": "sp13",
+    "description": "Túi bucket thời trang từ vải jean tái chế thân thiện môi trường.",
+    "specs": {
+      "Chất liệu": "Vải jean tái chế",
+      "Lót": "Da"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "115.000₫",
+        "originalPrice": "250.000₫",
+        "discount": "-5%"
+      },
+      {
+        "name": "Size M",
+        "price": "132.000₫",
+        "originalPrice": "250.000₫",
+        "discount": "-5%"
+      },
+      {
+        "name": "Size L",
+        "price": "149.000₫",
+        "originalPrice": "250.000₫",
+        "discount": "-5%"
+      }
+    ],
+    "currentPrice": "115.000₫",
+    "originalPrice": "250.000₫",
+    "discount": "-5%",
+    "rating": "5",
+    "sold": "18"
+  },
+  {
+    "id": 14,
+    "categoryid": 2,
+    "name": "Túi Canvas Thêu Tên Hoa Cỏ",
+    "imageKey": "sp14",
+    "description": "Túi canvas bền bỉ với họa tiết thêu hoa cỏ nhẹ nhàng.",
+    "specs": {
+      "Chất liệu": "Canvas",
+      "Họa tiết": "Hoa cỏ"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "110.000₫",
+        "originalPrice": "130.000₫",
+        "discount": "-8%"
+      },
+      {
+        "name": "Size M",
+        "price": "126.000₫",
+        "originalPrice": "130.000₫",
+        "discount": "-8%"
+      },
+      {
+        "name": "Size L",
+        "price": "143.000₫",
+        "originalPrice": "130.000₫",
+        "discount": "-8%"
+      }
+    ],
+    "currentPrice": "110.000₫",
+    "originalPrice": "130.000₫",
+    "discount": "-8%",
+    "rating": "5",
+    "sold": "89"
+  },
+  {
+    "id": 15,
+    "categoryid": 2,
+    "name": "Túi Dây Rút Mini Vải Linen Thêu Hoa Cỏ",
+    "imageKey": "sp15",
+    "description": "Túi rút mini xinh xắn, chất liệu linen thoáng mát.",
+    "specs": {
+      "Chất liệu": "Vải linen",
+      "Kiểu dáng": "Dây rút"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "160.000₫",
+        "originalPrice": "180.000₫",
+        "discount": "-11%"
+      },
+      {
+        "name": "Size M",
+        "price": "184.000₫",
+        "originalPrice": "180.000₫",
+        "discount": "-11%"
+      },
+      {
+        "name": "Size L",
+        "price": "208.000₫",
+        "originalPrice": "180.000₫",
+        "discount": "-11%"
+      }
+    ],
+    "currentPrice": "160.000₫",
+    "originalPrice": "180.000₫",
+    "discount": "-11%",
+    "rating": "4.8",
+    "sold": "120"
+  },
+  {
+    "id": 16,
+    "categoryid": 2,
+    "name": "Ví Da Đựng Hộ Chiếu",
+    "imageKey": "sp16",
+    "description": "Ví da bảo vệ hộ chiếu của bà một cách an toàn và sang trọng.",
+    "specs": {
+      "Chất liệu": "Da",
+      "Công dụng": "Đựng hộ chiếu"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "100.000₫",
+        "originalPrice": "250.000₫",
+        "discount": "-8%"
+      },
+      {
+        "name": "Size M",
+        "price": "114.000₫",
+        "originalPrice": "250.000₫",
+        "discount": "-8%"
+      },
+      {
+        "name": "Size L",
+        "price": "130.000₫",
+        "originalPrice": "250.000₫",
+        "discount": "-8%"
+      }
+    ],
+    "currentPrice": "100.000₫",
+    "originalPrice": "250.000₫",
+    "discount": "-8%",
+    "rating": "5",
+    "sold": "34"
+  },
+  {
+    "id": 17,
+    "categoryid": 2,
+    "name": "Túi Đựng Điện Thoại Vải Lanh Thêu Tay",
+    "imageKey": "sp17",
+    "description": "Túi nhỏ gọn đựng điện thoại với họa tiết thêu tay độc bản.",
+    "specs": {
+      "Chất liệu": "Vải lanh",
+      "Đặc điểm": "Thêu tay"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "100.000₫",
+        "originalPrice": "120.000₫",
+        "discount": "-9%"
+      },
+      {
+        "name": "Size M",
+        "price": "114.000₫",
+        "originalPrice": "120.000₫",
+        "discount": "-9%"
+      },
+      {
+        "name": "Size L",
+        "price": "130.000₫",
+        "originalPrice": "120.000₫",
+        "discount": "-9%"
+      }
+    ],
+    "currentPrice": "100.000₫",
+    "originalPrice": "120.000₫",
+    "discount": "-9%",
+    "rating": "4.9",
+    "sold": "67"
+  },
+  {
+    "id": 18,
+    "categoryid": 2,
+    "name": "Túi Tote Len Móc Caro",
+    "imageKey": "sp18",
+    "description": "Túi tote len móc họa tiết caro năng động.",
+    "specs": {
+      "Chất liệu": "Len",
+      "Họa tiết": "Caro"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "100.000₫",
+        "originalPrice": "130.000₫",
+        "discount": "-9%"
+      },
+      {
+        "name": "Size M",
+        "price": "114.000₫",
+        "originalPrice": "130.000₫",
+        "discount": "-9%"
+      },
+      {
+        "name": "Size L",
+        "price": "130.000₫",
+        "originalPrice": "130.000₫",
+        "discount": "-9%"
+      }
+    ],
+    "currentPrice": "100.000₫",
+    "originalPrice": "130.000₫",
+    "discount": "-9%",
+    "rating": "4.7",
+    "sold": "45"
+  },
+  {
+    "id": 19,
+    "categoryid": 2,
+    "name": "Balo Mini Số 2 Từ Jeans Tái Chế",
+    "imageKey": "sp19",
+    "description": "Balo mini cá tính từ chất liệu jeans tái chế.",
+    "specs": {
+      "Chất liệu": "Jeans tái chế",
+      "Kiểu dáng": "Balo mini"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "150.000₫",
         "originalPrice": "200.000₫",
-        "discount": "-8%",
-        "rating": "4.9",
-        "sold": "15"
+        "discount": "-10%"
+      },
+      {
+        "name": "Size M",
+        "price": "172.000₫",
+        "originalPrice": "200.000₫",
+        "discount": "-10%"
+      },
+      {
+        "name": "Size L",
+        "price": "195.000₫",
+        "originalPrice": "200.000₫",
+        "discount": "-10%"
+      }
+    ],
+    "currentPrice": "150.000₫",
+    "originalPrice": "200.000₫",
+    "discount": "-10%",
+    "rating": "5",
+    "sold": "12"
+  },
+  {
+    "id": 20,
+    "categoryid": 2,
+    "name": "Túi Len Nơ",
+    "imageKey": "sp20",
+    "description": "Túi len thiết kế hình nơ dễ thương cho các bạn nữ.",
+    "specs": {
+      "Chất liệu": "Len",
+      "Họa tiết": "Nơ"
     },
-    {
-        "id": 87,
-        "name": "Tranh cuộn giấy handmade - Phủ Chủ tịch",
-        "imageKey": "sp87",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "180.000₫",
-        "originalPrice": "210.000₫",
-        "discount": "-14%",
-        "rating": "5",
-        "sold": "42"
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "150.000₫",
+        "originalPrice": "180.000₫",
+        "discount": "-8%"
+      },
+      {
+        "name": "Size M",
+        "price": "172.000₫",
+        "originalPrice": "180.000₫",
+        "discount": "-8%"
+      },
+      {
+        "name": "Size L",
+        "price": "195.000₫",
+        "originalPrice": "180.000₫",
+        "discount": "-8%"
+      }
+    ],
+    "currentPrice": "150.000₫",
+    "originalPrice": "180.000₫",
+    "discount": "-8%",
+    "rating": "4.9",
+    "sold": "29"
+  },
+  {
+    "id": 21,
+    "categoryid": 3,
+    "name": "Khuyên Tai Gỗ Khắc Hoa",
+    "imageKey": "sp21",
+    "description": "Khuyên tai gỗ nhẹ nhàng, khắc họa tiết hoa tinh xảo.",
+    "specs": {
+      "Chất liệu": "Gỗ",
+      "Họa tiết": "Hoa"
     },
-    {
-        "id": 88,
-        "name": "Tranh cuộn giấy handmade - Phố Cổ Xưa",
-        "imageKey": "sp88",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "120.000₫",
-        "originalPrice": "285.000₫",
-        "discount": "-9%",
-        "rating": "4.7",
-        "sold": "26"
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "45.000₫",
+        "originalPrice": "60.000₫",
+        "discount": "-25%"
+      },
+      {
+        "name": "Size M",
+        "price": "51.000₫",
+        "originalPrice": "60.000₫",
+        "discount": "-25%"
+      },
+      {
+        "name": "Size L",
+        "price": "58.000₫",
+        "originalPrice": "60.000₫",
+        "discount": "-25%"
+      }
+    ],
+    "currentPrice": "45.000₫",
+    "originalPrice": "60.000₫",
+    "discount": "-25%",
+    "rating": "5",
+    "sold": "88"
+  },
+  {
+    "id": 22,
+    "categoryid": 3,
+    "name": "Vòng Tay Đá Thạch Anh",
+    "imageKey": "sp22",
+    "description": "Vòng tay đá thạch anh tự nhiên, mang lại năng lượng tích cực.",
+    "specs": {
+      "Chất liệu": "Đá thạch anh",
+      "Đặc điểm": "Tự nhiên"
     },
-    {
-        "id": 89,
-        "name": "Tranh cuộn giấy handmade - Phong Cảnh",
-        "imageKey": "sp89",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "120.000₫",
-        "originalPrice": "150.000₫",
-        "discount": "-20%",
-        "rating": "4.6",
-        "sold": "56"
-    },
-    {
-        "id": 90,
-        "name": "Tranh cuộn giấy handmade - Phong Cảnh Đường Làng",
-        "imageKey": "sp90",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "50.000₫",
-        "originalPrice": "150.000₫",
-        "discount": "-10%",
-        "rating": "5",
-        "sold": "4"
-    },
-    {
-        "id": 91,
-        "name": "Xà phòng tạo hình hoa hồng",
-        "imageKey": "sp91",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "150.000₫",
-        "originalPrice": "280.000₫",
-        "discount": "-11%",
-        "rating": "5",
-        "sold": "89"
-    },
-    {
-        "id": 92,
-        "name": "Bộ quà tặng mỹ phẩm thiên nhiên dành cho cho phái nam sang trọng",
-        "imageKey": "sp92",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "385.000₫",
-        "originalPrice": "410.000₫",
-        "discount": "-10%",
-        "rating": "5",
-        "sold": "34"
-    },
-    {
-        "id": 93,
-        "name": "Bộ quà tặng mỹ phẩm thiên nhiên dành cho ngày cưới",
-        "imageKey": "sp93",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "230.000₫",
-        "originalPrice": "310.000₫",
-        "discount": "-8%",
-        "rating": "5",
-        "sold": "21"
-    },
-    {
-        "id": 94,
-        "name": "Bộ quà tặng mỹ phẩm thiên nhiên dành cho tân gia",
-        "imageKey": "sp94",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "280.000₫",
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "250.000₫",
         "originalPrice": "300.000₫",
-        "discount": "-7%",
-        "rating": "5",
-        "sold": "6"
+        "discount": "-16%"
+      },
+      {
+        "name": "Size M",
+        "price": "287.000₫",
+        "originalPrice": "300.000₫",
+        "discount": "-16%"
+      },
+      {
+        "name": "Size L",
+        "price": "325.000₫",
+        "originalPrice": "300.000₫",
+        "discount": "-16%"
+      }
+    ],
+    "currentPrice": "250.000₫",
+    "originalPrice": "300.000₫",
+    "discount": "-16%",
+    "rating": "4.9",
+    "sold": "142"
+  },
+  {
+    "id": 23,
+    "categoryid": 3,
+    "name": "Dây Chuyền Bạc Mặt Trăng",
+    "imageKey": "sp23",
+    "description": "Dây chuyền bạc 925 thiết kế mặt trăng thanh mảnh.",
+    "specs": {
+      "Chất liệu": "Bạc 925",
+      "Thiết kế": "Mặt trăng"
     },
-    {
-        "id": 95,
-        "name": "Bộ quà tặng mỹ phẩm thiên nhiên dành cho phái nữ",
-        "imageKey": "sp95",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "320.000₫",
-        "originalPrice": "500.000₫",
-        "discount": "-8%",
-        "rating": "4.9",
-        "sold": "47"
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "180.000₫",
+        "originalPrice": "220.000₫",
+        "discount": "-18%"
+      },
+      {
+        "name": "Size M",
+        "price": "206.000₫",
+        "originalPrice": "220.000₫",
+        "discount": "-18%"
+      },
+      {
+        "name": "Size L",
+        "price": "234.000₫",
+        "originalPrice": "220.000₫",
+        "discount": "-18%"
+      }
+    ],
+    "currentPrice": "180.000₫",
+    "originalPrice": "220.000₫",
+    "discount": "-18%",
+    "rating": "5",
+    "sold": "210"
+  },
+  {
+    "id": 24,
+    "categoryid": 3,
+    "name": "Kẹp Tóc Đính Đá Sang Trọng",
+    "imageKey": "sp24",
+    "description": "Kẹp tóc đính đá lấp lánh cho những bữa tiệc tối.",
+    "specs": {
+      "Chất liệu": "Hợp kim, đá",
+      "Phong cách": "Sang trọng"
     },
-    {
-        "id": 96,
-        "name": "Set quà tặng Thư giãn",
-        "imageKey": "sp96",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "350.000₫",
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "55.000₫",
+        "originalPrice": "80.000₫",
+        "discount": "-31%"
+      },
+      {
+        "name": "Size M",
+        "price": "63.000₫",
+        "originalPrice": "80.000₫",
+        "discount": "-31%"
+      },
+      {
+        "name": "Size L",
+        "price": "71.000₫",
+        "originalPrice": "80.000₫",
+        "discount": "-31%"
+      }
+    ],
+    "currentPrice": "55.000₫",
+    "originalPrice": "80.000₫",
+    "discount": "-31%",
+    "rating": "4.8",
+    "sold": "560"
+  },
+  {
+    "id": 25,
+    "categoryid": 3,
+    "name": "Cài Áo Hoa Sen Thủ Công",
+    "imageKey": "sp25",
+    "description": "Ghim cài áo hình hoa sen làm từ vải lụa tinh xảo.",
+    "specs": {
+      "Chất liệu": "Lụa",
+      "Họa tiết": "Hoa sen"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "90.000₫",
+        "originalPrice": "120.000₫",
+        "discount": "-25%"
+      },
+      {
+        "name": "Size M",
+        "price": "103.000₫",
+        "originalPrice": "120.000₫",
+        "discount": "-25%"
+      },
+      {
+        "name": "Size L",
+        "price": "117.000₫",
+        "originalPrice": "120.000₫",
+        "discount": "-25%"
+      }
+    ],
+    "currentPrice": "90.000₫",
+    "originalPrice": "120.000₫",
+    "discount": "-25%",
+    "rating": "5",
+    "sold": "45"
+  },
+  {
+    "id": 26,
+    "categoryid": 3,
+    "name": "Vòng Cổ Hạt Gỗ Vintage",
+    "imageKey": "sp26",
+    "description": "Vòng cổ kết từ hạt gỗ tự nhiên, mang phong cách vintage.",
+    "specs": {
+      "Chất liệu": "Gỗ",
+      "Phong cách": "Vintage"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "75.000₫",
+        "originalPrice": "100.000₫",
+        "discount": "-25%"
+      },
+      {
+        "name": "Size M",
+        "price": "86.000₫",
+        "originalPrice": "100.000₫",
+        "discount": "-25%"
+      },
+      {
+        "name": "Size L",
+        "price": "97.000₫",
+        "originalPrice": "100.000₫",
+        "discount": "-25%"
+      }
+    ],
+    "currentPrice": "75.000₫",
+    "originalPrice": "100.000₫",
+    "discount": "-25%",
+    "rating": "4.7",
+    "sold": "32"
+  },
+  {
+    "id": 27,
+    "categoryid": 3,
+    "name": "Nhẫn Đôi Bạc Khắc Chữ",
+    "imageKey": "sp27",
+    "description": "Nhẫn cặp bạc có thể khắc tên hoặc thông điệp riêng.",
+    "specs": {
+      "Chất liệu": "Bạc",
+      "Đặc điểm": "Khắc chữ"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "320.000₫",
+        "originalPrice": "400.000₫",
+        "discount": "-20%"
+      },
+      {
+        "name": "Size M",
+        "price": "368.000₫",
+        "originalPrice": "400.000₫",
+        "discount": "-20%"
+      },
+      {
+        "name": "Size L",
+        "price": "416.000₫",
+        "originalPrice": "400.000₫",
+        "discount": "-20%"
+      }
+    ],
+    "currentPrice": "320.000₫",
+    "originalPrice": "400.000₫",
+    "discount": "-20%",
+    "rating": "5",
+    "sold": "89"
+  },
+  {
+    "id": 28,
+    "categoryid": 3,
+    "name": "Lắc Chân Bạc Đính Chuông",
+    "imageKey": "sp28",
+    "description": "Lắc chân bạc xinh xắn với tiếng chuông vui tai.",
+    "specs": {
+      "Chất liệu": "Bạc",
+      "Chi tiết": "Chuông"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "130.000₫",
+        "originalPrice": "160.000₫",
+        "discount": "-18%"
+      },
+      {
+        "name": "Size M",
+        "price": "149.000₫",
+        "originalPrice": "160.000₫",
+        "discount": "-18%"
+      },
+      {
+        "name": "Size L",
+        "price": "169.000₫",
+        "originalPrice": "160.000₫",
+        "discount": "-18%"
+      }
+    ],
+    "currentPrice": "130.000₫",
+    "originalPrice": "160.000₫",
+    "discount": "-18%",
+    "rating": "4.9",
+    "sold": "245"
+  },
+  {
+    "id": 29,
+    "categoryid": 3,
+    "name": "Mũ Cói Đi Biển Vành Rộng",
+    "imageKey": "sp29",
+    "description": "Mũ cói phong cách du lịch, che nắng hiệu quả.",
+    "specs": {
+      "Chất liệu": "Cói",
+      "Kiểu dáng": "Vành rộng"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "150.000₫",
+        "originalPrice": "200.000₫",
+        "discount": "-25%"
+      },
+      {
+        "name": "Size M",
+        "price": "172.000₫",
+        "originalPrice": "200.000₫",
+        "discount": "-25%"
+      },
+      {
+        "name": "Size L",
+        "price": "195.000₫",
+        "originalPrice": "200.000₫",
+        "discount": "-25%"
+      }
+    ],
+    "currentPrice": "150.000₫",
+    "originalPrice": "200.000₫",
+    "discount": "-25%",
+    "rating": "4.8",
+    "sold": "112"
+  },
+  {
+    "id": 30,
+    "categoryid": 3,
+    "name": "Kính Râm Gọng Tròn Retro",
+    "imageKey": "sp30",
+    "description": "Kính râm thời trang gọng tròn, phong cách cổ điển.",
+    "specs": {
+      "Chất liệu": "Nhựa, kim loại",
+      "Kiểu dáng": "Gọng tròn"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "120.000₫",
+        "originalPrice": "150.000₫",
+        "discount": "-20%"
+      },
+      {
+        "name": "Size M",
+        "price": "138.000₫",
+        "originalPrice": "150.000₫",
+        "discount": "-20%"
+      },
+      {
+        "name": "Size L",
+        "price": "156.000₫",
+        "originalPrice": "150.000₫",
+        "discount": "-20%"
+      }
+    ],
+    "currentPrice": "120.000₫",
+    "originalPrice": "150.000₫",
+    "discount": "-20%",
+    "rating": "4.7",
+    "sold": "78"
+  },
+  {
+    "id": 31,
+    "categoryid": 4,
+    "name": "Bình Giữ Nhiệt Inox In Hoạ Tiết",
+    "imageKey": "sp31",
+    "description": "Bình giữ nhiệt chất lượng cao với họa tiết độc đáo, giữ nóng lạnh tốt.",
+    "specs": {
+      "Chất liệu": "Inox 304",
+      "Dung tích": "500ml"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "145.000₫",
+        "originalPrice": "180.000₫",
+        "discount": "-19%"
+      },
+      {
+        "name": "Size M",
+        "price": "166.000₫",
+        "originalPrice": "180.000₫",
+        "discount": "-19%"
+      },
+      {
+        "name": "Size L",
+        "price": "188.000₫",
+        "originalPrice": "180.000₫",
+        "discount": "-19%"
+      }
+    ],
+    "currentPrice": "145.000₫",
+    "originalPrice": "180.000₫",
+    "discount": "-19%",
+    "rating": "4.9",
+    "sold": "320"
+  },
+  {
+    "id": 32,
+    "categoryid": 4,
+    "name": "Sổ Tay Bìa Da Handmade",
+    "imageKey": "sp32",
+    "description": "Sổ tay cao cấp với bìa da thật, thiết kế sang trọng bền bỉ.",
+    "specs": {
+      "Chất liệu": "Da thật",
+      "Số trang": "120 trang"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "210.000₫",
+        "originalPrice": "250.000₫",
+        "discount": "-16%"
+      },
+      {
+        "name": "Size M",
+        "price": "241.000₫",
+        "originalPrice": "250.000₫",
+        "discount": "-16%"
+      },
+      {
+        "name": "Size L",
+        "price": "273.000₫",
+        "originalPrice": "250.000₫",
+        "discount": "-16%"
+      }
+    ],
+    "currentPrice": "210.000₫",
+    "originalPrice": "250.000₫",
+    "discount": "-16%",
+    "rating": "5",
+    "sold": "98"
+  },
+  {
+    "id": 33,
+    "categoryid": 4,
+    "name": "Ốp Lưng Điện Thoại Gỗ Khắc Laser",
+    "imageKey": "sp33",
+    "description": "Ốp lưng gỗ sang trọng, bảo vệ máy với họa tiết khắc laser tỉ mỉ.",
+    "specs": {
+      "Chất liệu": "Gỗ tự nhiên",
+      "Đặc điểm": "Khắc laser"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "125.000₫",
+        "originalPrice": "150.000₫",
+        "discount": "-16%"
+      },
+      {
+        "name": "Size M",
+        "price": "143.000₫",
+        "originalPrice": "150.000₫",
+        "discount": "-16%"
+      },
+      {
+        "name": "Size L",
+        "price": "162.000₫",
+        "originalPrice": "150.000₫",
+        "discount": "-16%"
+      }
+    ],
+    "currentPrice": "125.000₫",
+    "originalPrice": "150.000₫",
+    "discount": "-16%",
+    "rating": "4.8",
+    "sold": "215"
+  },
+  {
+    "id": 34,
+    "categoryid": 4,
+    "name": "Đèn Ngủ Để Bàn Decor",
+    "imageKey": "sp34",
+    "description": "Đèn ngủ ánh sáng vàng ấm áp, trang trí phòng cực chill.",
+    "specs": {
+      "Chất liệu": "Nhựa, gỗ",
+      "Ánh sáng": "Vàng ấm"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "190.000₫",
+        "originalPrice": "230.000₫",
+        "discount": "-17%"
+      },
+      {
+        "name": "Size M",
+        "price": "218.000₫",
+        "originalPrice": "230.000₫",
+        "discount": "-17%"
+      },
+      {
+        "name": "Size L",
+        "price": "247.000₫",
+        "originalPrice": "230.000₫",
+        "discount": "-17%"
+      }
+    ],
+    "currentPrice": "190.000₫",
+    "originalPrice": "230.000₫",
+    "discount": "-17%",
+    "rating": "5",
+    "sold": "76"
+  },
+  {
+    "id": 35,
+    "categoryid": 4,
+    "name": "Khung Ảnh Để Bàn Gỗ Thông",
+    "imageKey": "sp35",
+    "description": "Khung ảnh gỗ thông tự nhiên, phong cách tối giản.",
+    "specs": {
+      "Chất liệu": "Gỗ thông",
+      "Màu sắc": "Vàng nhạt"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "85.000₫",
+        "originalPrice": "110.000₫",
+        "discount": "-22%"
+      },
+      {
+        "name": "Size M",
+        "price": "97.000₫",
+        "originalPrice": "110.000₫",
+        "discount": "-22%"
+      },
+      {
+        "name": "Size L",
+        "price": "110.000₫",
+        "originalPrice": "110.000₫",
+        "discount": "-22%"
+      }
+    ],
+    "currentPrice": "85.000₫",
+    "originalPrice": "110.000₫",
+    "discount": "-22%",
+    "rating": "4.9",
+    "sold": "430"
+  },
+  {
+    "id": 36,
+    "categoryid": 4,
+    "name": "Nến Thơm Tinh Dầu Hoa Oải Hương",
+    "imageKey": "sp36",
+    "description": "Nến thơm thư giãn, hương hoa oải hương dịu nhẹ.",
+    "specs": {
+      "Thành phần": "Sáp đậu nành",
+      "Hương": "Oải hương"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "110.000₫",
+        "originalPrice": "140.000₫",
+        "discount": "-21%"
+      },
+      {
+        "name": "Size M",
+        "price": "126.000₫",
+        "originalPrice": "140.000₫",
+        "discount": "-21%"
+      },
+      {
+        "name": "Size L",
+        "price": "143.000₫",
+        "originalPrice": "140.000₫",
+        "discount": "-21%"
+      }
+    ],
+    "currentPrice": "110.000₫",
+    "originalPrice": "140.000₫",
+    "discount": "-21%",
+    "rating": "5",
+    "sold": "890"
+  },
+  {
+    "id": 37,
+    "categoryid": 4,
+    "name": "Hộp Đựng Bút Để Bàn",
+    "imageKey": "sp37",
+    "description": "Hộp đựng bút tiện ích, giữ bàn học gọn gàng.",
+    "specs": {
+      "Chất liệu": "Nhựa cứng",
+      "Số ngăn": "3 ngăn"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "50.000₫",
+        "originalPrice": "70.000₫",
+        "discount": "-28%"
+      },
+      {
+        "name": "Size M",
+        "price": "57.000₫",
+        "originalPrice": "70.000₫",
+        "discount": "-28%"
+      },
+      {
+        "name": "Size L",
+        "price": "65.000₫",
+        "originalPrice": "70.000₫",
+        "discount": "-28%"
+      }
+    ],
+    "currentPrice": "50.000₫",
+    "originalPrice": "70.000₫",
+    "discount": "-28%",
+    "rating": "4.7",
+    "sold": "560"
+  },
+  {
+    "id": 38,
+    "categoryid": 4,
+    "name": "Gối Kê Cổ Đi Du Lịch",
+    "imageKey": "sp38",
+    "description": "Gối kê cổ êm ái, hỗ trợ cổ khi ngồi xe hoặc máy bay.",
+    "specs": {
+      "Chất liệu": "Bông memory foam",
+      "Màu": "Xám"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "135.000₫",
+        "originalPrice": "170.000₫",
+        "discount": "-20%"
+      },
+      {
+        "name": "Size M",
+        "price": "155.000₫",
+        "originalPrice": "170.000₫",
+        "discount": "-20%"
+      },
+      {
+        "name": "Size L",
+        "price": "175.000₫",
+        "originalPrice": "170.000₫",
+        "discount": "-20%"
+      }
+    ],
+    "currentPrice": "135.000₫",
+    "originalPrice": "170.000₫",
+    "discount": "-20%",
+    "rating": "4.9",
+    "sold": "112"
+  },
+  {
+    "id": 39,
+    "categoryid": 4,
+    "name": "Tấm Lót Chuột Chống Trượt",
+    "imageKey": "sp39",
+    "description": "Tấm lót chuột bề mặt êm, chống trượt hiệu quả.",
+    "specs": {
+      "Chất liệu": "Cao su, vải",
+      "Đặc điểm": "Chống trượt"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "40.000₫",
+        "originalPrice": "60.000₫",
+        "discount": "-33%"
+      },
+      {
+        "name": "Size M",
+        "price": "46.000₫",
+        "originalPrice": "60.000₫",
+        "discount": "-33%"
+      },
+      {
+        "name": "Size L",
+        "price": "52.000₫",
+        "originalPrice": "60.000₫",
+        "discount": "-33%"
+      }
+    ],
+    "currentPrice": "40.000₫",
+    "originalPrice": "60.000₫",
+    "discount": "-33%",
+    "rating": "4.8",
+    "sold": "1.2k"
+  },
+  {
+    "id": 40,
+    "categoryid": 4,
+    "name": "Dây Treo Trang Trí Tường",
+    "imageKey": "sp40",
+    "description": "Dây treo ảnh trang trí, làm cho không gian phòng thêm ấn tượng.",
+    "specs": {
+      "Chất liệu": "Thừng cotton",
+      "Phụ kiện": "Kẹp gỗ"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "65.000₫",
+        "originalPrice": "90.000₫",
+        "discount": "-27%"
+      },
+      {
+        "name": "Size M",
+        "price": "74.000₫",
+        "originalPrice": "90.000₫",
+        "discount": "-27%"
+      },
+      {
+        "name": "Size L",
+        "price": "84.000₫",
+        "originalPrice": "90.000₫",
+        "discount": "-27%"
+      }
+    ],
+    "currentPrice": "65.000₫",
+    "originalPrice": "90.000₫",
+    "discount": "-27%",
+    "rating": "5",
+    "sold": "85"
+  },
+  {
+    "id": 41,
+    "categoryid": 5,
+    "name": "Thảm Trải Sàn Dệt Tay",
+    "imageKey": "sp41",
+    "description": "Thảm trải sàn họa tiết thổ cẩm, chất liệu sợi tự nhiên, tạo điểm nhấn cho phòng khách.",
+    "specs": {
+      "Chất liệu": "Sợi cotton",
+      "Họa tiết": "Thổ cẩm"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "350.000₫",
+        "originalPrice": "450.000₫",
+        "discount": "-22%"
+      },
+      {
+        "name": "Size M",
+        "price": "402.000₫",
+        "originalPrice": "450.000₫",
+        "discount": "-22%"
+      },
+      {
+        "name": "Size L",
+        "price": "455.000₫",
+        "originalPrice": "450.000₫",
+        "discount": "-22%"
+      }
+    ],
+    "currentPrice": "350.000₫",
+    "originalPrice": "450.000₫",
+    "discount": "-22%",
+    "rating": "5",
+    "sold": "34"
+  },
+  {
+    "id": 42,
+    "categoryid": 5,
+    "name": "Tranh Canvas Treo Tường",
+    "imageKey": "sp42",
+    "description": "Tranh treo tường canvas in hình phong cảnh tối giản, sắc nét.",
+    "specs": {
+      "Chất liệu": "Vải canvas",
+      "Khung": "Gỗ"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "220.000₫",
+        "originalPrice": "280.000₫",
+        "discount": "-21%"
+      },
+      {
+        "name": "Size M",
+        "price": "252.000₫",
+        "originalPrice": "280.000₫",
+        "discount": "-21%"
+      },
+      {
+        "name": "Size L",
+        "price": "286.000₫",
+        "originalPrice": "280.000₫",
+        "discount": "-21%"
+      }
+    ],
+    "currentPrice": "220.000₫",
+    "originalPrice": "280.000₫",
+    "discount": "-21%",
+    "rating": "4.9",
+    "sold": "120"
+  },
+  {
+    "id": 43,
+    "categoryid": 5,
+    "name": "Giỏ Đựng Đồ Bằng Cói",
+    "imageKey": "sp43",
+    "description": "Giỏ cói đa năng, dùng để đựng quần áo hoặc trang trí nhà cửa.",
+    "specs": {
+      "Chất liệu": "Cói",
+      "Đặc điểm": "Có quai cầm"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "130.000₫",
+        "originalPrice": "160.000₫",
+        "discount": "-18%"
+      },
+      {
+        "name": "Size M",
+        "price": "149.000₫",
+        "originalPrice": "160.000₫",
+        "discount": "-18%"
+      },
+      {
+        "name": "Size L",
+        "price": "169.000₫",
+        "originalPrice": "160.000₫",
+        "discount": "-18%"
+      }
+    ],
+    "currentPrice": "130.000₫",
+    "originalPrice": "160.000₫",
+    "discount": "-18%",
+    "rating": "4.8",
+    "sold": "450"
+  },
+  {
+    "id": 44,
+    "categoryid": 5,
+    "name": "Kệ Gỗ Để Cây Cảnh",
+    "imageKey": "sp44",
+    "description": "Kệ gỗ nhiều tầng, giúp bày trí cây xanh gọn gàng.",
+    "specs": {
+      "Chất liệu": "Gỗ thông",
+      "Số tầng": "3 tầng"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "280.000₫",
+        "originalPrice": "350.000₫",
+        "discount": "-20%"
+      },
+      {
+        "name": "Size M",
+        "price": "322.000₫",
+        "originalPrice": "350.000₫",
+        "discount": "-20%"
+      },
+      {
+        "name": "Size L",
+        "price": "364.000₫",
+        "originalPrice": "350.000₫",
+        "discount": "-20%"
+      }
+    ],
+    "currentPrice": "280.000₫",
+    "originalPrice": "350.000₫",
+    "discount": "-20%",
+    "rating": "5",
+    "sold": "67"
+  },
+  {
+    "id": 45,
+    "categoryid": 5,
+    "name": "Đèn Thả Trần Vintage",
+    "imageKey": "sp45",
+    "description": "Đèn thả phong cách cổ điển, thích hợp cho quán cafe hoặc phòng ăn.",
+    "specs": {
+      "Chất liệu": "Kim loại",
+      "Phong cách": "Vintage"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "450.000₫",
+        "originalPrice": "550.000₫",
+        "discount": "-18%"
+      },
+      {
+        "name": "Size M",
+        "price": "517.000₫",
+        "originalPrice": "550.000₫",
+        "discount": "-18%"
+      },
+      {
+        "name": "Size L",
+        "price": "585.000₫",
+        "originalPrice": "550.000₫",
+        "discount": "-18%"
+      }
+    ],
+    "currentPrice": "450.000₫",
+    "originalPrice": "550.000₫",
+    "discount": "-18%",
+    "rating": "4.7",
+    "sold": "29"
+  },
+  {
+    "id": 46,
+    "categoryid": 5,
+    "name": "Bình Hoa Gốm Sứ Thủ Công",
+    "imageKey": "sp46",
+    "description": "Bình hoa gốm được nghệ nhân tạo tác thủ công, họa tiết tinh tế.",
+    "specs": {
+      "Chất liệu": "Gốm",
+      "Kỹ thuật": "Thủ công"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "190.000₫",
+        "originalPrice": "240.000₫",
+        "discount": "-20%"
+      },
+      {
+        "name": "Size M",
+        "price": "218.000₫",
+        "originalPrice": "240.000₫",
+        "discount": "-20%"
+      },
+      {
+        "name": "Size L",
+        "price": "247.000₫",
+        "originalPrice": "240.000₫",
+        "discount": "-20%"
+      }
+    ],
+    "currentPrice": "190.000₫",
+    "originalPrice": "240.000₫",
+    "discount": "-20%",
+    "rating": "5",
+    "sold": "88"
+  },
+  {
+    "id": 47,
+    "categoryid": 5,
+    "name": "Tấm Phủ Bàn Ăn Ren",
+    "imageKey": "sp47",
+    "description": "Tấm phủ bàn bằng vải ren trắng, phong cách lãng mạn.",
+    "specs": {
+      "Chất liệu": "Ren",
+      "Màu sắc": "Trắng"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "120.000₫",
+        "originalPrice": "150.000₫",
+        "discount": "-20%"
+      },
+      {
+        "name": "Size M",
+        "price": "138.000₫",
+        "originalPrice": "150.000₫",
+        "discount": "-20%"
+      },
+      {
+        "name": "Size L",
+        "price": "156.000₫",
+        "originalPrice": "150.000₫",
+        "discount": "-20%"
+      }
+    ],
+    "currentPrice": "120.000₫",
+    "originalPrice": "150.000₫",
+    "discount": "-20%",
+    "rating": "4.9",
+    "sold": "210"
+  },
+  {
+    "id": 48,
+    "categoryid": 5,
+    "name": "Lọ Khuếch Tán Tinh Dầu",
+    "imageKey": "sp48",
+    "description": "Bộ lọ khuếch tán tinh dầu giúp không gian luôn thơm mát.",
+    "specs": {
+      "Chất liệu": "Thủy tinh",
+      "Dung tích": "100ml"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "95.000₫",
+        "originalPrice": "130.000₫",
+        "discount": "-26%"
+      },
+      {
+        "name": "Size M",
+        "price": "109.000₫",
+        "originalPrice": "130.000₫",
+        "discount": "-26%"
+      },
+      {
+        "name": "Size L",
+        "price": "123.000₫",
+        "originalPrice": "130.000₫",
+        "discount": "-26%"
+      }
+    ],
+    "currentPrice": "95.000₫",
+    "originalPrice": "130.000₫",
+    "discount": "-26%",
+    "rating": "4.8",
+    "sold": "560"
+  },
+  {
+    "id": 49,
+    "categoryid": 5,
+    "name": "Kẹp Sách Kim Loại",
+    "imageKey": "sp49",
+    "description": "Kẹp sách bằng kim loại bền chắc, đánh dấu trang nhanh chóng.",
+    "specs": {
+      "Chất liệu": "Kim loại",
+      "Loại": "Kẹp"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "25.000₫",
+        "originalPrice": "40.000₫",
+        "discount": "-37%"
+      },
+      {
+        "name": "Size M",
+        "price": "28.000₫",
+        "originalPrice": "40.000₫",
+        "discount": "-37%"
+      },
+      {
+        "name": "Size L",
+        "price": "32.000₫",
+        "originalPrice": "40.000₫",
+        "discount": "-37%"
+      }
+    ],
+    "currentPrice": "25.000₫",
+    "originalPrice": "40.000₫",
+    "discount": "-37%",
+    "rating": "5",
+    "sold": "1.5k"
+  },
+  {
+    "id": 50,
+    "categoryid": 5,
+    "name": "Đồng Hồ Treo Tường Nghệ Thuật",
+    "imageKey": "sp50",
+    "description": "Đồng hồ treo tường thiết kế độc lạ, làm mới không gian sống.",
+    "specs": {
+      "Chất liệu": "Kim loại",
+      "Đặc điểm": "Chạy êm"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "320.000₫",
+        "originalPrice": "400.000₫",
+        "discount": "-20%"
+      },
+      {
+        "name": "Size M",
+        "price": "368.000₫",
+        "originalPrice": "400.000₫",
+        "discount": "-20%"
+      },
+      {
+        "name": "Size L",
+        "price": "416.000₫",
+        "originalPrice": "400.000₫",
+        "discount": "-20%"
+      }
+    ],
+    "currentPrice": "320.000₫",
+    "originalPrice": "400.000₫",
+    "discount": "-20%",
+    "rating": "4.9",
+    "sold": "45"
+  },
+  {
+    "id": 51,
+    "categoryid": 6,
+    "name": "Hộp Đựng Trang Sức Gỗ",
+    "imageKey": "sp51",
+    "description": "Hộp gỗ bọc nhung cao cấp giúp bảo quản trang sức khỏi trầy xước.",
+    "specs": {
+      "Chất liệu": "Gỗ, nhung",
+      "Số ngăn": "Nhiều ngăn"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "180.000₫",
+        "originalPrice": "220.000₫",
+        "discount": "-18%"
+      },
+      {
+        "name": "Size M",
+        "price": "206.000₫",
+        "originalPrice": "220.000₫",
+        "discount": "-18%"
+      },
+      {
+        "name": "Size L",
+        "price": "234.000₫",
+        "originalPrice": "220.000₫",
+        "discount": "-18%"
+      }
+    ],
+    "currentPrice": "180.000₫",
+    "originalPrice": "220.000₫",
+    "discount": "-18%",
+    "rating": "5",
+    "sold": "156"
+  },
+  {
+    "id": 52,
+    "categoryid": 6,
+    "name": "Kệ Sách Treo Tường Gỗ",
+    "imageKey": "sp52",
+    "description": "Kệ gỗ gắn tường tối giản, tận dụng không gian lưu trữ hiệu quả.",
+    "specs": {
+      "Chất liệu": "Gỗ thông",
+      "Lắp đặt": "Treo tường"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "250.000₫",
+        "originalPrice": "300.000₫",
+        "discount": "-16%"
+      },
+      {
+        "name": "Size M",
+        "price": "287.000₫",
+        "originalPrice": "300.000₫",
+        "discount": "-16%"
+      },
+      {
+        "name": "Size L",
+        "price": "325.000₫",
+        "originalPrice": "300.000₫",
+        "discount": "-16%"
+      }
+    ],
+    "currentPrice": "250.000₫",
+    "originalPrice": "300.000₫",
+    "discount": "-16%",
+    "rating": "4.8",
+    "sold": "89"
+  },
+  {
+    "id": 53,
+    "categoryid": 6,
+    "name": "Giá Treo Tai Nghe Gỗ",
+    "imageKey": "sp53",
+    "description": "Giá treo tai nghe phong cách hiện đại, giúp bàn làm việc ngăn nắp.",
+    "specs": {
+      "Chất liệu": "Gỗ sồi",
+      "Kiểu dáng": "Đứng"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "150.000₫",
+        "originalPrice": "190.000₫",
+        "discount": "-21%"
+      },
+      {
+        "name": "Size M",
+        "price": "172.000₫",
+        "originalPrice": "190.000₫",
+        "discount": "-21%"
+      },
+      {
+        "name": "Size L",
+        "price": "195.000₫",
+        "originalPrice": "190.000₫",
+        "discount": "-21%"
+      }
+    ],
+    "currentPrice": "150.000₫",
+    "originalPrice": "190.000₫",
+    "discount": "-21%",
+    "rating": "5",
+    "sold": "45"
+  },
+  {
+    "id": 54,
+    "categoryid": 6,
+    "name": "Gương Để Bàn Khung Gỗ",
+    "imageKey": "sp54",
+    "description": "Gương trang điểm để bàn với khung gỗ tự nhiên thanh lịch.",
+    "specs": {
+      "Chất liệu": "Gỗ, kính",
+      "Đặc điểm": "Gập được"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "200.000₫",
+        "originalPrice": "260.000₫",
+        "discount": "-23%"
+      },
+      {
+        "name": "Size M",
+        "price": "229.000₫",
+        "originalPrice": "260.000₫",
+        "discount": "-23%"
+      },
+      {
+        "name": "Size L",
+        "price": "260.000₫",
+        "originalPrice": "260.000₫",
+        "discount": "-23%"
+      }
+    ],
+    "currentPrice": "200.000₫",
+    "originalPrice": "260.000₫",
+    "discount": "-23%",
+    "rating": "4.9",
+    "sold": "312"
+  },
+  {
+    "id": 55,
+    "categoryid": 6,
+    "name": "Bảng Ghim Ghi Chú",
+    "imageKey": "sp55",
+    "description": "Bảng bần ghi chú cho góc học tập và làm việc.",
+    "specs": {
+      "Chất liệu": "Gỗ bần",
+      "Phụ kiện": "Đinh ghim"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "70.000₫",
+        "originalPrice": "100.000₫",
+        "discount": "-30%"
+      },
+      {
+        "name": "Size M",
+        "price": "80.000₫",
+        "originalPrice": "100.000₫",
+        "discount": "-30%"
+      },
+      {
+        "name": "Size L",
+        "price": "91.000₫",
+        "originalPrice": "100.000₫",
+        "discount": "-30%"
+      }
+    ],
+    "currentPrice": "70.000₫",
+    "originalPrice": "100.000₫",
+    "discount": "-30%",
+    "rating": "4.7",
+    "sold": "890"
+  },
+  {
+    "id": 56,
+    "categoryid": 6,
+    "name": "Chậu Cây Sen Đá Mini",
+    "imageKey": "sp56",
+    "description": "Chậu sen đá dễ thương, không tốn công chăm sóc.",
+    "specs": {
+      "Chất liệu": "Sứ",
+      "Loại": "Cây cảnh"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "35.000₫",
+        "originalPrice": "50.000₫",
+        "discount": "-30%"
+      },
+      {
+        "name": "Size M",
+        "price": "40.000₫",
+        "originalPrice": "50.000₫",
+        "discount": "-30%"
+      },
+      {
+        "name": "Size L",
+        "price": "45.000₫",
+        "originalPrice": "50.000₫",
+        "discount": "-30%"
+      }
+    ],
+    "currentPrice": "35.000₫",
+    "originalPrice": "50.000₫",
+    "discount": "-30%",
+    "rating": "5",
+    "sold": "2.1k"
+  },
+  {
+    "id": 57,
+    "categoryid": 6,
+    "name": "Túi Vải Canvas Trơn",
+    "imageKey": "sp57",
+    "description": "Túi tote vải canvas dày dặn, bền bỉ và tiện dụng.",
+    "specs": {
+      "Chất liệu": "Canvas",
+      "Phong cách": "Basic"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "45.000₫",
+        "originalPrice": "70.000₫",
+        "discount": "-35%"
+      },
+      {
+        "name": "Size M",
+        "price": "51.000₫",
+        "originalPrice": "70.000₫",
+        "discount": "-35%"
+      },
+      {
+        "name": "Size L",
+        "price": "58.000₫",
+        "originalPrice": "70.000₫",
+        "discount": "-35%"
+      }
+    ],
+    "currentPrice": "45.000₫",
+    "originalPrice": "70.000₫",
+    "discount": "-35%",
+    "rating": "4.8",
+    "sold": "1.8k"
+  },
+  {
+    "id": 58,
+    "categoryid": 6,
+    "name": "Ống Hút Tre Bảo Vệ Môi Trường",
+    "imageKey": "sp58",
+    "description": "Bộ ống hút tre kèm cọ rửa, an toàn sức khỏe.",
+    "specs": {
+      "Chất liệu": "Tre",
+      "Bộ sản phẩm": "Ống hút + cọ"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "20.000₫",
+        "originalPrice": "35.000₫",
+        "discount": "-42%"
+      },
+      {
+        "name": "Size M",
+        "price": "23.000₫",
+        "originalPrice": "35.000₫",
+        "discount": "-42%"
+      },
+      {
+        "name": "Size L",
+        "price": "26.000₫",
+        "originalPrice": "35.000₫",
+        "discount": "-42%"
+      }
+    ],
+    "currentPrice": "20.000₫",
+    "originalPrice": "35.000₫",
+    "discount": "-42%",
+    "rating": "5",
+    "sold": "950"
+  },
+  {
+    "id": 59,
+    "categoryid": 6,
+    "name": "Thớt Gỗ Teak",
+    "imageKey": "sp59",
+    "description": "Thớt gỗ Teak bền, kháng khuẩn tự nhiên, an toàn cho thực phẩm.",
+    "specs": {
+      "Chất liệu": "Gỗ Teak",
+      "Đặc điểm": "Kháng khuẩn"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "380.000₫",
+        "originalPrice": "450.000₫",
+        "discount": "-15%"
+      },
+      {
+        "name": "Size M",
+        "price": "436.000₫",
+        "originalPrice": "450.000₫",
+        "discount": "-15%"
+      },
+      {
+        "name": "Size L",
+        "price": "494.000₫",
+        "originalPrice": "450.000₫",
+        "discount": "-15%"
+      }
+    ],
+    "currentPrice": "380.000₫",
+    "originalPrice": "450.000₫",
+    "discount": "-15%",
+    "rating": "4.9",
+    "sold": "112"
+  },
+  {
+    "id": 60,
+    "categoryid": 6,
+    "name": "Khay Gỗ Đựng Đồ Ăn",
+    "imageKey": "sp60",
+    "description": "Khay gỗ thiết kế sang trọng, dùng để decor bàn ăn.",
+    "specs": {
+      "Chất liệu": "Gỗ sồi",
+      "Kiểu dáng": "Chữ nhật"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "140.000₫",
+        "originalPrice": "180.000₫",
+        "discount": "-22%"
+      },
+      {
+        "name": "Size M",
+        "price": "161.000₫",
+        "originalPrice": "180.000₫",
+        "discount": "-22%"
+      },
+      {
+        "name": "Size L",
+        "price": "182.000₫",
+        "originalPrice": "180.000₫",
+        "discount": "-22%"
+      }
+    ],
+    "currentPrice": "140.000₫",
+    "originalPrice": "180.000₫",
+    "discount": "-22%",
+    "rating": "4.8",
+    "sold": "76"
+  },
+  {
+    "id": 61,
+    "categoryid": 7,
+    "name": "Tấm Lót Ly Gỗ Decor",
+    "imageKey": "sp61",
+    "description": "Tấm lót ly bằng gỗ tự nhiên, thiết kế tối giản, chống trượt.",
+    "specs": {
+      "Chất liệu": "Gỗ thông",
+      "Đặc điểm": "Chống trượt"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "15.000₫",
+        "originalPrice": "25.000₫",
+        "discount": "-40%"
+      },
+      {
+        "name": "Size M",
+        "price": "17.000₫",
+        "originalPrice": "25.000₫",
+        "discount": "-40%"
+      },
+      {
+        "name": "Size L",
+        "price": "19.000₫",
+        "originalPrice": "25.000₫",
+        "discount": "-40%"
+      }
+    ],
+    "currentPrice": "15.000₫",
+    "originalPrice": "25.000₫",
+    "discount": "-40%",
+    "rating": "5",
+    "sold": "3.2k"
+  },
+  {
+    "id": 62,
+    "categoryid": 7,
+    "name": "Khăn Lau Tay Nhà Bếp Cotton",
+    "imageKey": "sp62",
+    "description": "Khăn lau tay sợi cotton thấm hút cực tốt, mềm mại.",
+    "specs": {
+      "Chất liệu": "Cotton",
+      "Công dụng": "Lau tay"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "25.000₫",
+        "originalPrice": "40.000₫",
+        "discount": "-37%"
+      },
+      {
+        "name": "Size M",
+        "price": "28.000₫",
+        "originalPrice": "40.000₫",
+        "discount": "-37%"
+      },
+      {
+        "name": "Size L",
+        "price": "32.000₫",
+        "originalPrice": "40.000₫",
+        "discount": "-37%"
+      }
+    ],
+    "currentPrice": "25.000₫",
+    "originalPrice": "40.000₫",
+    "discount": "-37%",
+    "rating": "4.9",
+    "sold": "890"
+  },
+  {
+    "id": 63,
+    "categoryid": 7,
+    "name": "Hộp Đựng Trà Gỗ Tự Nhiên",
+    "imageKey": "sp63",
+    "description": "Hộp gỗ kín hơi giúp bảo quản trà tươi ngon lâu hơn.",
+    "specs": {
+      "Chất liệu": "Gỗ",
+      "Đặc điểm": "Kín hơi"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "160.000₫",
+        "originalPrice": "200.000₫",
+        "discount": "-20%"
+      },
+      {
+        "name": "Size M",
+        "price": "184.000₫",
+        "originalPrice": "200.000₫",
+        "discount": "-20%"
+      },
+      {
+        "name": "Size L",
+        "price": "208.000₫",
+        "originalPrice": "200.000₫",
+        "discount": "-20%"
+      }
+    ],
+    "currentPrice": "160.000₫",
+    "originalPrice": "200.000₫",
+    "discount": "-20%",
+    "rating": "4.8",
+    "sold": "56"
+  },
+  {
+    "id": 64,
+    "categoryid": 7,
+    "name": "Đèn Bàn Học Gấp Gọn",
+    "imageKey": "sp64",
+    "description": "Đèn học LED có thể gấp gọn, tiết kiệm diện tích bàn học.",
+    "specs": {
+      "Chất liệu": "Nhựa cao cấp",
+      "Loại": "LED"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "220.000₫",
+        "originalPrice": "300.000₫",
+        "discount": "-26%"
+      },
+      {
+        "name": "Size M",
+        "price": "252.000₫",
+        "originalPrice": "300.000₫",
+        "discount": "-26%"
+      },
+      {
+        "name": "Size L",
+        "price": "286.000₫",
+        "originalPrice": "300.000₫",
+        "discount": "-26%"
+      }
+    ],
+    "currentPrice": "220.000₫",
+    "originalPrice": "300.000₫",
+    "discount": "-26%",
+    "rating": "5",
+    "sold": "210"
+  },
+  {
+    "id": 65,
+    "categoryid": 7,
+    "name": "Bình Tưới Cây Mini",
+    "imageKey": "sp65",
+    "description": "Bình tưới nhựa mini, dùng chăm sóc cây cảnh trong nhà.",
+    "specs": {
+      "Chất liệu": "Nhựa",
+      "Dung tích": "300ml"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "30.000₫",
+        "originalPrice": "50.000₫",
+        "discount": "-40%"
+      },
+      {
+        "name": "Size M",
+        "price": "34.000₫",
+        "originalPrice": "50.000₫",
+        "discount": "-40%"
+      },
+      {
+        "name": "Size L",
+        "price": "39.000₫",
+        "originalPrice": "50.000₫",
+        "discount": "-40%"
+      }
+    ],
+    "currentPrice": "30.000₫",
+    "originalPrice": "50.000₫",
+    "discount": "-40%",
+    "rating": "4.9",
+    "sold": "450"
+  },
+  {
+    "id": 66,
+    "categoryid": 7,
+    "name": "Khăn Trải Bàn Canvas",
+    "imageKey": "sp66",
+    "description": "Khăn trải bàn vải canvas họa tiết kẻ sọc đơn giản.",
+    "specs": {
+      "Chất liệu": "Canvas",
+      "Họa tiết": "Kẻ sọc"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "110.000₫",
+        "originalPrice": "150.000₫",
+        "discount": "-26%"
+      },
+      {
+        "name": "Size M",
+        "price": "126.000₫",
+        "originalPrice": "150.000₫",
+        "discount": "-26%"
+      },
+      {
+        "name": "Size L",
+        "price": "143.000₫",
+        "originalPrice": "150.000₫",
+        "discount": "-26%"
+      }
+    ],
+    "currentPrice": "110.000₫",
+    "originalPrice": "150.000₫",
+    "discount": "-26%",
+    "rating": "4.8",
+    "sold": "98"
+  },
+  {
+    "id": 67,
+    "categoryid": 7,
+    "name": "Móc Treo Đồ Tường Gỗ",
+    "imageKey": "sp67",
+    "description": "Móc treo gỗ gắn tường, thiết kế tròn tối giản.",
+    "specs": {
+      "Chất liệu": "Gỗ sồi",
+      "Kiểu dáng": "Tròn"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "40.000₫",
+        "originalPrice": "60.000₫",
+        "discount": "-33%"
+      },
+      {
+        "name": "Size M",
+        "price": "46.000₫",
+        "originalPrice": "60.000₫",
+        "discount": "-33%"
+      },
+      {
+        "name": "Size L",
+        "price": "52.000₫",
+        "originalPrice": "60.000₫",
+        "discount": "-33%"
+      }
+    ],
+    "currentPrice": "40.000₫",
+    "originalPrice": "60.000₫",
+    "discount": "-33%",
+    "rating": "5",
+    "sold": "340"
+  },
+  {
+    "id": 68,
+    "categoryid": 7,
+    "name": "Thảm Yoga Cao Su",
+    "imageKey": "sp68",
+    "description": "Thảm tập Yoga chống trượt, êm ái khi tập luyện.",
+    "specs": {
+      "Chất liệu": "Cao su tự nhiên",
+      "Độ dày": "5mm"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "450.000₫",
+        "originalPrice": "550.000₫",
+        "discount": "-18%"
+      },
+      {
+        "name": "Size M",
+        "price": "517.000₫",
+        "originalPrice": "550.000₫",
+        "discount": "-18%"
+      },
+      {
+        "name": "Size L",
+        "price": "585.000₫",
+        "originalPrice": "550.000₫",
+        "discount": "-18%"
+      }
+    ],
+    "currentPrice": "450.000₫",
+    "originalPrice": "550.000₫",
+    "discount": "-18%",
+    "rating": "4.9",
+    "sold": "120"
+  },
+  {
+    "id": 69,
+    "categoryid": 7,
+    "name": "Đĩa Đựng Trái Cây Gốm",
+    "imageKey": "sp69",
+    "description": "Đĩa gốm thiết kế cách điệu, sang trọng bày trái cây.",
+    "specs": {
+      "Chất liệu": "Gốm",
+      "Kiểu dáng": "Cách điệu"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "180.000₫",
+        "originalPrice": "230.000₫",
+        "discount": "-21%"
+      },
+      {
+        "name": "Size M",
+        "price": "206.000₫",
+        "originalPrice": "230.000₫",
+        "discount": "-21%"
+      },
+      {
+        "name": "Size L",
+        "price": "234.000₫",
+        "originalPrice": "230.000₫",
+        "discount": "-21%"
+      }
+    ],
+    "currentPrice": "180.000₫",
+    "originalPrice": "230.000₫",
+    "discount": "-21%",
+    "rating": "5",
+    "sold": "76"
+  },
+  {
+    "id": 70,
+    "categoryid": 7,
+    "name": "Giỏ Đựng Mỹ Phẩm Để Bàn",
+    "imageKey": "sp70",
+    "description": "Giỏ nhựa nhiều ngăn, sắp xếp mỹ phẩm gọn gàng.",
+    "specs": {
+      "Chất liệu": "Nhựa",
+      "Số ngăn": "Nhiều ngăn"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "90.000₫",
+        "originalPrice": "120.000₫",
+        "discount": "-25%"
+      },
+      {
+        "name": "Size M",
+        "price": "103.000₫",
+        "originalPrice": "120.000₫",
+        "discount": "-25%"
+      },
+      {
+        "name": "Size L",
+        "price": "117.000₫",
+        "originalPrice": "120.000₫",
+        "discount": "-25%"
+      }
+    ],
+    "currentPrice": "90.000₫",
+    "originalPrice": "120.000₫",
+    "discount": "-25%",
+    "rating": "4.8",
+    "sold": "240"
+  },
+  {
+    "id": 71,
+    "categoryid": 8,
+    "name": "Bình Giữ Nhiệt Gỗ Phong Cách Nhật Bản",
+    "imageKey": "sp71",
+    "description": "Bình giữ nhiệt lớp ngoài vân gỗ, phong cách tối giản sang trọng.",
+    "specs": {
+      "Chất liệu": "Inox, Gỗ",
+      "Dung tích": "450ml"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "190.000₫",
+        "originalPrice": "250.000₫",
+        "discount": "-24%"
+      },
+      {
+        "name": "Size M",
+        "price": "218.000₫",
+        "originalPrice": "250.000₫",
+        "discount": "-24%"
+      },
+      {
+        "name": "Size L",
+        "price": "247.000₫",
+        "originalPrice": "250.000₫",
+        "discount": "-24%"
+      }
+    ],
+    "currentPrice": "190.000₫",
+    "originalPrice": "250.000₫",
+    "discount": "-24%",
+    "rating": "4.9",
+    "sold": "112"
+  },
+  {
+    "id": 72,
+    "categoryid": 8,
+    "name": "Khay Gỗ Đựng Trà Đạo",
+    "imageKey": "sp72",
+    "description": "Khay trà gỗ nguyên khối, phong cách truyền thống.",
+    "specs": {
+      "Chất liệu": "Gỗ sồi",
+      "Kiểu dáng": "Nguyên khối"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "450.000₫",
+        "originalPrice": "550.000₫",
+        "discount": "-18%"
+      },
+      {
+        "name": "Size M",
+        "price": "517.000₫",
+        "originalPrice": "550.000₫",
+        "discount": "-18%"
+      },
+      {
+        "name": "Size L",
+        "price": "585.000₫",
+        "originalPrice": "550.000₫",
+        "discount": "-18%"
+      }
+    ],
+    "currentPrice": "450.000₫",
+    "originalPrice": "550.000₫",
+    "discount": "-18%",
+    "rating": "5",
+    "sold": "45"
+  },
+  {
+    "id": 73,
+    "categoryid": 8,
+    "name": "Giá Đỡ Điện Thoại Bằng Gỗ",
+    "imageKey": "sp73",
+    "description": "Giá đỡ điện thoại để bàn bằng gỗ, thiết kế gọn nhẹ.",
+    "specs": {
+      "Chất liệu": "Gỗ",
+      "Tiện ích": "Để bàn"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "55.000₫",
+        "originalPrice": "80.000₫",
+        "discount": "-31%"
+      },
+      {
+        "name": "Size M",
+        "price": "63.000₫",
+        "originalPrice": "80.000₫",
+        "discount": "-31%"
+      },
+      {
+        "name": "Size L",
+        "price": "71.000₫",
+        "originalPrice": "80.000₫",
+        "discount": "-31%"
+      }
+    ],
+    "currentPrice": "55.000₫",
+    "originalPrice": "80.000₫",
+    "discount": "-31%",
+    "rating": "4.8",
+    "sold": "890"
+  },
+  {
+    "id": 74,
+    "categoryid": 8,
+    "name": "Bàn Trà Nhỏ Chân Gỗ",
+    "imageKey": "sp74",
+    "description": "Bàn trà nhỏ xinh cho phòng khách, dễ dàng tháo lắp.",
+    "specs": {
+      "Chất liệu": "Gỗ, sắt",
+      "Kiểu": "Hiện đại"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "650.000₫",
+        "originalPrice": "800.000₫",
+        "discount": "-18%"
+      },
+      {
+        "name": "Size M",
+        "price": "747.000₫",
+        "originalPrice": "800.000₫",
+        "discount": "-18%"
+      },
+      {
+        "name": "Size L",
+        "price": "845.000₫",
+        "originalPrice": "800.000₫",
+        "discount": "-18%"
+      }
+    ],
+    "currentPrice": "650.000₫",
+    "originalPrice": "800.000₫",
+    "discount": "-18%",
+    "rating": "4.7",
+    "sold": "29"
+  },
+  {
+    "id": 75,
+    "categoryid": 8,
+    "name": "Kẹp Ảnh Gỗ Mini",
+    "imageKey": "sp75",
+    "description": "Combo kẹp ảnh gỗ mini trang trí phòng.",
+    "specs": {
+      "Chất liệu": "Gỗ",
+      "Số lượng": "20 cái"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "10.000₫",
+        "originalPrice": "20.000₫",
+        "discount": "-50%"
+      },
+      {
+        "name": "Size M",
+        "price": "11.000₫",
+        "originalPrice": "20.000₫",
+        "discount": "-50%"
+      },
+      {
+        "name": "Size L",
+        "price": "13.000₫",
+        "originalPrice": "20.000₫",
+        "discount": "-50%"
+      }
+    ],
+    "currentPrice": "10.000₫",
+    "originalPrice": "20.000₫",
+    "discount": "-50%",
+    "rating": "5",
+    "sold": "5.2k"
+  },
+  {
+    "id": 76,
+    "categoryid": 8,
+    "name": "Thớt Gỗ Decor Chụp Ảnh",
+    "imageKey": "sp76",
+    "description": "Thớt gỗ có tay cầm dùng decor bàn ăn hoặc chụp ảnh món ăn.",
+    "specs": {
+      "Chất liệu": "Gỗ",
+      "Kiểu dáng": "Có tay cầm"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "120.000₫",
+        "originalPrice": "160.000₫",
+        "discount": "-25%"
+      },
+      {
+        "name": "Size M",
+        "price": "138.000₫",
+        "originalPrice": "160.000₫",
+        "discount": "-25%"
+      },
+      {
+        "name": "Size L",
+        "price": "156.000₫",
+        "originalPrice": "160.000₫",
+        "discount": "-25%"
+      }
+    ],
+    "currentPrice": "120.000₫",
+    "originalPrice": "160.000₫",
+    "discount": "-25%",
+    "rating": "4.9",
+    "sold": "156"
+  },
+  {
+    "id": 77,
+    "categoryid": 8,
+    "name": "Đèn Bàn Gỗ Xếp Hình",
+    "imageKey": "sp77",
+    "description": "Đèn bàn gỗ lắp ghép sáng tạo, phong cách DIY.",
+    "specs": {
+      "Chất liệu": "Gỗ ép",
+      "Phong cách": "DIY"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "280.000₫",
+        "originalPrice": "350.000₫",
+        "discount": "-20%"
+      },
+      {
+        "name": "Size M",
+        "price": "322.000₫",
+        "originalPrice": "350.000₫",
+        "discount": "-20%"
+      },
+      {
+        "name": "Size L",
+        "price": "364.000₫",
+        "originalPrice": "350.000₫",
+        "discount": "-20%"
+      }
+    ],
+    "currentPrice": "280.000₫",
+    "originalPrice": "350.000₫",
+    "discount": "-20%",
+    "rating": "4.8",
+    "sold": "67"
+  },
+  {
+    "id": 78,
+    "categoryid": 8,
+    "name": "Lọ Đựng Nến Thơm Gỗ",
+    "imageKey": "sp78",
+    "description": "Lọ gỗ đựng nến thơm sang trọng, tỏa hương đều.",
+    "specs": {
+      "Chất liệu": "Gỗ",
+      "Loại": "Vỏ đựng"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "80.000₫",
+        "originalPrice": "110.000₫",
+        "discount": "-27%"
+      },
+      {
+        "name": "Size M",
+        "price": "92.000₫",
+        "originalPrice": "110.000₫",
+        "discount": "-27%"
+      },
+      {
+        "name": "Size L",
+        "price": "104.000₫",
+        "originalPrice": "110.000₫",
+        "discount": "-27%"
+      }
+    ],
+    "currentPrice": "80.000₫",
+    "originalPrice": "110.000₫",
+    "discount": "-27%",
+    "rating": "5",
+    "sold": "450"
+  },
+  {
+    "id": 79,
+    "categoryid": 8,
+    "name": "Đồng Hồ Gỗ Để Bàn",
+    "imageKey": "sp79",
+    "description": "Đồng hồ vân gỗ tự nhiên, thiết kế tối giản tinh tế.",
+    "specs": {
+      "Chất liệu": "Gỗ",
+      "Loại": "Để bàn"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "150.000₫",
+        "originalPrice": "200.000₫",
+        "discount": "-25%"
+      },
+      {
+        "name": "Size M",
+        "price": "172.000₫",
+        "originalPrice": "200.000₫",
+        "discount": "-25%"
+      },
+      {
+        "name": "Size L",
+        "price": "195.000₫",
+        "originalPrice": "200.000₫",
+        "discount": "-25%"
+      }
+    ],
+    "currentPrice": "150.000₫",
+    "originalPrice": "200.000₫",
+    "discount": "-25%",
+    "rating": "4.9",
+    "sold": "210"
+  },
+  {
+    "id": 80,
+    "categoryid": 8,
+    "name": "Hộp Chia Thuốc Gỗ",
+    "imageKey": "sp80",
+    "description": "Hộp chia thuốc bằng gỗ, an toàn và dễ sử dụng.",
+    "specs": {
+      "Chất liệu": "Gỗ",
+      "Loại": "Chia thuốc"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "75.000₫",
+        "originalPrice": "100.000₫",
+        "discount": "-25%"
+      },
+      {
+        "name": "Size M",
+        "price": "86.000₫",
+        "originalPrice": "100.000₫",
+        "discount": "-25%"
+      },
+      {
+        "name": "Size L",
+        "price": "97.000₫",
+        "originalPrice": "100.000₫",
+        "discount": "-25%"
+      }
+    ],
+    "currentPrice": "75.000₫",
+    "originalPrice": "100.000₫",
+    "discount": "-25%",
+    "rating": "5",
+    "sold": "112"
+  },
+  {
+    "id": 81,
+    "categoryid": 9,
+    "name": "Giá Đỡ Nến Gỗ Decor",
+    "imageKey": "sp81",
+    "description": "Giá đỡ nến gỗ phong cách Bắc Âu, tạo không gian ấm cúng.",
+    "specs": {
+      "Chất liệu": "Gỗ thông",
+      "Kiểu dáng": "Đế trụ"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "65.000₫",
+        "originalPrice": "90.000₫",
+        "discount": "-28%"
+      },
+      {
+        "name": "Size M",
+        "price": "74.000₫",
+        "originalPrice": "90.000₫",
+        "discount": "-28%"
+      },
+      {
+        "name": "Size L",
+        "price": "84.000₫",
+        "originalPrice": "90.000₫",
+        "discount": "-28%"
+      }
+    ],
+    "currentPrice": "65.000₫",
+    "originalPrice": "90.000₫",
+    "discount": "-28%",
+    "rating": "4.9",
+    "sold": "340"
+  },
+  {
+    "id": 82,
+    "categoryid": 9,
+    "name": "Hộp Đựng Bút Để Bàn Gỗ Sồi",
+    "imageKey": "sp82",
+    "description": "Hộp đựng bút gỗ sồi vân tự nhiên, sang trọng bền bỉ.",
+    "specs": {
+      "Chất liệu": "Gỗ sồi",
+      "Số ngăn": "2 ngăn"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "110.000₫",
+        "originalPrice": "150.000₫",
+        "discount": "-26%"
+      },
+      {
+        "name": "Size M",
+        "price": "126.000₫",
+        "originalPrice": "150.000₫",
+        "discount": "-26%"
+      },
+      {
+        "name": "Size L",
+        "price": "143.000₫",
+        "originalPrice": "150.000₫",
+        "discount": "-26%"
+      }
+    ],
+    "currentPrice": "110.000₫",
+    "originalPrice": "150.000₫",
+    "discount": "-26%",
+    "rating": "5",
+    "sold": "210"
+  },
+  {
+    "id": 83,
+    "categoryid": 9,
+    "name": "Khay Gỗ Đựng Chìa Khóa",
+    "imageKey": "sp83",
+    "description": "Khay để đồ tiện lợi đặt tại cửa ra vào.",
+    "specs": {
+      "Chất liệu": "Gỗ",
+      "Tiện ích": "Để chìa khóa"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "95.000₫",
+        "originalPrice": "130.000₫",
+        "discount": "-26%"
+      },
+      {
+        "name": "Size M",
+        "price": "109.000₫",
+        "originalPrice": "130.000₫",
+        "discount": "-26%"
+      },
+      {
+        "name": "Size L",
+        "price": "123.000₫",
+        "originalPrice": "130.000₫",
+        "discount": "-26%"
+      }
+    ],
+    "currentPrice": "95.000₫",
+    "originalPrice": "130.000₫",
+    "discount": "-26%",
+    "rating": "4.8",
+    "sold": "89"
+  },
+  {
+    "id": 84,
+    "categoryid": 9,
+    "name": "Kệ Treo Tường Gỗ Hình Chữ U",
+    "imageKey": "sp84",
+    "description": "Kệ gỗ treo tường kiểu chữ U, tối ưu hóa không gian trưng bày.",
+    "specs": {
+      "Chất liệu": "Gỗ thông",
+      "Kiểu dáng": "Chữ U"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "140.000₫",
+        "originalPrice": "190.000₫",
+        "discount": "-26%"
+      },
+      {
+        "name": "Size M",
+        "price": "161.000₫",
+        "originalPrice": "190.000₫",
+        "discount": "-26%"
+      },
+      {
+        "name": "Size L",
+        "price": "182.000₫",
+        "originalPrice": "190.000₫",
+        "discount": "-26%"
+      }
+    ],
+    "currentPrice": "140.000₫",
+    "originalPrice": "190.000₫",
+    "discount": "-26%",
+    "rating": "4.9",
+    "sold": "76"
+  },
+  {
+    "id": 85,
+    "categoryid": 9,
+    "name": "Đèn Bàn Gỗ Đọc Sách",
+    "imageKey": "sp85",
+    "description": "Đèn học thân gỗ, ánh sáng bảo vệ mắt.",
+    "specs": {
+      "Chất liệu": "Gỗ, kim loại",
+      "Ánh sáng": "Trung tính"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "290.000₫",
+        "originalPrice": "380.000₫",
+        "discount": "-23%"
+      },
+      {
+        "name": "Size M",
+        "price": "333.000₫",
+        "originalPrice": "380.000₫",
+        "discount": "-23%"
+      },
+      {
+        "name": "Size L",
+        "price": "377.000₫",
+        "originalPrice": "380.000₫",
+        "discount": "-23%"
+      }
+    ],
+    "currentPrice": "290.000₫",
+    "originalPrice": "380.000₫",
+    "discount": "-23%",
+    "rating": "5",
+    "sold": "156"
+  },
+  {
+    "id": 86,
+    "categoryid": 9,
+    "name": "Giá Đỡ Máy Tính Bảng Gỗ",
+    "imageKey": "sp86",
+    "description": "Giá đỡ máy tính bảng gỗ bền chắc, gập gọn được.",
+    "specs": {
+      "Chất liệu": "Gỗ",
+      "Tiện ích": "Để bàn"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "130.000₫",
+        "originalPrice": "170.000₫",
+        "discount": "-23%"
+      },
+      {
+        "name": "Size M",
+        "price": "149.000₫",
+        "originalPrice": "170.000₫",
+        "discount": "-23%"
+      },
+      {
+        "name": "Size L",
+        "price": "169.000₫",
+        "originalPrice": "170.000₫",
+        "discount": "-23%"
+      }
+    ],
+    "currentPrice": "130.000₫",
+    "originalPrice": "170.000₫",
+    "discount": "-23%",
+    "rating": "4.8",
+    "sold": "240"
+  },
+  {
+    "id": 87,
+    "categoryid": 9,
+    "name": "Đĩa Gỗ Đựng Trái Cây",
+    "imageKey": "sp87",
+    "description": "Đĩa gỗ nguyên khối, phong cách mộc mạc.",
+    "specs": {
+      "Chất liệu": "Gỗ",
+      "Kiểu dáng": "Tròn"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "170.000₫",
+        "originalPrice": "220.000₫",
+        "discount": "-22%"
+      },
+      {
+        "name": "Size M",
+        "price": "195.000₫",
+        "originalPrice": "220.000₫",
+        "discount": "-22%"
+      },
+      {
+        "name": "Size L",
+        "price": "221.000₫",
+        "originalPrice": "220.000₫",
+        "discount": "-22%"
+      }
+    ],
+    "currentPrice": "170.000₫",
+    "originalPrice": "220.000₫",
+    "discount": "-22%",
+    "rating": "5",
+    "sold": "45"
+  },
+  {
+    "id": 88,
+    "categoryid": 9,
+    "name": "Hộp Đựng Khăn Giấy Gỗ",
+    "imageKey": "sp88",
+    "description": "Vỏ bọc hộp giấy bằng gỗ, trang trí phòng khách.",
+    "specs": {
+      "Chất liệu": "Gỗ",
+      "Loại": "Hộp giấy"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "120.000₫",
+        "originalPrice": "160.000₫",
+        "discount": "-25%"
+      },
+      {
+        "name": "Size M",
+        "price": "138.000₫",
+        "originalPrice": "160.000₫",
+        "discount": "-25%"
+      },
+      {
+        "name": "Size L",
+        "price": "156.000₫",
+        "originalPrice": "160.000₫",
+        "discount": "-25%"
+      }
+    ],
+    "currentPrice": "120.000₫",
+    "originalPrice": "160.000₫",
+    "discount": "-25%",
+    "rating": "4.9",
+    "sold": "560"
+  },
+  {
+    "id": 89,
+    "categoryid": 9,
+    "name": "Lịch Để Bàn Gỗ",
+    "imageKey": "sp89",
+    "description": "Lịch để bàn bằng gỗ, xoay thay đổi ngày tiện lợi.",
+    "specs": {
+      "Chất liệu": "Gỗ",
+      "Loại": "Vĩnh cửu"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "90.000₫",
+        "originalPrice": "130.000₫",
+        "discount": "-30%"
+      },
+      {
+        "name": "Size M",
+        "price": "103.000₫",
+        "originalPrice": "130.000₫",
+        "discount": "-30%"
+      },
+      {
+        "name": "Size L",
+        "price": "117.000₫",
+        "originalPrice": "130.000₫",
+        "discount": "-30%"
+      }
+    ],
+    "currentPrice": "90.000₫",
+    "originalPrice": "130.000₫",
+    "discount": "-30%",
+    "rating": "5",
+    "sold": "210"
+  },
+  {
+    "id": 90,
+    "categoryid": 9,
+    "name": "Kẹp Ghi Chú Gỗ",
+    "imageKey": "sp90",
+    "description": "Kẹp gỗ nhỏ để ghi chú hoặc ảnh.",
+    "specs": {
+      "Chất liệu": "Gỗ",
+      "Bộ": "10 chiếc"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "15.000₫",
+        "originalPrice": "30.000₫",
+        "discount": "-50%"
+      },
+      {
+        "name": "Size M",
+        "price": "17.000₫",
+        "originalPrice": "30.000₫",
+        "discount": "-50%"
+      },
+      {
+        "name": "Size L",
+        "price": "19.000₫",
+        "originalPrice": "30.000₫",
+        "discount": "-50%"
+      }
+    ],
+    "currentPrice": "15.000₫",
+    "originalPrice": "30.000₫",
+    "discount": "-50%",
+    "rating": "4.9",
+    "sold": "2.5k"
+  },
+  {
+    "id": 91,
+    "categoryid": 10,
+    "name": "Thớt Gỗ Teak Chữ Nhật",
+    "imageKey": "sp91",
+    "description": "Thớt gỗ Teak chất lượng cao, bền bỉ và an toàn.",
+    "specs": {
+      "Chất liệu": "Gỗ Teak",
+      "Kiểu dáng": "Chữ nhật"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "350.000₫",
         "originalPrice": "420.000₫",
-        "discount": "-8%",
-        "rating": "5",
-        "sold": "29"
+        "discount": "-16%"
+      },
+      {
+        "name": "Size M",
+        "price": "402.000₫",
+        "originalPrice": "420.000₫",
+        "discount": "-16%"
+      },
+      {
+        "name": "Size L",
+        "price": "455.000₫",
+        "originalPrice": "420.000₫",
+        "discount": "-16%"
+      }
+    ],
+    "currentPrice": "350.000₫",
+    "originalPrice": "420.000₫",
+    "discount": "-16%",
+    "rating": "5",
+    "sold": "29"
+  },
+  {
+    "id": 92,
+    "categoryid": 10,
+    "name": "Muôi Gỗ Xào Nấu",
+    "imageKey": "sp92",
+    "description": "Muôi gỗ tự nhiên, không gây trầy xước chảo chống dính.",
+    "specs": {
+      "Chất liệu": "Gỗ",
+      "Công dụng": "Xào nấu"
     },
-    {
-        "id": 97,
-        "name": "Xà phòng hương hoa hồng",
-        "imageKey": "sp97",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "150.000₫",
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "45.000₫",
+        "originalPrice": "60.000₫",
+        "discount": "-25%"
+      },
+      {
+        "name": "Size M",
+        "price": "51.000₫",
+        "originalPrice": "60.000₫",
+        "discount": "-25%"
+      },
+      {
+        "name": "Size L",
+        "price": "58.000₫",
+        "originalPrice": "60.000₫",
+        "discount": "-25%"
+      }
+    ],
+    "currentPrice": "45.000₫",
+    "originalPrice": "60.000₫",
+    "discount": "-25%",
+    "rating": "4.9",
+    "sold": "890"
+  },
+  {
+    "id": 93,
+    "categoryid": 10,
+    "name": "Hũ Thủy Tinh Nắp Gỗ",
+    "imageKey": "sp93",
+    "description": "Hũ thủy tinh đựng thực phẩm nắp gỗ kín khít.",
+    "specs": {
+      "Chất liệu": "Thủy tinh, Gỗ",
+      "Dung tích": "500ml"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "55.000₫",
+        "originalPrice": "80.000₫",
+        "discount": "-31%"
+      },
+      {
+        "name": "Size M",
+        "price": "63.000₫",
+        "originalPrice": "80.000₫",
+        "discount": "-31%"
+      },
+      {
+        "name": "Size L",
+        "price": "71.000₫",
+        "originalPrice": "80.000₫",
+        "discount": "-31%"
+      }
+    ],
+    "currentPrice": "55.000₫",
+    "originalPrice": "80.000₫",
+    "discount": "-31%",
+    "rating": "4.8",
+    "sold": "560"
+  },
+  {
+    "id": 94,
+    "categoryid": 10,
+    "name": "Bình Pha Trà Gỗ",
+    "imageKey": "sp94",
+    "description": "Bình pha trà phong cách tối giản với đế gỗ cách nhiệt.",
+    "specs": {
+      "Chất liệu": "Thủy tinh, Gỗ",
+      "Dung tích": "600ml"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "280.000₫",
+        "originalPrice": "350.000₫",
+        "discount": "-20%"
+      },
+      {
+        "name": "Size M",
+        "price": "322.000₫",
+        "originalPrice": "350.000₫",
+        "discount": "-20%"
+      },
+      {
+        "name": "Size L",
+        "price": "364.000₫",
+        "originalPrice": "350.000₫",
+        "discount": "-20%"
+      }
+    ],
+    "currentPrice": "280.000₫",
+    "originalPrice": "350.000₫",
+    "discount": "-20%",
+    "rating": "5",
+    "sold": "34"
+  },
+  {
+    "id": 95,
+    "categoryid": 10,
+    "name": "Giá Treo Khăn Nhà Bếp Gỗ",
+    "imageKey": "sp95",
+    "description": "Giá treo khăn tiết kiệm không gian, thiết kế trang nhã.",
+    "specs": {
+      "Chất liệu": "Gỗ thông",
+      "Lắp đặt": "Gắn tường"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "95.000₫",
+        "originalPrice": "130.000₫",
+        "discount": "-26%"
+      },
+      {
+        "name": "Size M",
+        "price": "109.000₫",
+        "originalPrice": "130.000₫",
+        "discount": "-26%"
+      },
+      {
+        "name": "Size L",
+        "price": "123.000₫",
+        "originalPrice": "130.000₫",
+        "discount": "-26%"
+      }
+    ],
+    "currentPrice": "95.000₫",
+    "originalPrice": "130.000₫",
+    "discount": "-26%",
+    "rating": "4.7",
+    "sold": "112"
+  },
+  {
+    "id": 96,
+    "categoryid": 10,
+    "name": "Khung Gương Gỗ Tròn Treo Tường",
+    "imageKey": "sp96",
+    "description": "Gương treo tường khung gỗ phong cách tối giản.",
+    "specs": {
+      "Chất liệu": "Gỗ, kính",
+      "Kiểu dáng": "Tròn"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "350.000₫",
+        "originalPrice": "420.000₫",
+        "discount": "-16%"
+      },
+      {
+        "name": "Size M",
+        "price": "402.000₫",
+        "originalPrice": "420.000₫",
+        "discount": "-16%"
+      },
+      {
+        "name": "Size L",
+        "price": "455.000₫",
+        "originalPrice": "420.000₫",
+        "discount": "-16%"
+      }
+    ],
+    "currentPrice": "350.000₫",
+    "originalPrice": "420.000₫",
+    "discount": "-16%",
+    "rating": "5",
+    "sold": "29"
+  },
+  {
+    "id": 97,
+    "categoryid": 10,
+    "name": "Xà Phòng Hương Hoa Hồng",
+    "imageKey": "sp97",
+    "description": "Xà phòng handmade dịu nhẹ, hương hoa hồng tự nhiên.",
+    "specs": {
+      "Thành phần": "Tinh dầu hoa hồng",
+      "Loại": "Handmade"
+    },
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "150.000₫",
         "originalPrice": "200.000₫",
-        "discount": "-10%",
-        "rating": "4.8",
-        "sold": "156"
+        "discount": "-25%"
+      },
+      {
+        "name": "Size M",
+        "price": "172.000₫",
+        "originalPrice": "200.000₫",
+        "discount": "-25%"
+      },
+      {
+        "name": "Size L",
+        "price": "195.000₫",
+        "originalPrice": "200.000₫",
+        "discount": "-25%"
+      }
+    ],
+    "currentPrice": "150.000₫",
+    "originalPrice": "200.000₫",
+    "discount": "-25%",
+    "rating": "4.8",
+    "sold": "156"
+  },
+  {
+    "id": 98,
+    "categoryid": 10,
+    "name": "Tẩy Da Chết Toàn Thân Hương Cam Thảo Mộc",
+    "imageKey": "sp98",
+    "description": "Tẩy da chết nhẹ nhàng với mùi hương thảo mộc dễ chịu.",
+    "specs": {
+      "Chất liệu": "Muối khoáng, thảo mộc",
+      "Công dụng": "Tẩy da chết"
     },
-    {
-        "id": 98,
-        "name": "Tẩy da chết toàn thân hương cam thảo mộc",
-        "imageKey": "sp98",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "525.000₫",
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "525.000₫",
         "originalPrice": "600.000₫",
-        "discount": "-8%",
-        "rating": "5",
-        "sold": "12"
+        "discount": "-12%"
+      },
+      {
+        "name": "Size M",
+        "price": "603.000₫",
+        "originalPrice": "600.000₫",
+        "discount": "-12%"
+      },
+      {
+        "name": "Size L",
+        "price": "682.000₫",
+        "originalPrice": "600.000₫",
+        "discount": "-12%"
+      }
+    ],
+    "currentPrice": "525.000₫",
+    "originalPrice": "600.000₫",
+    "discount": "-12%",
+    "rating": "5",
+    "sold": "12"
+  },
+  {
+    "id": 99,
+    "categoryid": 10,
+    "name": "Son Dưỡng Trà Xanh",
+    "imageKey": "sp99",
+    "description": "Son dưỡng môi trà xanh, cấp ẩm và ngăn ngừa khô môi.",
+    "specs": {
+      "Thành phần": "Trà xanh, dầu dưỡng",
+      "Đặc điểm": "Dưỡng ẩm"
     },
-    {
-        "id": 99,
-        "name": "Son dưỡng trà xanh",
-        "imageKey": "sp99",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "170.000₫",
-        "originalPrice": "200.000₫",
-        "discount": "-10%",
-        "rating": "4.9",
-        "sold": "342"
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "80.000₫",
+        "originalPrice": "110.000₫",
+        "discount": "-27%"
+      },
+      {
+        "name": "Size M",
+        "price": "92.000₫",
+        "originalPrice": "110.000₫",
+        "discount": "-27%"
+      },
+      {
+        "name": "Size L",
+        "price": "104.000₫",
+        "originalPrice": "110.000₫",
+        "discount": "-27%"
+      }
+    ],
+    "currentPrice": "80.000₫",
+    "originalPrice": "110.000₫",
+    "discount": "-27%",
+    "rating": "4.9",
+    "sold": "450"
+  },
+  {
+    "id": 100,
+    "categoryid": 10,
+    "name": "Tinh Dầu Thư Giãn Sả Chanh",
+    "imageKey": "sp100",
+    "description": "Tinh dầu sả chanh giúp thư giãn và khử mùi hiệu quả.",
+    "specs": {
+      "Chất liệu": "Sả chanh",
+      "Dung tích": "10ml"
     },
-    {
-        "id": 100,
-        "name": "Sữa rửa mặt thiên nhiên",
-        "imageKey": "sp100",
-        "sizeS": "S",
-        "sizeM": "M",
-        "sizeL": "L",
-        "currentPrice": "350.000₫",
-        "originalPrice": "620.000₫",
-        "discount": "-10%",
-        "rating": "5",
-        "sold": "84"
-    }
+    "variants": [
+      {
+        "name": "Size S",
+        "price": "120.000₫",
+        "originalPrice": "150.000₫",
+        "discount": "-20%"
+      },
+      {
+        "name": "Size M",
+        "price": "138.000₫",
+        "originalPrice": "150.000₫",
+        "discount": "-20%"
+      },
+      {
+        "name": "Size L",
+        "price": "156.000₫",
+        "originalPrice": "150.000₫",
+        "discount": "-20%"
+      }
+    ],
+    "currentPrice": "120.000₫",
+    "originalPrice": "150.000₫",
+    "discount": "-20%",
+    "rating": "5",
+    "sold": "890"
+  }
 ]

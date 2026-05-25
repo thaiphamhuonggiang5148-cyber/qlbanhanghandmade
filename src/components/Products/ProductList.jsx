@@ -15,8 +15,8 @@ const ProductList = () => {
     const loadData = async () => {
       try {
         const [productsRes, categoriesRes] = await Promise.all([
-          fetch(`${jsonBase}products.json`),
-          fetch(`${jsonBase}category.json`)
+          fetch(`${jsonBase}Products.json`),
+          fetch(`${jsonBase}Category.json`)
         ]);
         if (!productsRes.ok) {
           throw new Error('Không thể tải dữ liệu sản phẩm');
@@ -39,11 +39,10 @@ const ProductList = () => {
     };
     loadData();
   }, []);
-  const filteredProducts =
-
-    selectedCategoryId == null
-      ? products
-      : products.filter((p) => p.categoryid === selectedCategoryId);
+const filteredProducts =
+  selectedCategoryId == null
+    ? products
+    : products.filter((p) => Number(p.categoryid) === Number(selectedCategoryId));
   const totalPages = Math.max(1, Math.ceil(filteredProducts.length / PRODUCTS_PER_PAGE));
   useEffect(() => {
     setCurrentPage((p) => Math.min(p, totalPages));

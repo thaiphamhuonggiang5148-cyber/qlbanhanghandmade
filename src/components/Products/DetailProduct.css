@@ -7,7 +7,8 @@
 .back-button {
   background: none;
   border: none;
-  color: #347A5C; /* Đổi sang xanh mộc */
+  color: #347A5C;
+  /* Đổi sang xanh mộc */
   font-weight: 600;
   cursor: pointer;
   margin-bottom: 12px;
@@ -26,11 +27,13 @@
 
 .detail-image img {
   width: 100%;
-  height: auto;
-  object-fit: contain;
-  border-radius: 8px;
-  background: #fafafa;
-  padding: 16px;
+  max-height: 450px;
+  /* Giới hạn chiều cao tối đa cho ảnh */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fdfdfd;
 }
 
 .detail-info {
@@ -40,7 +43,8 @@
 .detail-info h2 {
   margin: 0 0 12px;
   font-size: 28px;
-  color: #3C3C3B; /* Đổi sang nâu đen */
+  color: #3C3C3B;
+  /* Đổi sang nâu đen */
 }
 
 .detail-price {
@@ -52,7 +56,8 @@
 
 .detail-price .current-price {
   font-size: 26px;
-  color: #347A5C; /* Đổi sang xanh mộc */
+  color: #347A5C;
+  /* Đổi sang xanh mộc */
   font-weight: 700;
 }
 
@@ -62,8 +67,10 @@
 }
 
 .detail-price .discount {
-  background: #f0f7f4; /* Nền xanh nhạt */
-  color: #347A5C; /* Chữ xanh mộc */
+  background: #f0f7f4;
+  /* Nền xanh nhạt */
+  color: #347A5C;
+  /* Chữ xanh mộc */
   padding: 4px 10px;
   border-radius: 12px;
   font-weight: 600;
@@ -96,6 +103,12 @@
   cursor: pointer;
 }
 
+.ram-ssd-tag.active {
+  background-color: #347A5C;
+  color: white;
+  border-color: #347A5C;
+}
+
 .detail-meta {
   display: flex;
   gap: 14px;
@@ -106,7 +119,8 @@
 
 .buy-now-button {
   width: 100%;
-  background: #347A5C; /* Đổi sang màu xanh mộc đơn sắc */
+  background: #347A5C;
+  /* Đổi sang màu xanh mộc đơn sắc */
   color: white;
   border: none;
   border-radius: 10px;
@@ -120,7 +134,8 @@
 }
 
 .buy-now-button:hover {
-  background: #2a6149; /* Xanh đậm hơn khi hover */
+  background: #2a6149;
+  /* Xanh đậm hơn khi hover */
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(52, 122, 92, 0.3);
 }
