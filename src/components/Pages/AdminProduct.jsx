@@ -2,7 +2,9 @@ import React, { useEffect, useState, useCallback, useMemo } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import './Admin.css';
+import { resolveProductImage } from '../../utils/productImages';
 const jsonBase = import.meta.env.BASE_URL || '/';
+
 const emptyForm = () => ({
   id: '',
   name: '',
@@ -13,18 +15,20 @@ const emptyForm = () => ({
   rating: '5',
   sold: '0',
 });
+
 function rowToForm(p) {
   return {
     id: String(p.id),
     name: p.name ?? '',
     price: p.price != null ? String(p.price) : '',
     categoryid: p.categoryid != null ? String(p.categoryid) : '',
-    image: p.image ?? '',
+    image: p.image ?? p.imageKey ?? '',
     description: p.description ?? '',
     rating: p.rating != null ? String(p.rating) : '5',
     sold: p.sold != null ? String(p.sold) : '0',
   };
 }
+
 function formToRow(form, nextId) {
   return {
     id: form.id ? Number(form.id) : nextId,
@@ -37,12 +41,24 @@ function formToRow(form, nextId) {
     sold: Number(form.sold),
   };
 }
+
 function validateRow(built) {
-  if (!built.name) return 'Vui lòng nhập tên sản phẩm vật liệu';
+  if (!built.name) return 'Vui lòng nhập tên sản phẩm';
   if (!built.price || built.price <= 0) return 'Đơn giá phải là số dương hợp lệ';
   if (!built.categoryid) return 'Vui lòng phân loại nhóm danh mục cho sản phẩm';
   return null;
 }
+
+const getImageUrl = (imgString) => {
+  if (!imgString) return '';
+  if (imgString.startsWith('http') || imgString.startsWith('data:')) return imgString;
+  
+  const key = imgString.replace(/^img\//, '').replace(/\.[^.]+$/, '');
+  const resolved = resolveProductImage(key);
+  
+  return resolved || 'https://placehold.co/100x100/e2e8f0/475569?text=Lỗi+ảnh';
+};
+
 function AdminProduct({ embedded = false }) {
   const navigate = useNavigate();
   const [allowed, setAllowed] = useState(embedded);
@@ -57,6 +73,7 @@ function AdminProduct({ embedded = false }) {
   const [isNew, setIsNew] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [appliedSearch, setAppliedSearch] = useState('');
+
   const displayedRows = useMemo(() => {
     const q = appliedSearch.trim().toLowerCase();
     if (!q) return rows;
@@ -66,6 +83,7 @@ function AdminProduct({ embedded = false }) {
         String(r.name || '').toLowerCase().includes(q)
     );
   }, [rows, appliedSearch]);
+
   const persist = useCallback(async (nextList) => {
     setSaving(true);
     setSaveError('');
@@ -81,7 +99,7 @@ function AdminProduct({ embedded = false }) {
       const msg =
         err.response?.data?.error ||
         (err.code === 'ERR_NETWORK' || err.response?.status === 404
-          ? 'Hệ thống đang chạy ở chế độ Demo (API ghi file yêu cầu môi trường dev server).'
+          ? 'Hệ thống đang chạy ở chế độ Demo.'
           : null) ||
         'Không thể lưu thông tin sản phẩm lên máy chủ.';
       setSaveError(msg);
@@ -89,6 +107,7 @@ function AdminProduct({ embedded = false }) {
       setSaving(false);
     }
   }, []);
+
   useEffect(() => {
     if (embedded) {
       setAllowed(true);
@@ -96,7 +115,7 @@ function AdminProduct({ embedded = false }) {
     }
     const raw = localStorage.getItem('currentUser');
     if (!raw) {
-      navigate('/login');
+      navigate('/');
       return;
     }
     try {
@@ -107,9 +126,10 @@ function AdminProduct({ embedded = false }) {
       }
       setAllowed(true);
     } catch {
-      navigate('/login');
+      navigate('/');
     }
   }, [navigate, embedded]);
+
   useEffect(() => {
     if (!allowed) return;
     const load = async () => {
@@ -135,33 +155,39 @@ function AdminProduct({ embedded = false }) {
     };
     load();
   }, [allowed]);
+
   const goHome = () => navigate('/');
   const logout = () => {
     localStorage.removeItem('currentUser');
     window.dispatchEvent(new Event('userUpdated'));
-    navigate('/login');
+    navigate('/');
   };
+
   const openCreate = () => {
     setIsNew(true);
     setForm(emptyForm());
     setView('form');
     setSaveError('');
   };
+
   const openEdit = (p) => {
     setIsNew(false);
     setForm(rowToForm(p));
     setView('form');
     setSaveError('');
   };
+
   const cancelForm = () => {
     setView('list');
     setForm(emptyForm());
     setIsNew(false);
     setSaveError('');
   };
+
   const handleFormChange = (field, value) => {
     setForm((f) => ({ ...f, [field]: value }));
   };
+
   const handleSubmitForm = (e) => {
     e.preventDefault();
     const nextId = rows.reduce((m, r) => Math.max(m, Number(r.id) || 0), 0) + 1;
@@ -184,20 +210,25 @@ function AdminProduct({ embedded = false }) {
     }
     persist(nextList);
   };
+
   const handleDelete = (id, name) => {
     if (!window.confirm(`Bạn có chắc chắn muốn xóa sản phẩm mặt hàng: ${name} (ID: #${id})?`)) return;
     persist(rows.filter((r) => String(r.id) !== String(id)));
   };
+
   const applySearch = () => setAppliedSearch(searchQuery.trim());
   const clearSearch = () => {
     setSearchQuery('');
     setAppliedSearch('');
   };
+
   const getCategoryName = (catId) => {
     const found = categories.find((c) => String(c.id) === String(catId));
     return found ? found.name : `Danh mục #${catId}`;
   };
+
   const fmtCurrency = (n) => `${Number(n || 0).toLocaleString('vi-VN')} đ`;
+
   const bodyContent = (
     <>
       {loadError && (
@@ -213,9 +244,9 @@ function AdminProduct({ embedded = false }) {
         </div>
       )}
       {loading ? (
-        <div className="ruang-loading" style={{ padding: '2rem', textAlign: 'center', fontWeight: '600', color: '#64748b' }}>
+        <div className="ruang-loading" style={{ padding: '2rem', textAlign: 'center', fontWeight: '600', color: 'var(--text-muted)' }}>
           <i className="fa-solid fa-spinner fa-spin" style={{ marginRight: '10px', fontSize: '1.2rem' }} />
-          Đang truy xuất kho dữ liệu handmade...
+          Đang truy xuất kho dữ liệu...
         </div>
       ) : view === 'list' ? (
         <>
@@ -264,7 +295,7 @@ function AdminProduct({ embedded = false }) {
               <tbody>
                 {displayedRows.length === 0 ? (
                   <tr>
-                    <td colSpan={8} className="admin-table_empty" style={{ textAlign: 'center', padding: '3rem', color: '#94a3b8' }}>
+                    <td colSpan={8} className="admin-table_empty" style={{ textAlign: 'center', padding: '3rem', color: 'var(--text-muted)' }}>
                       <i className="fa-solid fa-boxes-packing" style={{ display: 'block', fontSize: '2rem', marginBottom: '1rem' }} />
                       {appliedSearch.trim()
                         ? `Không tìm thấy mặt hàng nào khớp từ khóa "${appliedSearch.trim()}".`
@@ -274,16 +305,20 @@ function AdminProduct({ embedded = false }) {
                 ) : (
                   displayedRows.map((r) => (
                     <tr key={r.id}>
-                      <td style={{ fontWeight: '700', color: '#4f46e5' }}>#{r.id}</td>
+                      <td style={{ fontWeight: '700', color: 'var(--primary)' }}>#{r.id}</td>
                       <td>
-                        {r.image ? (
+                        {r.image || r.imageKey ? (
                           <img
-                            src={r.image.startsWith('http') || r.image.startsWith('/') ? r.image : `${jsonBase}${r.image}`}
+                            src={getImageUrl(r.image || r.imageKey)}
                             alt={r.name}
+                            onError={(e) => {
+                              e.target.onerror = null;
+                              e.target.src = 'https://placehold.co/100x100/e2e8f0/475569?text=Lỗi+ảnh';
+                            }}
                             style={{ width: '45px', height: '45px', objectFit: 'cover', borderRadius: '8px', border: '1px solid var(--border)' }}
                           />
                         ) : (
-                          <div style={{ width: '45px', height: '45px', borderRadius: '8px', background: '#e2e8f0', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#94a3b8' }}>
+                          <div style={{ width: '45px', height: '45px', borderRadius: '8px', background: '#e2e8f0', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-muted)' }}>
                             <i className="fa-solid fa-image" />
                           </div>
                         )}
@@ -330,18 +365,18 @@ function AdminProduct({ embedded = false }) {
       ) : (
         <form className="admin-form-card" onSubmit={handleSubmitForm}>
           <h2>
-            <i className="fa-solid fa-box-open" style={{ marginRight: '10px', color: '#4f46e5' }} />
-            {isNew ? 'Khai báo thông số vật liệu mới' : `Điều chỉnh thông tin sản phẩm #${form.id}`}
+            <i className="fa-solid fa-box-open" style={{ marginRight: '10px', color: 'var(--primary)' }} />
+            {isNew ? 'Khai báo thông số mới' : `Điều chỉnh thông tin sản phẩm #${form.id}`}
           </h2>
           <div className="admin-form-grid">
             {!isNew && (
               <label>
                 Mã định danh sản phẩm (ID)
-                <input value={form.id} readOnly style={{ background: '#e2e8f0', cursor: 'not-allowed', fontWeight: 'bold' }} />
+                <input value={form.id} readOnly className="input-readonly" />
               </label>
             )}
             <label className={isNew ? 'admin-form-grid_full' : ''}>
-              Tên gọi handmade / sản phẩm
+              Tên gọi vật liệu / sản phẩm
               <input
                 type="text"
                 placeholder="Nhập tên sản phẩm thương mại..."
@@ -381,7 +416,6 @@ function AdminProduct({ embedded = false }) {
                   onChange={(e) => {
                     const file = e.target.files[0];
                     if (file) {
-                      // Tự động gán đường dẫn img/ phía trước tên file
                       handleFormChange('image', `img/${file.name}`);
                     }
                   }}
@@ -397,7 +431,7 @@ function AdminProduct({ embedded = false }) {
                 />
                 <input
                   type="text"
-                  placeholder="Hoặc dán trực tiếp link ảnh mạng vào đây..."
+                  placeholder="Hoặc nhập tên key/ảnh (VD: sp1 hoặc img/hinhanh.jpg)..."
                   value={form.image}
                   onChange={(e) => handleFormChange('image', e.target.value)}
                   style={{ marginTop: '4px' }}
@@ -427,7 +461,7 @@ function AdminProduct({ embedded = false }) {
               />
             </label>
             <label className="admin-form-grid_full">
-              Mô tả chi tiết đặc tính sản phẩm
+              Mô tả chi tiết đặc tính kỹ thuật vật liệu
               <textarea
                 rows={4}
                 placeholder="Nhập ghi chú hoặc mô tả thông số sản phẩm..."
@@ -476,20 +510,22 @@ function AdminProduct({ embedded = false }) {
       )}
     </>
   );
+
   if (embedded) return <div className="admin-product-embed">{bodyContent}</div>;
   if (!allowed) return <div className="admin-page" />;
+
   return (
     <div className="admin-page">
       <header className="admin-topbar">
         <h1 className="admin-topbar_title">
-          <i className="fa-solid fa-boxes-stacked" style={{ marginRight: '12px', color: '#4f46e5' }} />
+          <i className="fa-solid fa-boxes-stacked" style={{ marginRight: '12px', color: 'var(--primary)' }} />
           Hệ thống Quản lý Kho sản phẩm
         </h1>
         <div className="admin-topbar_actions">
           <button type="button" className="admin-btn admin-btn--ghost" onClick={goHome}>
             <i className="fa-solid fa-house" /> Trang chủ
           </button>
-          <button type="button" className="admin-btn" style={{ background: '#ef4444' }} onClick={logout}>
+          <button type="button" className="admin-btn admin-btn--danger" onClick={logout}>
             <i className="fa-solid fa-right-from-bracket" /> Đăng xuất hệ thống
           </button>
         </div>
@@ -498,4 +534,5 @@ function AdminProduct({ embedded = false }) {
     </div>
   );
 }
+
 export default AdminProduct;

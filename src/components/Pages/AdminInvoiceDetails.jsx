@@ -216,7 +216,7 @@ function AdminInvoiceDetails({ embedded = false }) {
         </div>
       )}
       {loading ? (
-        <div className="ruang-loading" style={{ padding: '2rem', textAlign: 'center', fontWeight: '600', color: '#64748b' }}>
+        <div className="ruang-loading" style={{ padding: '2rem', textAlign: 'center', fontWeight: '600', color: 'var(--text-muted)' }}>
           <i className="fa-solid fa-spinner fa-spin" style={{ marginRight: '10px', fontSize: '1.2rem' }} />
           Đang tải dữ liệu chi tiết hóa đơn...
         </div>
@@ -266,7 +266,7 @@ function AdminInvoiceDetails({ embedded = false }) {
               <tbody>
                 {displayedRows.length === 0 ? (
                   <tr>
-                    <td colSpan={7} className="admin-table_empty" style={{ textAlign: 'center', padding: '3rem', color: '#94a3b8' }}>
+                    <td colSpan={7} className="admin-table_empty" style={{ textAlign: 'center', padding: '3rem', color: 'var(--text-muted)' }}>
                       <i className="fa-solid fa-receipt" style={{ display: 'block', fontSize: '2rem', marginBottom: '1rem' }} />
                       {appliedSearchBill.trim()
                         ? `Không tìm thấy chi tiết mặt hàng nào thuộc Hóa đơn #${appliedSearchBill.trim()}.`
@@ -276,21 +276,21 @@ function AdminInvoiceDetails({ embedded = false }) {
                 ) : (
                   displayedRows.map((r) => (
                     <tr key={r.id}>
-                      <td style={{ color: '#64748b', fontSize: '0.85rem' }}>#{r.id}</td>
+                      <td style={{ color: 'var(--text-muted)', fontSize: '0.85rem' }}>#{r.id}</td>
                       {/* Đọc đúng billId từ JSON */}
-                      <td style={{ fontWeight: '700', color: '#4f46e5' }}>#{r.billId}</td>
+                      <td style={{ fontWeight: '700', color: 'var(--primary)' }}>#{r.billId}</td>
                       <td style={{ fontWeight: '600' }}>
                         <i className="fa-solid fa-box" style={{ marginRight: '6px', opacity: 0.5 }} />
                         {/* Ưu tiên productName có sẵn trong JSON, fallback lookup */}
                         {r.productName || getProductName(r.productId)}
-                        <span style={{ display: 'block', fontSize: '0.75rem', color: '#94a3b8', fontWeight: 'normal' }}>
+                        <span style={{ display: 'block', fontSize: '0.75rem', color: 'var(--text-muted)', fontWeight: 'normal' }}>
                           Mã SP: #{r.productId}
                         </span>
                       </td>
                       <td style={{ fontWeight: '700' }}>{r.quantity}</td>
                       <td>{fmtCurrency(r.price)}</td>
                       {/* Dùng subtotal từ JSON nếu có, fallback tính lại */}
-                      <td style={{ fontWeight: '700', color: '#10b981' }}>
+                      <td style={{ fontWeight: '700', color: 'var(--success)' }}>
                         {fmtCurrency(r.subtotal != null ? r.subtotal : r.quantity * r.price)}
                       </td>
                       <td>
@@ -323,14 +323,14 @@ function AdminInvoiceDetails({ embedded = false }) {
       ) : (
         <form className="admin-form-card" onSubmit={handleSubmitForm}>
           <h2>
-            <i className="fa-solid fa-circle-info" style={{ marginRight: '10px', color: '#4f46e5' }} />
+            <i className="fa-solid fa-circle-info" style={{ marginRight: '10px', color: 'var(--primary)' }} />
             {isNew ? 'Bổ sung mặt hàng vào hóa đơn' : `Cập nhật thông tin dòng sản phẩm #${form.id}`}
           </h2>
           <div className="admin-form-grid">
             {!isNew && (
               <label>
                 Mã dòng chi tiết (ID)
-                <input value={form.id} readOnly style={{ background: '#e2e8f0', cursor: 'not-allowed', fontWeight: 'bold' }} />
+                <input value={form.id} readOnly className="input-readonly" />
               </label>
             )}
             <label className={isNew ? 'admin-form-grid_full' : ''}>
@@ -403,14 +403,14 @@ function AdminInvoiceDetails({ embedded = false }) {
     <div className="admin-page">
       <header className="admin-topbar">
         <h1 className="admin-topbar_title">
-          <i className="fa-solid fa-receipt" style={{ marginRight: '12px', color: '#4f46e5' }} />
+          <i className="fa-solid fa-receipt" style={{ marginRight: '12px', color: 'var(--primary)' }} />
           Quản lý Chi tiết Hóa đơn
         </h1>
         <div className="admin-topbar_actions">
           <button type="button" className="admin-btn admin-btn--ghost" onClick={goHome}>
             <i className="fa-solid fa-house" /> Trang chủ
           </button>
-          <button type="button" className="admin-btn" style={{ background: '#ef4444' }} onClick={logout}>
+          <button type="button" className="admin-btn admin-btn--danger" onClick={logout}>
             <i className="fa-solid fa-right-from-bracket" /> Đăng xuất
           </button>
         </div>

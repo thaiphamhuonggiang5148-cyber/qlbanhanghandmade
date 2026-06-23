@@ -3,109 +3,104 @@ import './About.css';
 
 const About = () => {
   const stats = [
-    { number: '10+', label: 'Năm Kinh Nghiệm' },
-    { number: '5.000+', label: 'Công Trình Hoàn Thành' },
-    { number: '200+', label: 'Nhà Cung Cấp Đối Tác' },
-    { number: '98%', label: 'Khách Hàng Hài Lòng' },
+    { number: '5+', label: 'Năm Đam Mê' },
+    { number: '1.200+', label: 'Sản Phẩm Đã Hoàn Thiện' },
+    { number: '50+', label: 'Nguyên Liệu Tuyển Chọn' },
+    { number: '99%', label: 'Khách Hàng Hài Lòng' },
   ];
 
   const team = [
     {
-      name: 'Nguyễn Văn Minh',
-      role: 'Giám Đốc Điều Hành',
-      desc: '15 năm kinh nghiệm trong ngành vật liệu xây dựng và quản lý chuỗi cung ứng.',
+      name: 'Lê Minh Anh',
+      role: 'Founder & Head Artisan',
+      desc: 'Một người yêu cái đẹp thô mộc, dành 8 năm nghiên cứu các kỹ thuật dệt nhuộm tự nhiên và thổi hồn vào sản phẩm thủ công.',
     },
     {
-      name: 'Trần Thị Hương',
-      role: 'Giám Đốc Kinh Doanh',
-      desc: 'Chuyên gia tư vấn vật tư xây dựng, từng hợp tác với hơn 300 nhà thầu lớn toàn quốc.',
+      name: 'Hoàng Nhật Nam',
+      role: 'Lead Designer',
+      desc: 'Chuyên gia thiết kế tối giản. Nam tin rằng mỗi món đồ handmade hoàn hảo là sự kết hợp giữa công năng và cảm xúc nghệ thuật.',
     },
     {
-      name: 'Lê Quốc Bảo',
-      role: 'Trưởng Phòng Kỹ Thuật',
-      desc: 'Kỹ sư xây dựng với chuyên môn kiểm định chất lượng vật liệu và tư vấn thi công.',
+      name: 'Phạm Thu Thảo',
+      role: 'Craftsmanship Lead',
+      desc: 'Đôi bàn tay khéo léo với hơn 10 năm kinh nghiệm trong nghề thêu thùa và đan móc, người trực tiếp đào tạo các thế hệ nghệ nhân trẻ.',
     },
   ];
 
   const milestones = [
     {
-      year: '2014',
-      title: 'Thành Lập Moon VLXD',
-      desc: 'Khởi đầu với một kho nhỏ tại TP.HCM, Moon VLXD ra đời với sứ mệnh cung cấp vật liệu xây dựng chất lượng, minh bạch giá cả.',
-    },
-    {
-      year: '2016',
-      title: 'Mở Rộng Danh Mục Sản Phẩm',
-      desc: 'Bổ sung các dòng sản phẩm hoàn thiện cao cấp: gạch ốp lát, sơn nước, thiết bị vệ sinh thương hiệu lớn.',
-    },
-    {
-      year: '2018',
-      title: 'Ra Mắt Hệ Thống Báo Giá Online',
-      desc: 'Tiên phong trong ngành với nền tảng báo giá tự động, cập nhật theo thời gian thực, giúp khách hàng tra cứu nhanh chóng.',
-    },
-    {
-      year: '2020',
-      title: 'Đạt 1.000 Công Trình Phục Vụ',
-      desc: 'Cột mốc quan trọng: Moon VLXD đã đồng hành cùng hơn 1.000 công trình dân dụng và thương mại trên toàn quốc.',
+      year: '2021',
+      title: 'Thành Lập SoulMade',
+      desc: 'Khởi đầu từ một xưởng nhỏ tại TP.HCM, SoulMade ra đời với sứ mệnh mang những món đồ thủ công tinh tế đến mọi gia đình.',
     },
     {
       year: '2022',
-      title: 'Khai Trương Kho Hàng Miền Bắc',
-      desc: 'Mở rộng hệ thống phân phối với kho trung chuyển tại Hà Nội, rút ngắn thời gian giao hàng cho khu vực phía Bắc.',
+      title: 'Ra Mắt BST Đầu Tiên',
+      desc: 'Giới thiệu các dòng sản phẩm dệt may và phụ kiện làm từ nguyên liệu tự nhiên, thân thiện với môi trường.',
+    },
+    {
+      year: '2023',
+      title: 'Kết Nối Nghệ Nhân',
+      desc: 'Mở rộng mạng lưới hợp tác với các làng nghề truyền thống, bảo tồn và phát triển giá trị văn hóa vào sản phẩm hiện đại.',
     },
     {
       year: '2024',
-      title: 'Nền Tảng Thương Mại Điện Tử Toàn Diện',
-      desc: 'Ra mắt website thương mại điện tử tích hợp đặt hàng, theo dõi vận chuyển và tư vấn kỹ thuật trực tuyến 24/7.',
+      title: 'Phát Triển Đơn Hàng Tùy Chỉnh',
+      desc: 'Dịch vụ thiết kế handmade cá nhân hóa được đón nhận nồng nhiệt, khẳng định dấu ấn riêng của từng khách hàng.',
+    },
+    {
+      year: '2025',
+      title: 'Workshop Handmade',
+      desc: 'Khai trương không gian trải nghiệm thực tế, nơi khách hàng có thể tự tay làm nên món đồ tâm đắc.',
+    },
+    {
+      year: '2026',
+      title: 'Nền Tảng Handmade Toàn Diện',
+      desc: 'Ra mắt website tích hợp đặt hàng cá nhân hóa, theo dõi quá trình làm sản phẩm và tư vấn sáng tạo 24/7.',
     },
   ];
 
   const partners = [
-    'SCG', 'Hà Tiên 1', 'Viglacera', 'Toto', 'Dulux', 'Pomina',
-    'Hoa Sen', 'INSEE', 'Prime Group', 'Caesar',
+    'Lụa Tơ Tằm Hà Đông', 'Gốm Bát Tràng', 'Mây Tre Đan...', 'Nhuộm Tự Nhiên', 'Sợi Tự Nhiên',
   ];
 
   const products = [
     {
-      icon: '🏗️',
-      name: 'Vật Liệu Thô',
-      items: ['Cát xây dựng các loại', 'Đá dăm, đá 1×2, đá 4×6', 'Xi măng các nhãn hiệu', 'Gạch xây thẻ, gạch block'],
+      icon: '🧶',
+      name: 'Phụ Kiện Dệt May',
+      items: ['Túi xách handmade', 'Khăn quàng thủ công', 'Trang trí decor dệt', 'Vỏ gối thêu tay'],
     },
     {
-      icon: '🔩',
-      name: 'Sắt Thép & Kết Cấu',
-      items: ['Thép cây, thép cuộn Hòa Phát', 'Thép hình I, U, V', 'Lưới thép hàn, thép tấm', 'Ống thép, ty ren, bu lông'],
+      icon: '🏺',
+      name: 'Gốm & Decor',
+      items: ['Bình hoa thủ công', 'Chậu gốm nghệ thuật', 'Đĩa trưng bày', 'Phụ kiện gốm mini'],
     },
     {
-      icon: '🪟',
-      name: 'Vật Liệu Hoàn Thiện',
-      items: ['Gạch ốp lát cao cấp', 'Sơn nội – ngoại thất', 'Trần thạch cao, xốp cách nhiệt', 'Kính cường lực, nhôm định hình'],
+      icon: '🌿',
+      name: 'Sản Phẩm Từ Thiên Nhiên',
+      items: ['Nến thơm tinh dầu', 'Xà phòng thảo mộc', 'Đồ dùng mây tre', 'Giỏ đựng đồ thủ công'],
     },
     {
-      icon: '🚿',
-      name: 'Thiết Bị Vệ Sinh',
-      items: ['Bồn cầu, chậu rửa TOTO, Caesar', 'Sen vòi, bồn tắm cao cấp', 'Gương phòng tắm, tủ lavabo', 'Phụ kiện nhà tắm đồng bộ'],
+      icon: '🎨',
+      name: 'Quà Tặng Cá Nhân Hóa',
+      items: ['Tranh thêu tên riêng', 'Thiệp vẽ tay', 'Đồ chơi len (Amigurumi)', 'Phụ kiện khắc tên'],
     },
   ];
 
   return (
     <div className="about-container">
-      {/* Hero */}
       <div className="about-hero">
-        <h1 className="about-title">Giới Thiệu Về Moon VLXD</h1>
-        <p className="about-subtitle">Hành trình xây dựng niềm tin và đồng hành cùng mọi công trình vững bền.</p>
+        <h1 className="about-title">Giới Thiệu Về SoulMade</h1>
+        <p className="about-subtitle">Nơi mỗi sản phẩm đều chứa đựng tâm hồn và sự tỉ mỉ của đôi bàn tay người nghệ nhân.</p>
       </div>
 
       <div className="about-content">
-
-        {/* Story */}
         <section className="about-section">
           <h2>Câu Chuyện Của Chúng Tôi</h2>
-          <p>Moon VLXD tự hào là một trong những đơn vị hàng đầu cung cấp vật liệu xây dựng thô và hoàn thiện chất lượng cao tại Việt Nam. Được thành lập với mục tiêu đơn giản hóa quy trình cung ứng vật tư, chúng tôi mang đến giải pháp toàn diện từ cát, đá, xi măng, sắt thép cho đến gạch ốp lát, sơn và thiết bị vệ sinh cao cấp.</p>
-          <p style={{ marginTop: '16px' }}>Hơn một thập kỷ hoạt động, Moon VLXD đã xây dựng được mạng lưới cung ứng vững chắc, kết nối trực tiếp với hơn 200 nhà sản xuất và nhà phân phối uy tín trong và ngoài nước. Điều này giúp chúng tôi kiểm soát chất lượng từ đầu vào, đảm bảo mỗi sản phẩm đến tay khách hàng đều đạt tiêu chuẩn kỹ thuật cao nhất với mức giá cạnh tranh nhất thị trường.</p>
+          <p>SoulMade tự hào là đơn vị tiên phong mang đến những sản phẩm thủ công (handmade) tinh tế, chất lượng cao tại Việt Nam. Chúng tôi tin rằng mỗi món đồ không chỉ là vật dụng, mà còn là một câu chuyện, một tác phẩm nghệ thuật mang đậm dấu ấn cá nhân.</p>
+          <p style={{ marginTop: '16px' }}>Sau 5 năm hình thành, SoulMade đã xây dựng mạng lưới kết nối trực tiếp với hơn 50 nghệ nhân và nguồn nguyên liệu tự nhiên uy tín. Chúng tôi cam kết mang đến những sản phẩm an toàn, bền vững và đầy tính thẩm mỹ.</p>
         </section>
 
-        {/* Stats */}
         <section className="about-stats">
           {stats.map((s, i) => (
             <div className="stat-item" key={i}>
@@ -115,38 +110,35 @@ const About = () => {
           ))}
         </section>
 
-        {/* Vision & Mission */}
         <div className="about-grid">
           <div className="about-card">
             <h3>Tầm Nhìn</h3>
-            <p>Trở thành biểu tượng niềm tin hàng đầu trong ngành cung ứng vật liệu xây dựng tại Đông Nam Á, nơi mọi nhà thầu và gia chủ đều nghĩ đến đầu tiên khi khởi công công trình. Chúng tôi hướng tới một hệ sinh thái cung ứng vật tư thông minh, số hóa toàn diện và phát triển bền vững.</p>
+            <p>Trở thành thương hiệu handmade hàng đầu, nơi tôn vinh giá trị thủ công và sự sáng tạo không giới hạn. Chúng tôi hướng tới việc đưa sản phẩm thủ công Việt vươn tầm quốc tế.</p>
           </div>
           <div className="about-card">
             <h3>Sứ Mệnh</h3>
-            <p>Cung cấp vật tư chính hãng, đúng tiến độ với giá cả cạnh tranh nhất. Chúng tôi không chỉ bán vật liệu — chúng tôi cùng bạn đặt nền móng cho những mái ấm vững bền, góp phần xây dựng hạ tầng quốc gia và nâng cao chất lượng cuộc sống cộng đồng.</p>
+            <p>Lan tỏa thông điệp "Sống chậm, trân trọng thủ công". Chúng tôi nỗ lực tạo ra những sản phẩm giúp khách hàng cảm nhận được sự ấm áp, tinh tế trong từng không gian sống.</p>
           </div>
         </div>
 
-        {/* Core Values */}
         <section className="about-values">
           <h2>Giá Trị Cốt Lõi</h2>
           <div className="values-list">
             <div className="value-item">
-              <h4>Chất Lượng Hàng Đầu</h4>
-              <p>Mọi sản phẩm xuất xưởng đều đạt chuẩn kiểm định kỹ thuật cao nhất. Chúng tôi hợp tác trực tiếp với nhà sản xuất, loại bỏ hàng trung gian để kiểm soát chất lượng toàn diện.</p>
+              <h4>Sự Tỉ Mỉ</h4>
+              <p>Mỗi đường kim mũi chỉ, mỗi nét vẽ đều được thực hiện thủ công với sự tập trung cao nhất, đảm bảo tính thẩm mỹ tuyệt đối.</p>
             </div>
             <div className="value-item">
-              <h4>Minh Bạch Giá Cả</h4>
-              <p>Hệ thống báo giá tự động, cập nhật liên tục theo biến động thị trường. Không phụ thu ẩn, không chi phí bất ngờ — mọi thứ rõ ràng từ lúc đặt hàng đến khi nhận hàng.</p>
+              <h4>Chất Liệu Xanh</h4>
+              <p>Chúng tôi ưu tiên nguyên liệu tự nhiên, thân thiện với môi trường, an toàn cho người sử dụng và bền bỉ theo thời gian.</p>
             </div>
             <div className="value-item">
-              <h4>Tận Tâm Phục Vụ</h4>
-              <p>Đội ngũ tư vấn 24/7, hỗ trợ tính toán khối lượng vật tư tối ưu nhất cho công trình, giúp khách hàng tiết kiệm chi phí mà vẫn đảm bảo tiến độ và chất lượng.</p>
+              <h4>Dấu Ấn Riêng</h4>
+              <p>Tại SoulMade, bạn không chỉ mua sản phẩm — bạn sở hữu một món quà duy nhất, được tùy chỉnh theo sở thích riêng của mình.</p>
             </div>
           </div>
         </section>
 
-        {/* Products */}
         <section className="about-products">
           <h2>Danh Mục Sản Phẩm Chủ Lực</h2>
           <div className="products-grid">
@@ -164,7 +156,6 @@ const About = () => {
           </div>
         </section>
 
-        {/* Timeline */}
         <section className="about-timeline">
           <h2>Hành Trình Phát Triển</h2>
           <div className="timeline-list">
@@ -181,10 +172,9 @@ const About = () => {
           </div>
         </section>
 
-        {/* Team */}
         <section className="about-team">
-          <h2>Đội Ngũ Lãnh Đạo</h2>
-          <p className="section-desc">Đằng sau mỗi chuyến hàng đúng hẹn là một đội ngũ tận tâm với nhiều năm kinh nghiệm trong ngành.</p>
+          <h2>Đội Ngũ Nghệ Nhân</h2>
+          <p className="section-desc">Những bàn tay tài hoa đứng sau các thiết kế tâm huyết tại SoulMade.</p>
           <div className="team-grid">
             {team.map((member, i) => (
               <div className="team-card" key={i}>
@@ -197,10 +187,9 @@ const About = () => {
           </div>
         </section>
 
-        {/* Partners */}
         <section className="about-partners">
-          <h2>Đối Tác Thương Hiệu</h2>
-          <p className="section-desc">Chúng tôi phân phối chính hãng các thương hiệu vật liệu xây dựng uy tín hàng đầu trong và ngoài nước.</p>
+          <h2>Nguyên Liệu & Đối Tác</h2>
+          <p className="section-desc">Chúng tôi hợp tác cùng các nghệ nhân làng nghề uy tín để duy trì nguồn nguyên liệu sạch và tinh khiết.</p>
           <div className="partners-grid">
             {partners.map((p, i) => (
               <div className="partner-tag" key={i}>{p}</div>
@@ -208,28 +197,24 @@ const About = () => {
           </div>
         </section>
 
-        {/* Commitment */}
         <section className="about-section commitment">
-          <h2>Cam Kết Từ Moon VLXD</h2>
+          <h2>Cam Kết Từ SoulMade</h2>
           <ul>
-            <li>Hoàn tiền 100% nếu phát hiện hàng giả, hàng nhái, kém chất lượng.</li>
-            <li>Vận chuyển nhanh chóng, an toàn đến tận chân công trình trong vòng 24–48 giờ.</li>
-            <li>Chính sách chiết khấu cực kỳ hấp dẫn cho các nhà thầu và đối tác dài hạn.</li>
-            <li>Hỗ trợ kỹ thuật miễn phí: tư vấn lựa chọn vật tư phù hợp với từng hạng mục công trình.</li>
-            <li>Bảo hành sản phẩm theo đúng chính sách của nhà sản xuất, không gây khó dễ khi khiếu nại.</li>
+            <li>Chất lượng thủ công: Hoàn tiền nếu sản phẩm không đúng như thiết kế thủ công cam kết.</li>
+            <li>Đóng gói bền vững: Hạn chế nhựa, sử dụng bao bì giấy thân thiện môi trường.</li>
+            <li>Tư vấn tận tình: Hỗ trợ thiết kế theo ý tưởng riêng của khách hàng.</li>
+            <li>Bảo hành nghệ nhân: Bảo dưỡng và chăm sóc sản phẩm định kỳ cho khách hàng thân thiết.</li>
           </ul>
         </section>
 
-        {/* CTA */}
         <section className="about-cta">
-          <h2>Sẵn Sàng Bắt Đầu Công Trình?</h2>
-          <p>Liên hệ ngay với đội ngũ tư vấn của Moon VLXD để nhận báo giá tốt nhất và hỗ trợ lên kế hoạch vật tư tối ưu cho công trình của bạn.</p>
+          <h2>Bạn Đã Sẵn Sàng Sở Hữu Một Món Đồ Thủ Công Riêng?</h2>
+          <p>Hãy liên hệ với SoulMade để cùng chúng tôi hiện thực hóa món đồ handmade mơ ước của bà!</p>
           <div className="cta-buttons">
             <a href="/contact" className="btn-primary">Liên Hệ Ngay</a>
-            <a href="/products" className="btn-secondary">Xem Sản Phẩm</a>
+            <a href="/products" className="btn-secondary">Khám Phá Bộ Sưu Tập</a>
           </div>
         </section>
-
       </div>
     </div>
   );

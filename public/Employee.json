@@ -10,18 +10,18 @@
   },
   {
     "id": "NV002",
-    "name": "Trần Thị Lan",
-    "phone": "0912345678",
-    "email": "lantt@smade.com",
+    "name": "Trần Thị Tâm",
+    "phone": "09125785678",
+    "email": "tamtt@smade.com",
     "role": "Thu ngân",
     "salary": 9000000,
     "status": "Đang làm việc"
   },
   {
     "id": "NV003",
-    "name": "Lê Văn Hùng",
-    "phone": "0923456789",
-    "email": "hunglv@smade.com",
+    "name": "Lê Văn Sơn",
+    "phone": "092245489",
+    "email": "sonlv@smade.com",
     "role": "Nhân viên bán hàng",
     "salary": 8500000,
     "status": "Đang làm việc"

@@ -20,13 +20,13 @@
       {
         "name": "Size M",
         "price": "135.000₫",
-        "originalPrice": "130.000₫",
+        "originalPrice": "140.000₫",
         "discount": "-13,75%"
       },
       {
         "name": "Size L",
         "price": "153.000₫",
-        "originalPrice": "130.000₫",
+        "originalPrice": "170.000₫",
         "discount": "-13,75%"
       }
     ],
@@ -56,13 +56,13 @@
       {
         "name": "Size M",
         "price": "77.000₫",
-        "originalPrice": "90.000₫",
+        "originalPrice": "110.000₫",
         "discount": "-8%"
       },
       {
         "name": "Size L",
         "price": "87.000₫",
-        "originalPrice": "90.000₫",
+        "originalPrice": "130.000₫",
         "discount": "-8%"
       }
     ],
@@ -92,13 +92,13 @@
       {
         "name": "Size M",
         "price": "24.000₫",
-        "originalPrice": "30.000₫",
+        "originalPrice": "40.000₫",
         "discount": "-7,14%"
       },
       {
         "name": "Size L",
         "price": "27.000₫",
-        "originalPrice": "30.000₫",
+        "originalPrice": "50.000₫",
         "discount": "-7,14%"
       }
     ],

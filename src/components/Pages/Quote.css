@@ -1,3 +1,8 @@
+/* ══════════════════════════════════════
+   QUOTE PAGE — Nâng cấp UI
+   ══════════════════════════════════════ */
+
+/* ── BASE ── */
 .q-page {
   max-width: 1280px;
   margin: 0 auto;
@@ -7,7 +12,7 @@
 
 /* ── HERO ── */
 .q-hero {
-  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  background: linear-gradient(135deg, #2D6B50 0%, #347A5C 100%);
   border-radius: 0 0 24px 24px;
   margin: 0 -24px 40px;
   padding: 56px 40px 52px;
@@ -20,8 +25,8 @@
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 60% 80% at 80% 50%, rgba(245, 158, 11, 0.12) 0%, transparent 70%),
-    radial-gradient(ellipse 40% 60% at 10% 80%, rgba(99, 102, 241, 0.08) 0%, transparent 60%);
+    radial-gradient(ellipse 60% 80% at 80% 50%, rgba(242, 237, 228, 0.12) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 60% at 10% 80%, rgba(242, 237, 228, 0.08) 0%, transparent 60%);
   pointer-events: none;
 }
 
@@ -34,9 +39,9 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: rgba(245, 158, 11, 0.15);
-  border: 1px solid rgba(245, 158, 11, 0.3);
-  color: #fbbf24;
+  background: rgba(242, 237, 228, 0.15);
+  border: 1px solid rgba(242, 237, 228, 0.3);
+  color: #F2EDE4;
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.05em;
@@ -51,7 +56,7 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #f59e0b;
+  background: #F2EDE4;
   animation: pulse-badge 2s infinite;
 }
 
@@ -63,7 +68,7 @@
 .q-hero-title {
   font-size: clamp(24px, 4vw, 36px);
   font-weight: 800;
-  color: #f8fafc;
+  color: #fff;
   margin: 0 0 12px;
   letter-spacing: -0.02em;
   line-height: 1.2;
@@ -71,7 +76,7 @@
 
 .q-hero-sub {
   font-size: 15px;
-  color: #94a3b8;
+  color: #F2EDE4;
   margin: 0;
   line-height: 1.7;
 }
@@ -99,7 +104,7 @@
 .q-tab {
   padding: 7px 16px;
   border-radius: 100px;
-  border: 1.5px solid #e2e8f0;
+  border: 1.5px solid #e5ddd0;
   background: #fff;
   font-size: 13.5px;
   font-weight: 600;
@@ -110,22 +115,22 @@
 }
 
 .q-tab:hover {
-  border-color: #f59e0b;
-  color: #d97706;
+  border-color: #347A5C;
+  color: #2D6B50;
 }
 
 .q-tab.active {
-  background: #f59e0b;
-  border-color: #f59e0b;
+  background: #347A5C;
+  border-color: #347A5C;
   color: #fff;
-  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+  box-shadow: 0 4px 12px rgba(52, 122, 92, 0.3);
 }
 
 /* ── TABLE CARD ── */
 .q-table-card {
   background: #fff;
   border-radius: 16px;
-  border: 1px solid #e8edf3;
+  border: 1px solid #e5ddd0;
   box-shadow: 0 4px 24px rgba(15, 23, 42, 0.06);
   overflow: hidden;
 }
@@ -135,13 +140,13 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px 24px 16px;
-  border-bottom: 1px solid #f1f5f9;
+  border-bottom: 1px solid #e5ddd0;
 }
 
 .q-table-title {
   font-size: 17px;
   font-weight: 700;
-  color: #0f172a;
+  color: #3C3C3B;
   margin: 0 0 2px;
 }
 
@@ -202,21 +207,21 @@
 .q-table thead th {
   position: sticky;
   top: 0;
-  background: #f8fafc;
+  background: #F2EDE4;
   z-index: 2;
   font-size: 11.5px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: #94a3b8;
+  color: #64748b;
   padding: 12px 16px;
-  border-bottom: 1px solid #e8edf3;
+  border-bottom: 1px solid #e5ddd0;
   text-align: left;
 }
 
 .q-table td {
   padding: 14px 16px;
-  border-bottom: 1px solid #f1f5f9;
+  border-bottom: 1px solid #e5ddd0;
   vertical-align: middle;
 }
 
@@ -225,7 +230,7 @@
 }
 
 .q-row:hover {
-  background: #fafbff;
+  background: #faf8f5;
 }
 
 /* Column widths */
@@ -234,7 +239,7 @@
 .col-price { width: 150px; }
 
 .td-stt {
-  color: #cbd5e1;
+  color: #94a3b8;
   font-size: 13px;
   font-weight: 600;
   text-align: center;
@@ -242,7 +247,7 @@
 
 .td-name {
   font-weight: 600;
-  color: #1e293b;
+  color: #3C3C3B;
   font-size: 14px;
 }
 
@@ -255,9 +260,9 @@
 
 .price-chip {
   display: inline-block;
-  background: #fffbeb;
-  border: 1px solid #fde68a;
-  color: #b45309;
+  background: #F2EDE4;
+  border: 1px solid #e5ddd0;
+  color: #2D6B50;
   font-weight: 700;
   font-size: 13.5px;
   padding: 3px 10px;
@@ -275,9 +280,9 @@
   padding: 12px 24px;
   font-size: 12px;
   color: #94a3b8;
-  border-top: 1px dashed #e2e8f0;
+  border-top: 1px dashed #e5ddd0;
   margin: 0;
-  background: #fafafa;
+  background: #faf8f5;
 }
 
 /* ── SKELETON LOADING ── */
@@ -297,7 +302,7 @@
 .q-sk {
   height: 14px;
   border-radius: 6px;
-  background: linear-gradient(90deg, #f1f5f9 25%, #e2e8f0 50%, #f1f5f9 75%);
+  background: linear-gradient(90deg, #F2EDE4 25%, #e5ddd0 50%, #F2EDE4 75%);
   background-size: 200% 100%;
   animation: shimmer 1.4s infinite;
 }
@@ -339,7 +344,7 @@
 .q-form-card {
   background: #fff;
   border-radius: 16px;
-  border: 1px solid #e8edf3;
+  border: 1px solid #e5ddd0;
   box-shadow: 0 8px 32px rgba(15, 23, 42, 0.08);
   overflow: hidden;
 }
@@ -349,15 +354,15 @@
   align-items: center;
   gap: 14px;
   padding: 20px 24px;
-  border-bottom: 1px solid #f1f5f9;
-  background: linear-gradient(135deg, #fffbeb 0%, #fff 100%);
+  border-bottom: 1px solid #e5ddd0;
+  background: linear-gradient(135deg, #F2EDE4 0%, #fff 100%);
 }
 
 .q-form-icon {
   width: 40px;
   height: 40px;
   border-radius: 10px;
-  background: #f59e0b;
+  background: #347A5C;
   color: #fff;
   display: flex;
   align-items: center;
@@ -368,7 +373,7 @@
 .q-form-title {
   font-size: 16px;
   font-weight: 800;
-  color: #0f172a;
+  color: #3C3C3B;
   margin: 0 0 2px;
 }
 
@@ -395,7 +400,7 @@
 .q-field label {
   font-size: 13px;
   font-weight: 700;
-  color: #334155;
+  color: #3C3C3B;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -412,7 +417,7 @@
   font-size: 11.5px;
   font-weight: 500;
   color: #94a3b8;
-  background: #f1f5f9;
+  background: #F2EDE4;
   padding: 1px 7px;
   border-radius: 4px;
 }
@@ -421,27 +426,27 @@
 .q-field textarea {
   width: 100%;
   padding: 11px 14px;
-  border: 1.5px solid #e2e8f0;
+  border: 1.5px solid #e5ddd0;
   border-radius: 10px;
   font-size: 14px;
-  color: #1e293b;
+  color: #3C3C3B;
   outline: none;
   transition: all 0.2s ease;
-  background: #f8fafc;
+  background: #F2EDE4;
   font-family: inherit;
   box-sizing: border-box;
 }
 
 .q-field input:focus,
 .q-field textarea:focus {
-  border-color: #f59e0b;
+  border-color: #347A5C;
   background: #fff;
-  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.12);
+  box-shadow: 0 0 0 3px rgba(52, 122, 92, 0.12);
 }
 
 .q-field input::placeholder,
 .q-field textarea::placeholder {
-  color: #c0c9d6;
+  color: #94a3b8;
 }
 
 .q-field textarea {
@@ -479,7 +484,7 @@
   gap: 8px;
   width: 100%;
   padding: 14px;
-  background: #f59e0b;
+  background: #347A5C;
   color: #fff;
   border: none;
   border-radius: 10px;
@@ -487,19 +492,19 @@
   font-weight: 700;
   cursor: pointer;
   transition: all 0.25s ease;
-  box-shadow: 0 4px 16px rgba(245, 158, 11, 0.25);
+  box-shadow: 0 4px 16px rgba(52, 122, 92, 0.25);
   margin-top: 4px;
 }
 
 .q-submit:hover:not(:disabled) {
-  background: #d97706;
+  background: #2D6B50;
   transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.35);
+  box-shadow: 0 6px 20px rgba(52, 122, 92, 0.35);
 }
 
 .q-submit:active:not(:disabled) {
   transform: translateY(0);
-  box-shadow: 0 2px 10px rgba(245, 158, 11, 0.2);
+  box-shadow: 0 2px 10px rgba(52, 122, 92, 0.2);
 }
 
 .q-submit:disabled {
@@ -566,7 +571,7 @@
 .q-success h3 {
   font-size: 17px;
   font-weight: 700;
-  color: #0f172a;
+  color: #3C3C3B;
   margin: 0;
 }
 
@@ -591,20 +596,20 @@
   gap: 7px;
   padding: 11px 16px;
   border-radius: 10px;
-  border: 1.5px solid #e2e8f0;
+  border: 1.5px solid #e5ddd0;
   background: #fff;
   font-size: 14px;
   font-weight: 600;
-  color: #334155;
+  color: #3C3C3B;
   text-decoration: none;
   transition: all 0.2s ease;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
 .q-chip:hover {
-  border-color: #f59e0b;
-  color: #d97706;
-  background: #fffbeb;
+  border-color: #347A5C;
+  color: #2D6B50;
+  background: #F2EDE4;
   transform: translateY(-1px);
 }
 

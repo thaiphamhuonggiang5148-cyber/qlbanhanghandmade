@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "code": "SMade01",
+    "type": "fixed",
+    "value": "100,000",
+    "min_order": "500,000",
+    "status": "active",
+    "limit": 20,
+    "used": 5
+  },
+  {
+    "id": 2,
+    "code": "SMade02",
+    "type": "percent",
+    "value": "20%",
+    "min_order": "150,000",
+    "status": "active",
+    "limit": 6,
+    "used": 7
+  }
+]

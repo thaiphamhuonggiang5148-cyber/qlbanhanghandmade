@@ -1,0 +1,46 @@
+:root {
+  --green-main: #347A5C;
+  --green-light: #F2EDE4;
+  --text-main: #3C3C3B;
+}
+
+.smade-loader-wrapper {
+  position: fixed;
+  inset: 0;
+  background: var(--green-light); 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  gap: 20px;
+}
+
+.smade-spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid #c0d1c9; 
+   border-top-color: var(--green-main);
+  border-right-color: var(--green-main);
+  border-radius: 50%;
+  animation: spin 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
+}
+
+.smade-loader-text {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--green-main); 
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  animation: pulse-text 1.5s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulse-text {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}

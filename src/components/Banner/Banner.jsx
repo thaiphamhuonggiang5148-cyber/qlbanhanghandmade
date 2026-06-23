@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import './Banner.css';
-import ban1Image from '../../img/banner1.jpg'; 
+import ban1Image from '../../img/banner1.jpg';
 import ban2Image from '../../img/banner2.jpg';
-
 
 const Banner = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const banners = [
-        ban1Image, ban2Image
-    ];
+    { id: 1, src: ban1Image, alt: "Banner 1" },
+    { id: 2, src: ban2Image, alt: "Banner 2" }
+];
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -28,26 +28,24 @@ const Banner = () => {
 
     return (
         <div className="banner-carousel">
-            <div className="banner-wrapper">
-                {banners.map((banner, index) => (
-                    <div
-                        key={index}
-                        className={`banner-slide ${index === currentIndex ? 'active' : ''}`}
-                    >
-                        <img
-                            src={banner}
-                            alt={`Banner ${index + 1}`}
-                            className="banner-image"
-                        />
-                    </div>
-                ))}
+         <div className="banner-wrapper">
+        {banners.map((banner, index) => ( 
+            <div
+                key={banner.id} 
+                className={`banner-slide ${index === currentIndex ? 'active' : ''}`} 
+            >
+                <img
+                    src={banner.src}
+                    alt={banner.alt}
+                    className="banner-image"
+                />
             </div>
+        ))}
+    </div>
 
-            {/* Nút điều hướng */}
             <button className="nav-btn prev" onClick={prevSlide}>&#10094;</button>
             <button className="nav-btn next" onClick={nextSlide}>&#10095;</button>
 
-            {/* Dots indicator */}
             <div className="banner-dots">
                 {banners.map((_, index) => (
                     <span

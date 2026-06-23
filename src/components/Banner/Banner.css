@@ -43,7 +43,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(52, 122, 92, 0.6);
     color: white;
     border: none;
     cursor: pointer;
@@ -60,7 +60,7 @@
 }
 
 .nav-btn:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(52, 122, 92, 1); 
     transform: translateY(-50%) scale(1.1);
 }
 
@@ -99,9 +99,9 @@
 }
 
 .dot.active {
-    background-color: #ff6b00; 
+    background-color: #347A5C; 
     transform: scale(1.3);
-    box-shadow: 0 0 8px rgba(255, 107, 0, 0.6);
+    box-shadow: 0 0 8px rgba(52, 122, 92, 0.6);
 }
 
 @media (max-width: 768px) {

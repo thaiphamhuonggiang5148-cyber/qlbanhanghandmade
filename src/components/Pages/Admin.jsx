@@ -6,6 +6,7 @@ import AdminCustomer from './AdminCustomer';
 import AdminEmployee from './AdminEmployee';
 import AdminBill from './AdminBill';
 import AdminInvoiceDetails from './AdminInvoiceDetails';
+import AdminVoucher from './AdminVoucher'; // Thêm import AdminVoucher
 import "./Admin.css";
 const jsonBase = import.meta.env.BASE_URL || "/";
 const SECTION_LABEL = {
@@ -16,6 +17,7 @@ const SECTION_LABEL = {
   employee: "Nhân viên",
   bill: "Hóa đơn",
   invoiceDetails: "Chi tiết hóa đơn",
+  voucher: "Mã giảm giá", // Thêm label cho voucher
 };
 function fmtNumber(n) {
   return String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
@@ -91,7 +93,7 @@ const Admin = () => {
           fetch(`${jsonBase}Employee.json`),
           fetch(`${jsonBase}Invoicedetails.json`)
         ]);
-        if (!pRes.ok) throw new Error("Không tải được product.json");
+        if (!pRes.ok) throw new Error("Không tải được Products.json");
         const pdata = await pRes.json();
         setProducts(Array.isArray(pdata) ? pdata : []);
         if (cRes.ok) {
@@ -276,7 +278,7 @@ const Admin = () => {
           <span className="ruang-sidebar_brand-icon">
             <i className="fa-solid fa-layer-group" aria-hidden />
           </span>
-          <span>Moon VLXD</span>
+          <span>SoulNade</span>
         </div>
         <hr className="ruang-sidebar_divider" />
         <div className="ruang-sidebar_heading">Hệ thống</div>
@@ -306,6 +308,16 @@ const Admin = () => {
               onClick={() => { setAdminSection("category"); closeMobileNav(); }}
             >
               <i className="fa-solid fa-tags" aria-hidden /> Danh mục Vật liệu
+            </button>
+          </li>
+          {/* NÚT THÊM VOUCHER */}
+          <li>
+            <button
+              type="button"
+              className={`ruang-sidebar_link ${adminSection === "voucher" ? "is-active" : ""}`}
+              onClick={() => { setAdminSection("voucher"); closeMobileNav(); }}
+            >
+              <i className="fa-solid fa-ticket" aria-hidden /> Quản lý Voucher
             </button>
           </li>
           <li>
@@ -394,178 +406,180 @@ const Admin = () => {
               <i className="fa-solid fa-triangle-exclamation" style={{ marginRight: '8px' }} /> {loadError}
             </div>
           )}
+          {/* HIỂN THỊ COMPONENT TƯƠNG ỨNG */}
           {adminSection === "products" ? <AdminProduct embedded={true} /> :
             adminSection === "category" ? <AdminCategory embedded={true} /> :
-              adminSection === "customer" ? <AdminCustomer embedded={true} /> :
-                adminSection === "employee" ? <AdminEmployee embedded={true} /> :
-                  adminSection === "bill" ? <AdminBill embedded={true} /> :
-                    adminSection === "invoiceDetails" ? <AdminInvoiceDetails embedded={true} /> :
-                      loading ? (
-                        <div className="ruang-loading" style={{ padding: '2rem', textAlign: 'center', fontWeight: '600', color: '#64748b' }}>
-                          <i className="fa-solid fa-spinner fa-spin" style={{ marginRight: '10px', fontSize: '1.2rem' }} /> Đang khởi tạo Dashboard...
-                        </div>
-                      ) : (
-                        <>
-                          <div className="ruang-cards">
-                            <div className="ruang-stat-card">
-                              <div className="ruang-stat-card_body">
-                                <div className="ruang-stat-card_label">Tổng Doanh Thu</div>
-                                <div className="ruang-stat-card_value" style={{ color: 'var(--primary)' }}>{fmtCurrency(stats.revenue)}</div>
-                                <div className="ruang-stat-card_badge">{fmtNumber(bills.length)} đơn thành công</div>
-                              </div>
-                              <div className="ruang-stat-card_icon" aria-hidden>
-                                <i className="fa-solid fa-wallet" />
-                              </div>
-                            </div>
-                            <div className="ruang-stat-card ruang-stat-card--green">
-                              <div className="ruang-stat-card_body">
-                                <div className="ruang-stat-card_label">Vật Liệu Đã Bán</div>
-                                <div className="ruang-stat-card_value">{fmtNumber(stats.soldSum)}</div>
-                                <div className="ruang-stat-card_badge">Từ hệ thống hóa đơn</div>
-                              </div>
-                              <div className="ruang-stat-card_icon" aria-hidden>
-                                <i className="fa-solid fa-boxes-packing" />
-                              </div>
-                            </div>
-                            <div className="ruang-stat-card ruang-stat-card--cyan">
-                              <div className="ruang-stat-card_body">
-                                <div className="ruang-stat-card_label">Mạng Lưới Đối Tác</div>
-                                <div className="ruang-stat-card_value">{fmtNumber(customers.length)}</div>
-                                <div className="ruang-stat-card_badge">{fmtNumber(employees.length)} nhân sự nội bộ</div>
-                              </div>
-                              <div className="ruang-stat-card_icon" aria-hidden>
-                                <i className="fa-solid fa-users-rays" />
-                              </div>
-                            </div>
-                            <div className="ruang-stat-card ruang-stat-card--amber">
-                              <div className="ruang-stat-card_body">
-                                <div className="ruang-stat-card_label">Danh Mục / Hóa Đơn TB</div>
-                                <div className="ruang-stat-card_value">{fmtNumber(stats.catCount)} / {fmtCurrency(stats.avgBill)}</div>
-                                <div className="ruang-stat-card_badge" style={{ background: stats.uncategorized > 0 ? '#fee2e2' : '#d1fae5', color: stats.uncategorized > 0 ? 'var(--danger)' : 'var(--success)' }}>
-                                  {stats.uncategorized > 0 ? `${stats.uncategorized} SP chưa phân loại` : "Dữ liệu đồng bộ chuẩn"}
+              adminSection === "voucher" ? <AdminVoucher embedded={true} /> : // Render AdminVoucher
+                adminSection === "customer" ? <AdminCustomer embedded={true} /> :
+                  adminSection === "employee" ? <AdminEmployee embedded={true} /> :
+                    adminSection === "bill" ? <AdminBill embedded={true} /> :
+                      adminSection === "invoiceDetails" ? <AdminInvoiceDetails embedded={true} /> :
+                        loading ? (
+                          <div className="ruang-loading" style={{ padding: '2rem', textAlign: 'center', fontWeight: '600', color: 'var(--text-muted)' }}>
+                            <i className="fa-solid fa-spinner fa-spin" style={{ marginRight: '10px', fontSize: '1.2rem' }} /> Đang khởi tạo Dashboard...
+                          </div>
+                        ) : (
+                          <>
+                            <div className="ruang-cards">
+                              <div className="ruang-stat-card">
+                                <div className="ruang-stat-card_body">
+                                  <div className="ruang-stat-card_label">Tổng Doanh Thu</div>
+                                  <div className="ruang-stat-card_value" style={{ color: 'var(--primary)' }}>{fmtCurrency(stats.revenue)}</div>
+                                  <div className="ruang-stat-card_badge">{fmtNumber(bills.length)} đơn thành công</div>
+                                </div>
+                                <div className="ruang-stat-card_icon" aria-hidden>
+                                  <i className="fa-solid fa-wallet" />
                                 </div>
                               </div>
-                              <div className="ruang-stat-card_icon" aria-hidden>
-                                <i className="fa-solid fa-chart-line" />
+                              <div className="ruang-stat-card ruang-stat-card--green">
+                                <div className="ruang-stat-card_body">
+                                  <div className="ruang-stat-card_label">Vật Liệu Đã Bán</div>
+                                  <div className="ruang-stat-card_value">{fmtNumber(stats.soldSum)}</div>
+                                  <div className="ruang-stat-card_badge">Từ hệ thống hóa đơn</div>
+                                </div>
+                                <div className="ruang-stat-card_icon" aria-hidden>
+                                  <i className="fa-solid fa-boxes-packing" />
+                                </div>
+                              </div>
+                              <div className="ruang-stat-card ruang-stat-card--cyan">
+                                <div className="ruang-stat-card_body">
+                                  <div className="ruang-stat-card_label">Mạng Lưới Đối Tác</div>
+                                  <div className="ruang-stat-card_value">{fmtNumber(customers.length)}</div>
+                                  <div className="ruang-stat-card_badge">{fmtNumber(employees.length)} nhân sự nội bộ</div>
+                                </div>
+                                <div className="ruang-stat-card_icon" aria-hidden>
+                                  <i className="fa-solid fa-users-rays" />
+                                </div>
+                              </div>
+                              <div className="ruang-stat-card ruang-stat-card--amber">
+                                <div className="ruang-stat-card_body">
+                                  <div className="ruang-stat-card_label">Danh Mục / Hóa Đơn TB</div>
+                                  <div className="ruang-stat-card_value">{fmtNumber(stats.catCount)} / {fmtCurrency(stats.avgBill)}</div>
+                                  <div className="ruang-stat-card_badge" style={{ background: stats.uncategorized > 0 ? '#fee2e2' : '#d1fae5', color: stats.uncategorized > 0 ? 'var(--danger)' : 'var(--success)' }}>
+                                    {stats.uncategorized > 0 ? `${stats.uncategorized} SP chưa phân loại` : "Dữ liệu đồng bộ chuẩn"}
+                                  </div>
+                                </div>
+                                <div className="ruang-stat-card_icon" aria-hidden>
+                                  <i className="fa-solid fa-chart-line" />
+                                </div>
                               </div>
                             </div>
-                          </div>
-                          <div className="ruang-dashboard-grid">
-                            <div className="ruang-card">
-                              <div className="ruang-card_title-bar">
-                                <h6><i className="fa-solid fa-chart-column" style={{ marginRight: '8px', color: 'var(--primary)' }} /> Thống kê doanh thu theo ngày</h6>
-                              </div>
-                              <div className="ruang-revenue-list">
-                                {revenuePagedRows.map((row) => (
-                                  <div className="ruang-revenue-item" key={row.date}>
-                                    <div className="ruang-revenue-item_head">
-                                      <span style={{ fontWeight: '600' }}><i className="fa-regular fa-calendar" style={{ marginRight: '6px' }} />{row.date}</span>
-                                      <strong style={{ color: 'var(--text-main)' }}>{fmtCurrency(row.total)}</strong>
+                            <div className="ruang-dashboard-grid">
+                              <div className="ruang-card">
+                                <div className="ruang-card_title-bar">
+                                  <h6><i className="fa-solid fa-chart-column" style={{ marginRight: '8px', color: 'var(--primary)' }} /> Thống kê doanh thu theo ngày</h6>
+                                </div>
+                                <div className="ruang-revenue-list">
+                                  {revenuePagedRows.map((row) => (
+                                    <div className="ruang-revenue-item" key={row.date}>
+                                      <div className="ruang-revenue-item_head">
+                                        <span style={{ fontWeight: '600' }}><i className="fa-regular fa-calendar" style={{ marginRight: '6px' }} />{row.date}</span>
+                                        <strong style={{ color: 'var(--text-main)' }}>{fmtCurrency(row.total)}</strong>
+                                      </div>
+                                      <div className="ruang-revenue-item_bar">
+                                        <div className="ruang-revenue-item_fill" style={{ width: `${row.percent}%` }} />
+                                      </div>
                                     </div>
-                                    <div className="ruang-revenue-item_bar">
-                                      <div className="ruang-revenue-item_fill" style={{ width: `${row.percent}%` }} />
-                                    </div>
+                                  ))}
+                                </div>
+                                {revenueTotalPages > 1 && (
+                                  <div style={{ padding: '1rem', borderTop: '1px solid var(--border)', display: 'flex', justifyContent: 'center', gap: '1rem', alignItems: 'center' }}>
+                                    <button className="ruang-mini-btn" onClick={() => setRevenuePage((p) => p - 1)} disabled={revenuePage === 0}>
+                                      <i className="fa-solid fa-chevron-left" /> Trước
+                                    </button>
+                                    <span style={{ fontWeight: '700', fontSize: '0.9rem' }}>Trang {revenuePage + 1} / {revenueTotalPages}</span>
+                                    <button className="ruang-mini-btn" onClick={() => setRevenuePage((p) => p + 1)} disabled={revenuePage + 1 >= revenueTotalPages}>
+                                      Sau <i className="fa-solid fa-chevron-right" />
+                                    </button>
                                   </div>
-                                ))}
+                                )}
                               </div>
-                              {revenueTotalPages > 1 && (
-                                <div style={{ padding: '1rem', borderTop: '1px solid var(--border)', display: 'flex', justifyContent: 'center', gap: '1rem', alignItems: 'center' }}>
-                                  <button className="ruang-mini-btn" onClick={() => setRevenuePage((p) => p - 1)} disabled={revenuePage === 0}>
-                                    <i className="fa-solid fa-chevron-left" /> Trước
-                                  </button>
-                                  <span style={{ fontWeight: '700', fontSize: '0.9rem' }}>Trang {revenuePage + 1} / {revenueTotalPages}</span>
-                                  <button className="ruang-mini-btn" onClick={() => setRevenuePage((p) => p + 1)} disabled={revenuePage + 1 >= revenueTotalPages}>
-                                    Sau <i className="fa-solid fa-chevron-right" />
+                              <div className="ruang-card">
+                                <div className="ruang-card_title-bar">
+                                  <h6><i className="fa-solid fa-fire-flame-curved" style={{ marginRight: '8px', color: 'var(--danger)' }} /> Top Bán Chạy</h6>
+                                </div>
+                                <div className="ruang-sold-list">
+                                  {topSoldProducts.map((item, idx) => (
+                                    <div className="ruang-sold-item" key={item.id}>
+                                      <div className="ruang-sold-item_head">
+                                        <span style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', maxWidth: '70%' }}>{item.name}</span>
+                                        <strong style={{ color: 'var(--primary)' }}>{item.sold}</strong>
+                                      </div>
+                                      <div className="ruang-sold-item_bar">
+                                        <div className={`ruang-sold-item_fill ruang-sold-item_fill--${idx % 4}`} style={{ width: `${item.percent}%` }} />
+                                      </div>
+                                    </div>
+                                  ))}
+                                </div>
+                              </div>
+                            </div>
+                            <div className="ruang-bottom-grid">
+                              <div className="ruang-card">
+                                <div className="ruang-card_title-bar">
+                                  <h6><i className="fa-solid fa-clock-rotate-left" style={{ marginRight: '8px', color: 'var(--primary)' }} /> Giao dịch gần đây</h6>
+                                  <button type="button" className="ruang-detail-btn" onClick={() => setAdminSection("bill")}>
+                                    Xem toàn bộ <i className="fa-solid fa-arrow-right" style={{ marginLeft: '4px' }} />
                                   </button>
                                 </div>
-                              )}
-                            </div>
-                            <div className="ruang-card">
-                              <div className="ruang-card_title-bar">
-                                <h6><i className="fa-solid fa-fire-flame-curved" style={{ marginRight: '8px', color: 'var(--danger)' }} /> Top Bán Chạy</h6>
-                              </div>
-                              <div className="ruang-sold-list">
-                                {topSoldProducts.map((item, idx) => (
-                                  <div className="ruang-sold-item" key={item.id}>
-                                    <div className="ruang-sold-item_head">
-                                      <span style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', maxWidth: '70%' }}>{item.name}</span>
-                                      <strong style={{ color: 'var(--primary)' }}>{item.sold}</strong>
-                                    </div>
-                                    <div className="ruang-sold-item_bar">
-                                      <div className={`ruang-sold-item_fill ruang-sold-item_fill--${idx % 4}`} style={{ width: `${item.percent}%` }} />
-                                    </div>
-                                  </div>
-                                ))}
-                              </div>
-                            </div>
-                          </div>
-                          <div className="ruang-bottom-grid">
-                            <div className="ruang-card">
-                              <div className="ruang-card_title-bar">
-                                <h6><i className="fa-solid fa-clock-rotate-left" style={{ marginRight: '8px', color: 'var(--primary)' }} /> Giao dịch gần đây</h6>
-                                <button type="button" className="ruang-detail-btn" onClick={() => setAdminSection("bill")}>
-                                  Xem toàn bộ <i className="fa-solid fa-arrow-right" style={{ marginLeft: '4px' }} />
-                                </button>
-                              </div>
-                              <div className="admin-table-wrap" style={{ padding: '0' }}>
-                                <table className="admin-table" style={{ borderSpacing: 0 }}>
-                                  <thead>
-                                    <tr>
-                                      <th style={{ borderBottom: '1px solid var(--border)' }}>ID</th>
-                                      <th style={{ borderBottom: '1px solid var(--border)' }}>Khách hàng</th>
-                                      <th style={{ borderBottom: '1px solid var(--border)' }}>Mặt hàng đầu tiên</th>
-                                      <th style={{ borderBottom: '1px solid var(--border)' }}>Trạng thái</th>
-                                      <th style={{ borderBottom: '1px solid var(--border)', textAlign: 'right' }}>Thao tác</th>
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    {billTableRows.map((row) => (
-                                      <tr key={row.id} style={{ boxShadow: 'none', borderBottom: '1px solid var(--bg-app)' }}>
-                                        <td style={{ fontWeight: '700', color: 'var(--primary)' }}>#{row.billCode}</td>
-                                        <td style={{ fontWeight: '600' }}><i className="fa-solid fa-user" style={{ marginRight: '6px', opacity: 0.5 }} />{row.customerName}</td>
-                                        <td>{row.itemName}</td>
-                                        <td>
-                                          <span className={`ruang-status ruang-status--${row.status.cls}`}>{row.status.label}</span>
-                                        </td>
-                                        <td style={{ textAlign: 'right' }}>
-                                          <button type="button" className="admin-table_link" onClick={() => setAdminSection("bill")}>
-                                            <i className="fa-solid fa-eye" /> Chi tiết
-                                          </button>
-                                        </td>
+                                <div className="admin-table-wrap" style={{ padding: '0' }}>
+                                  <table className="admin-table" style={{ borderSpacing: 0 }}>
+                                    <thead>
+                                      <tr>
+                                        <th style={{ borderBottom: '1px solid var(--border)' }}>ID</th>
+                                        <th style={{ borderBottom: '1px solid var(--border)' }}>Khách hàng</th>
+                                        <th style={{ borderBottom: '1px solid var(--border)' }}>Mặt hàng đầu tiên</th>
+                                        <th style={{ borderBottom: '1px solid var(--border)' }}>Trạng thái</th>
+                                        <th style={{ borderBottom: '1px solid var(--border)', textAlign: 'right' }}>Thao tác</th>
                                       </tr>
-                                    ))}
-                                  </tbody>
-                                </table>
+                                    </thead>
+                                    <tbody>
+                                      {billTableRows.map((row) => (
+                                        <tr key={row.id} style={{ boxShadow: 'none', borderBottom: '1px solid var(--bg-app)' }}>
+                                          <td style={{ fontWeight: '700', color: 'var(--primary)' }}>#{row.billCode}</td>
+                                          <td style={{ fontWeight: '600' }}><i className="fa-solid fa-user" style={{ marginRight: '6px', opacity: 0.5 }} />{row.customerName}</td>
+                                          <td>{row.itemName}</td>
+                                          <td>
+                                            <span className={`ruang-status ruang-status--${row.status.cls}`}>{row.status.label}</span>
+                                          </td>
+                                          <td style={{ textAlign: 'right' }}>
+                                            <button type="button" className="admin-table_link" onClick={() => setAdminSection("bill")}>
+                                              <i className="fa-solid fa-eye" /> Chi tiết
+                                            </button>
+                                          </td>
+                                        </tr>
+                                      ))}
+                                    </tbody>
+                                  </table>
+                                </div>
                               </div>
-                            </div>
-                            <div className="ruang-card">
-                              <div className="ruang-card_title-bar">
-                                <h6><i className="fa-solid fa-crown" style={{ marginRight: '8px', color: 'var(--warning)' }} /> Khách VIP (Tháng này)</h6>
-                              </div>
-                              <div style={{ padding: '1.5rem', display: 'flex', flexDirection: 'column', gap: '1.2rem' }}>
-                                {vipCustomers.map((vip, index) => (
-                                  <div key={vip.customerId} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingBottom: '1rem', borderBottom: index < vipCustomers.length - 1 ? '1px dashed var(--border)' : 'none' }}>
-                                    <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                                      <div style={{ width: '40px', height: '40px', borderRadius: '50%', background: index === 0 ? '#fef3c7' : index === 1 ? '#f1f5f9' : index === 2 ? '#ffedd5' : 'var(--primary-light)', color: index === 0 ? '#d97706' : index === 1 ? '#475569' : index === 2 ? '#c2410c' : 'var(--primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: '800', fontSize: '1.1rem' }}>
-                                        {index + 1}
+                              <div className="ruang-card">
+                                <div className="ruang-card_title-bar">
+                                  <h6><i className="fa-solid fa-crown" style={{ marginRight: '8px', color: 'var(--warning)' }} /> Khách VIP (Tháng này)</h6>
+                                </div>
+                                <div style={{ padding: '1.5rem', display: 'flex', flexDirection: 'column', gap: '1.2rem' }}>
+                                  {vipCustomers.map((vip, index) => (
+                                    <div key={vip.customerId} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingBottom: '1rem', borderBottom: index < vipCustomers.length - 1 ? '1px dashed var(--border)' : 'none' }}>
+                                      <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                                        <div style={{ width: '40px', height: '40px', borderRadius: '50%', background: index === 0 ? '#fef3c7' : index === 1 ? '#f1f5f9' : index === 2 ? '#ffedd5' : 'var(--primary-light)', color: index === 0 ? '#d97706' : index === 1 ? '#475569' : index === 2 ? '#c2410c' : 'var(--primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: '800', fontSize: '1.1rem' }}>
+                                          {index + 1}
+                                        </div>
+                                        <div>
+                                          <strong style={{ display: 'block', color: 'var(--text-main)', fontSize: '0.95rem' }}>{vip.name}</strong>
+                                          <small style={{ color: 'var(--text-muted)', fontWeight: '600' }}><i className="fa-solid fa-bag-shopping" style={{ marginRight: '4px' }} /> {vip.count} đơn hàng</small>
+                                        </div>
                                       </div>
-                                      <div>
-                                        <strong style={{ display: 'block', color: 'var(--text-main)', fontSize: '0.95rem' }}>{vip.name}</strong>
-                                        <small style={{ color: 'var(--text-muted)', fontWeight: '600' }}><i className="fa-solid fa-bag-shopping" style={{ marginRight: '4px' }} /> {vip.count} đơn hàng</small>
+                                      <div style={{ fontWeight: '800', color: 'var(--success)' }}>
+                                        {fmtCurrency(vip.total)}
                                       </div>
                                     </div>
-                                    <div style={{ fontWeight: '800', color: 'var(--success)' }}>
-                                      {fmtCurrency(vip.total)}
-                                    </div>
-                                  </div>
-                                ))}
+                                  ))}
+                                </div>
                               </div>
                             </div>
-                          </div>
-                        </>
-                      )}
+                          </>
+                        )}
         </main>
-        <footer className="ruang-footer">Hệ thống Quản trị viên - Moon Vật Liệu Xây Dựng &copy; {new Date().getFullYear()}</footer>
+        <footer className="ruang-footer">Hệ thống Quản trị viên - SoulMade &copy; {new Date().getFullYear()}</footer>
       </div>
       {logoutModalOpen && (
         <div className="ruang-modal-backdrop" role="dialog" aria-modal="true">

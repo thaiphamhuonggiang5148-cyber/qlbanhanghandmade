@@ -178,7 +178,7 @@ function AdminEmployee({ embedded = false }) {
   const getRoleBadge = (roleRaw) => {
     const role = String(roleRaw || 'staff').toLowerCase().trim();
     if (role === 'admin') {
-      return <span className="ruang-status" style={{ background: '#4f46e5', color: '#fff' }}><i className="fa-solid fa-user-shield" style={{ marginRight: '6px' }} /> Quản trị viên</span>;
+      return <span className="ruang-status" style={{ background: 'var(--primary)', color: '#fff' }}><i className="fa-solid fa-user-shield" style={{ marginRight: '6px' }} /> Quản trị viên</span>;
     }
     return <span className="ruang-status" style={{ background: '#e2e8f0', color: '#475569' }}><i className="fa-solid fa-user-tag" style={{ marginRight: '6px' }} /> Nhân viên</span>;
   };
@@ -197,7 +197,7 @@ function AdminEmployee({ embedded = false }) {
         </div>
       )}
       {loading ? (
-        <div className="ruang-loading" style={{ padding: '2rem', textAlign: 'center', fontWeight: '600', color: '#64748b' }}>
+        <div className="ruang-loading" style={{ padding: '2rem', textAlign: 'center', fontWeight: '600', color: 'var(--text-muted)' }}>
           <i className="fa-solid fa-spinner fa-spin" style={{ marginRight: '10px', fontSize: '1.2rem' }} />
           Đang tải danh sách nhân sự...
         </div>
@@ -247,7 +247,7 @@ function AdminEmployee({ embedded = false }) {
               <tbody>
                 {displayedRows.length === 0 ? (
                   <tr>
-                    <td colSpan={6} className="admin-table_empty" style={{ textAlign: 'center', padding: '3rem', color: '#94a3b8' }}>
+                    <td colSpan={6} className="admin-table_empty" style={{ textAlign: 'center', padding: '3rem', color: 'var(--text-muted)' }}>
                       <i className="fa-solid fa-user-xmark" style={{ display: 'block', fontSize: '2rem', marginBottom: '1rem' }} />
                       {appliedSearchId.trim()
                         ? `Không tìm thấy nhân viên nào có ID "${appliedSearchId.trim()}".`
@@ -257,7 +257,7 @@ function AdminEmployee({ embedded = false }) {
                 ) : (
                   displayedRows.map((r) => (
                     <tr key={r.id}>
-                      <td style={{ fontWeight: '700', color: '#4f46e5' }}>#{r.id}</td>
+                      <td style={{ fontWeight: '700', color: 'var(--primary)' }}>#{r.id}</td>
                       <td style={{ fontWeight: '600' }}>{r.name}</td>
                       <td><i className="fa-solid fa-phone" style={{ marginRight: '6px', opacity: 0.5, fontSize: '0.85rem' }} />{r.phone}</td>
                       <td><i className="fa-solid fa-envelope" style={{ marginRight: '6px', opacity: 0.5, fontSize: '0.85rem' }} />{r.email || '---'}</td>
@@ -292,14 +292,14 @@ function AdminEmployee({ embedded = false }) {
       ) : (
         <form className="admin-form-card" onSubmit={handleSubmitForm}>
           <h2>
-            <i className="fa-solid fa-id-badge" style={{ marginRight: '10px', color: '#4f46e5' }} />
+            <i className="fa-solid fa-id-badge" style={{ marginRight: '10px', color: 'var(--primary)' }} />
             {isNew ? 'Đăng ký hồ sơ nhân sự mới' : `Cập nhật hồ sơ nhân sự #${form.id}`}
           </h2>
           <div className="admin-form-grid">
             {!isNew && (
               <label>
                 Mã định danh (ID)
-                <input value={form.id} readOnly style={{ background: '#e2e8f0', cursor: 'not-allowed', fontWeight: 'bold' }} />
+                <input value={form.id} readOnly className="input-readonly" />
               </label>
             )}
             <label className={isNew ? 'admin-form-grid_full' : ''}>
@@ -368,14 +368,14 @@ function AdminEmployee({ embedded = false }) {
     <div className="admin-page">
       <header className="admin-topbar">
         <h1 className="admin-topbar_title">
-          <i className="fa-solid fa-user-tie" style={{ marginRight: '12px', color: '#4f46e5' }} />
+          <i className="fa-solid fa-user-tie" style={{ marginRight: '12px', color: 'var(--primary)' }} />
           Hệ thống Quản lý Nhân sự
         </h1>
         <div className="admin-topbar_actions">
           <button type="button" className="admin-btn admin-btn--ghost" onClick={goHome}>
             <i className="fa-solid fa-house" /> Trang chủ
           </button>
-          <button type="button" className="admin-btn" style={{ background: '#ef4444' }} onClick={logout}>
+          <button type="button" className="admin-btn admin-btn--danger" onClick={logout}>
             <i className="fa-solid fa-right-from-bracket" /> Đăng xuất
           </button>
         </div>
