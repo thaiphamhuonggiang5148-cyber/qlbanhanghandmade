@@ -14,7 +14,7 @@ import Checkout from "./components/Pages/Checkout";
 import News from "./components/Pages/News";
 import NewsDetail from "./components/Pages/NewsDetail";
 import Contact from "./components/Pages/Contact";
-import Loading from "./components/Pages/Loading";
+import Loading from './components/loading/Loading';
 import Banner from "./components/Banner/Banner";
 import Login from "./components/Pages/Login";
 import Signup from "./components/Pages/Signup";
