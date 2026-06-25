@@ -1,4 +1,4 @@
-:@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap");
 
 :root {
   --primary:        #347A5C;
@@ -1750,9 +1750,7 @@ h1, h2, h3, h4, h5, h6, .font-nunito {
 .ruang-sold-item_fill--2 { background: linear-gradient(90deg, #DC2626, #F87171); }
 .ruang-sold-item_fill--3 { background: linear-gradient(90deg, #A84406, #F79009); }
 
-/* ================================================================
-   TABLES
-   ================================================================ */
+
 .admin-table-wrap {
   overflow-x: auto;
   padding: 0.6rem 0.75rem;

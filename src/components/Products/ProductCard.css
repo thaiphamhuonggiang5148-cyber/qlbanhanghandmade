@@ -1,24 +1,24 @@
 .product-card {
-  background: #ffffff;
+  background: #F2EDE4;
   border-radius: 16px;
   padding: 20px;
   display: flex;
   flex-direction: column;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-  border: 1px solid #f1f5f9;
+  box-shadow: 0 4px 15px rgba(30, 59, 47, 0.06);
+  border: 1px solid #E5EFEB;
   height: 100%;
 }
 
 .product-card:hover {
-  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 12px 30px rgba(30, 59, 47, 0.12);
   transform: translateY(-4px);
-  border-color: #e2e8f0;
+  border-color: #CEDFDA;
 }
 
 .product-image-container {
   text-align: center;
-  background: #f8fafc;
+  background: #EAF4EF;
   border-radius: 12px;
   padding: 16px;
   margin-bottom: 20px;
@@ -37,7 +37,7 @@
 .product-name {
   font-size: 18px;
   font-weight: 700;
-  color: #1e293b;
+  color: #1E3B2F;
   margin: 0 0 12px 0;
   line-height: 1.4;
   display: -webkit-box;
@@ -49,38 +49,37 @@
 
 .product-ram-ssd {
   display: flex;
-  flex-wrap: nowrap; /* Ép cứng trên 1 dòng, không cho rớt */
-  gap: 4px; /* Thu hẹp khoảng cách giữa các nút */
+  flex-wrap: nowrap;
+  gap: 4px;
   margin-bottom: 16px;
   width: 100%;
 }
 
 .ram-ssd-tag {
-  flex: 1; 
-  background: #f1f5f9;
-  color: #475569;
+  flex: 1;
+  background: #347A5C;
+  color: #3C3C3B;
   padding: 6px 2px;
   border-radius: 6px;
   font-size: 11px;
   font-weight: 600;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #CEDFDA;
   white-space: nowrap;
   text-align: center;
   overflow: hidden;
   text-overflow: ellipsis;
-  cursor: pointer; /* Thêm cái này để biến chuột thành bàn tay */
+  cursor: pointer;
   transition: all 0.2s ease;
 }
 
-/* Thêm hiệu ứng hover và nút đang chọn (active) */
 .ram-ssd-tag:hover {
-  background: #e2e8f0;
+  background: #CEDFDA;
 }
 
 .ram-ssd-tag.active {
-  background-color: #f59e0b; /* Nền vàng */
-  color: #ffffff; /* Chữ trắng */
-  border-color: #f59e0b;
+  background-color: #347A5C;
+  color: #F2EDE4;
+  border-color: #347A5C;
 }
 
 .product-pricing {
@@ -91,7 +90,7 @@
 .current-price {
   font-size: 22px;
   font-weight: 800;
-  color: #f59e0b;
+  color: #347A5C;
   margin-bottom: 4px;
 }
 
@@ -103,7 +102,7 @@
 
 .original-price {
   font-size: 14px;
-  color: #94a3b8;
+  color: #7FA090;
   text-decoration: line-through;
   font-weight: 500;
 }
@@ -123,17 +122,17 @@
   align-items: center;
   margin-bottom: 16px;
   font-size: 13px;
-  color: #64748b;
+  color: #5A7A6B;
   font-weight: 600;
 }
 
-.rating { color: #f59e0b; }
+.rating { color: #347A5C; }
 
 .compare-button {
   width: 100%;
   padding: 12px;
-  background: #1e293b;
-  color: white;
+  background: #1E3B2F;
+  color: #F2EDE4;
   border: none;
   border-radius: 10px;
   font-size: 15px;
@@ -144,12 +143,12 @@
 }
 
 .compare-button:hover {
-  background: #f59e0b;
-  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.25);
+  background: #347A5C;
+  box-shadow: 0 4px 12px rgba(52, 122, 92, 0.28);
 }
 
 .compare-button:disabled {
-  background: #cbd5e1;
+  background: #AECABB;
   cursor: not-allowed;
   box-shadow: none;
 }
@@ -157,26 +156,28 @@
 .error-text { color: #dc2626; font-size: 13px; margin-top: 8px; text-align: center; }
 
 .product-card {
-  position: relative; /* Thêm cái này để căn nút tim */
+  position: relative;
 }
+
 .favorite-btn {
   position: absolute;
   top: 10px;
   right: 10px;
-  background: white;
+  background: #F2EDE4;
   border: none;
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(30, 59, 47, 0.12);
   cursor: pointer;
   z-index: 10;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 18px;
-  color: #cbd5e1;
+  color: #AECABB;
   transition: all 0.2s;
 }
+
 .favorite-btn:hover { transform: scale(1.1); }
-.favorite-btn.active { color: #ef4444; }
+.favorite-btn.active { color: #347A5C; }

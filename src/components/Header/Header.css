@@ -163,3 +163,46 @@
 .search-button:hover {
   background: #2D6B50;
 }
+.user-menu-wrapper {
+  position: relative;
+}
+
+.user-login {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.user-login i {
+  margin-right: 5px;
+}
+
+.user-dropdown {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background: white;
+  min-width: 180px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  z-index: 9999;
+}
+
+.dropdown-btn {
+  width: 100%;
+  border: none;
+  background: white;
+  padding: 12px 15px;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.dropdown-btn:hover {
+  background: #f2ede4;
+}
+
+.logout-btn:hover {
+  background: #ffe5e5;
+  color: red;
+}

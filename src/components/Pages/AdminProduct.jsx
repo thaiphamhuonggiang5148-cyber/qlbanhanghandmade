@@ -52,10 +52,10 @@ function validateRow(built) {
 const getImageUrl = (imgString) => {
   if (!imgString) return '';
   if (imgString.startsWith('http') || imgString.startsWith('data:')) return imgString;
-  
+
   const key = imgString.replace(/^img\//, '').replace(/\.[^.]+$/, '');
   const resolved = resolveProductImage(key);
-  
+
   return resolved || 'https://placehold.co/100x100/e2e8f0/475569?text=Lỗi+ảnh';
 };
 
@@ -315,7 +315,14 @@ function AdminProduct({ embedded = false }) {
                               e.target.onerror = null;
                               e.target.src = 'https://placehold.co/100x100/e2e8f0/475569?text=Lỗi+ảnh';
                             }}
-                            style={{ width: '45px', height: '45px', objectFit: 'cover', borderRadius: '8px', border: '1px solid var(--border)' }}
+                            style={{
+                              width: '60px',
+                              height: '60px',
+                              objectFit: 'contain',
+                              borderRadius: '8px',
+                              border: '1px solid var(--border)',
+                              background: '#fff'
+                            }}
                           />
                         ) : (
                           <div style={{ width: '45px', height: '45px', borderRadius: '8px', background: '#e2e8f0', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-muted)' }}>
@@ -420,11 +427,11 @@ function AdminProduct({ embedded = false }) {
                     }
                   }}
                   style={{
-                    padding: '0.65rem 1rem', 
-                    border: '1px dashed var(--primary)', 
+                    padding: '0.65rem 1rem',
+                    border: '1px dashed var(--primary)',
                     borderRadius: 'var(--radius-sm)',
-                    fontSize: '0.85rem', 
-                    background: 'var(--primary-light)', 
+                    fontSize: '0.85rem',
+                    background: 'var(--primary-light)',
                     color: 'var(--primary)',
                     cursor: 'pointer'
                   }}

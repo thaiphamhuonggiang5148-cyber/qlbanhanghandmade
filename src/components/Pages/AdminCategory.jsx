@@ -304,7 +304,7 @@ function AdminCategory({ embedded = false }) {
               Tên gọi danh mục phân loại
               <input
                 type="text"
-                placeholder="Nhập tên danh mục vật liệu (Ví dụ: Phụ kiện thời trang,đồ len,...)"
+                placeholder="Nhập tên danh mục sản phẩm (Ví dụ: Phụ kiện thời trang,đồ len,...)"
                 value={form.name}
                 onChange={(e) => handleFormChange('name', e.target.value)}
                 required

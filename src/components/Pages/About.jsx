@@ -209,7 +209,7 @@ const About = () => {
 
         <section className="about-cta">
           <h2>Bạn Đã Sẵn Sàng Sở Hữu Một Món Đồ Thủ Công Riêng?</h2>
-          <p>Hãy liên hệ với SoulMade để cùng chúng tôi hiện thực hóa món đồ handmade mơ ước của bà!</p>
+          <p>Hãy liên hệ với SoulMade để cùng chúng tôi hiện thực hóa món đồ handmade mơ ước của bạn!</p>
           <div className="cta-buttons">
             <a href="/contact" className="btn-primary">Liên Hệ Ngay</a>
             <a href="/products" className="btn-secondary">Khám Phá Bộ Sưu Tập</a>

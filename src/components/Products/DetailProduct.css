@@ -5,22 +5,22 @@
 }
 
 .back-button {
-  background: #fff;
-  border: 1px solid #e2e8f0;
+  background: #F2EDE4;
+  border: 1px solid #CEDFDA;
   padding: 10px 20px;
   border-radius: 8px;
-  color: #475569;
+  color: #3C3C3B;
   font-weight: 700;
   cursor: pointer;
   margin-bottom: 24px;
   transition: all 0.2s;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+  box-shadow: 0 2px 4px rgba(30, 59, 47, 0.04);
 }
 
 .back-button:hover {
-  background: #1e293b;
-  color: #fff;
-  border-color: #1e293b;
+  background: #1E3B2F;
+  color: #F2EDE4;
+  border-color: #1E3B2F;
 }
 
 /* Phần chia 2 cột bên trên */
@@ -28,10 +28,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 48px;
-  background: #fff;
+  background: #F2EDE4;
   border-radius: 20px;
   padding: 32px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  box-shadow: 0 10px 30px rgba(30, 59, 47, 0.07);
   margin-bottom: 32px;
 }
 
@@ -43,14 +43,14 @@
 }
 
 .detail-image-main {
-  background: #f8fafc;
+  background: #EAF4EF;
   border-radius: 16px;
   padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 400px;
-  border: 1px solid #f1f5f9;
+  border: 1px solid #E5EFEB;
 }
 
 .detail-image-main img {
@@ -69,7 +69,7 @@
   width: 80px;
   height: 80px;
   border-radius: 8px;
-  background: #f8fafc;
+  background: #EAF4EF;
   border: 2px solid transparent;
   padding: 4px;
   cursor: pointer;
@@ -83,11 +83,11 @@
 }
 
 .thumbnail-item:hover {
-  border-color: #cbd5e1;
+  border-color: #AECABB;
 }
 
 .thumbnail-item.active {
-  border-color: #f59e0b;
+  border-color: #347A5C;
 }
 
 /* Info bên phải */
@@ -101,7 +101,7 @@
   margin: 0 0 12px;
   font-size: 32px;
   font-weight: 800;
-  color: #1e293b;
+  color: #1E3B2F;
   line-height: 1.3;
 }
 
@@ -109,14 +109,14 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  color: #64748b;
+  color: #5A7A6B;
   font-weight: 600;
   font-size: 14px;
   margin-bottom: 24px;
 }
 
 .meta-divider {
-  color: #cbd5e1;
+  color: #AECABB;
 }
 
 .detail-price {
@@ -125,20 +125,20 @@
   gap: 16px;
   margin-bottom: 24px;
   padding: 16px;
-  background: #f8fafc;
+  background: #EAF4EF;
   border-radius: 12px;
 }
 
 .detail-price .current-price {
   font-size: 32px;
-  color: #f59e0b;
+  color: #347A5C;
   font-weight: 800;
 }
 
 .detail-price .original-price {
   font-size: 16px;
   text-decoration: line-through;
-  color: #94a3b8;
+  color: #7FA090;
   font-weight: 500;
 }
 
@@ -154,7 +154,7 @@
 .section-label {
   margin: 0 0 12px 0;
   font-size: 15px;
-  color: #475569;
+  color: #3C3C3B;
 }
 
 .detail-sizes {
@@ -168,9 +168,9 @@
 }
 
 .ram-ssd-tag {
-  background: #fff;
-  border: 1px solid #cbd5e1;
-  color: #475569;
+  background: #F2EDE4;
+  border: 1px solid #CEDFDA;
+  color: #3C3C3B;
   padding: 10px 20px;
   border-radius: 8px;
   font-weight: 600;
@@ -179,14 +179,14 @@
 }
 
 .ram-ssd-tag:hover {
-  background: #f1f5f9;
-  border-color: #94a3b8;
+  background: #E5EFEB;
+  border-color: #AECABB;
 }
 
 .ram-ssd-tag.active {
-  background-color: #f59e0b;
-  color: white;
-  border-color: #f59e0b;
+  background-color: #347A5C;
+  color: #F2EDE4;
+  border-color: #347A5C;
 }
 
 .detail-policies {
@@ -194,7 +194,7 @@
   flex-direction: column;
   gap: 10px;
   margin-bottom: 32px;
-  border-top: 1px dashed #e2e8f0;
+  border-top: 1px dashed #CEDFDA;
   padding-top: 20px;
 }
 
@@ -202,14 +202,14 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #16a34a;
+  color: #276048;
   font-weight: 600;
   font-size: 14px;
 }
 
 .buy-now-button {
-  background: #f59e0b;
-  color: white;
+  background: #347A5C;
+  color: #F2EDE4;
   border: none;
   border-radius: 12px;
   padding: 18px 32px;
@@ -218,28 +218,28 @@
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 8px 20px rgba(245, 158, 11, 0.25);
+  box-shadow: 0 8px 20px rgba(52, 122, 92, 0.28);
   width: 100%;
 }
 
 .buy-now-button:hover {
-  background: #1e293b;
-  box-shadow: 0 8px 20px rgba(30, 41, 59, 0.25);
+  background: #1E3B2F;
+  box-shadow: 0 8px 20px rgba(30, 59, 47, 0.28);
   transform: translateY(-2px);
 }
 
 /* Tab Nội dung bên dưới */
 .detail-bottom-section {
-  background: #fff;
+  background: #F2EDE4;
   border-radius: 20px;
   padding: 32px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  box-shadow: 0 10px 30px rgba(30, 59, 47, 0.07);
 }
 
 .tab-headers {
   display: flex;
   gap: 32px;
-  border-bottom: 2px solid #f1f5f9;
+  border-bottom: 2px solid #E5EFEB;
   margin-bottom: 24px;
 }
 
@@ -249,18 +249,18 @@
   padding: 0 0 16px 0;
   font-size: 18px;
   font-weight: 700;
-  color: #64748b;
+  color: #5A7A6B;
   cursor: pointer;
   position: relative;
   transition: color 0.2s;
 }
 
 .tab-btn:hover {
-  color: #1e293b;
+  color: #1E3B2F;
 }
 
 .tab-btn.active {
-  color: #f59e0b;
+  color: #347A5C;
 }
 
 .tab-btn.active::after {
@@ -270,12 +270,12 @@
   left: 0;
   width: 100%;
   height: 3px;
-  background: #f59e0b;
+  background: #347A5C;
   border-radius: 3px 3px 0 0;
 }
 
 .tab-content {
-  color: #334155;
+  color: #3C3C3B;
   line-height: 1.6;
 }
 
@@ -286,14 +286,14 @@
 
 .specs-table td {
   padding: 12px 16px;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #CEDFDA;
 }
 
 .spec-key {
-  background: #f8fafc;
+  background: #EAF4EF;
   font-weight: 600;
   width: 30%;
-  color: #475569;
+  color: #3C3C3B;
 }
 
 .spec-value {
@@ -315,10 +315,10 @@
   display: flex;
   align-items: center;
   gap: 40px;
-  background: #f8fafc;
+  background: #EAF4EF;
   border-radius: 16px;
   padding: 24px 28px;
-  border: 1px solid #f1f5f9;
+  border: 1px solid #E5EFEB;
 }
 
 .review-avg {
@@ -332,13 +332,13 @@
 .avg-number {
   font-size: 48px;
   font-weight: 800;
-  color: #1e293b;
+  color: #1E3B2F;
   line-height: 1;
 }
 
 .avg-total {
   font-size: 13px;
-  color: #64748b;
+  color: #5A7A6B;
   font-weight: 500;
 }
 
@@ -354,7 +354,7 @@
   align-items: center;
   gap: 10px;
   font-size: 13px;
-  color: #475569;
+  color: #3C3C3B;
 }
 
 .bar-label {
@@ -366,21 +366,21 @@
 .bar-track {
   flex: 1;
   height: 8px;
-  background: #e2e8f0;
+  background: #CEDFDA;
   border-radius: 99px;
   overflow: hidden;
 }
 
 .bar-fill {
   height: 100%;
-  background: #f59e0b;
+  background: #347A5C;
   border-radius: 99px;
   transition: width 0.4s ease;
 }
 
 .bar-count {
   min-width: 20px;
-  color: #94a3b8;
+  color: #7FA090;
   font-size: 12px;
 }
 
@@ -392,9 +392,9 @@
 }
 
 .write-review-btn {
-  background: #fff;
-  border: 1.5px solid #f59e0b;
-  color: #b45309;
+  background: #F2EDE4;
+  border: 1.5px solid #347A5C;
+  color: #276048;
   padding: 10px 22px;
   border-radius: 10px;
   font-size: 14px;
@@ -404,20 +404,20 @@
 }
 
 .write-review-btn:hover {
-  background: #f59e0b;
-  color: #fff;
+  background: #347A5C;
+  color: #F2EDE4;
 }
 
 .review-thanks {
   font-size: 14px;
-  color: #16a34a;
+  color: #276048;
   font-weight: 600;
 }
 
 /* Form viết đánh giá */
 .review-form {
-  background: #f8fafc;
-  border: 1px dashed #cbd5e1;
+  background: #EAF4EF;
+  border: 1px dashed #AECABB;
   border-radius: 16px;
   padding: 24px;
   display: flex;
@@ -428,7 +428,7 @@
 .form-title {
   margin: 0;
   font-size: 16px;
-  color: #1e293b;
+  color: #1E3B2F;
   font-weight: 700;
 }
 
@@ -439,20 +439,21 @@
 
 .review-textarea {
   width: 100%;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #CEDFDA;
   border-radius: 10px;
   padding: 12px 16px;
   font-size: 14px;
-  color: #334155;
+  color: #3C3C3B;
   resize: vertical;
   outline: none;
   font-family: inherit;
   box-sizing: border-box;
   transition: border-color 0.2s;
+  background: #F2EDE4;
 }
 
 .review-textarea:focus {
-  border-color: #f59e0b;
+  border-color: #347A5C;
 }
 
 .form-buttons {
@@ -462,9 +463,9 @@
 }
 
 .cancel-btn {
-  background: #fff;
-  border: 1px solid #e2e8f0;
-  color: #64748b;
+  background: #F2EDE4;
+  border: 1px solid #CEDFDA;
+  color: #5A7A6B;
   padding: 10px 20px;
   border-radius: 8px;
   font-weight: 600;
@@ -474,13 +475,13 @@
 }
 
 .cancel-btn:hover {
-  background: #f1f5f9;
+  background: #E5EFEB;
 }
 
 .submit-btn {
-  background: #f59e0b;
+  background: #347A5C;
   border: none;
-  color: #fff;
+  color: #F2EDE4;
   padding: 10px 24px;
   border-radius: 8px;
   font-weight: 700;
@@ -490,7 +491,7 @@
 }
 
 .submit-btn:hover:not(:disabled) {
-  background: #d97706;
+  background: #276048;
 }
 
 .submit-btn:disabled {
@@ -509,7 +510,7 @@
   display: flex;
   gap: 16px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #f1f5f9;
+  border-bottom: 1px solid #E5EFEB;
 }
 
 .review-item:last-child {
@@ -521,8 +522,8 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: #fef3c7;
-  color: #b45309;
+  background: #D4EAE0;
+  color: #276048;
   font-size: 13px;
   font-weight: 800;
   display: flex;
@@ -547,14 +548,14 @@
 .reviewer-name {
   font-size: 15px;
   font-weight: 700;
-  color: #1e293b;
+  color: #1E3B2F;
 }
 
 .verified-badge {
   font-size: 12px;
-  color: #16a34a;
+  color: #276048;
   font-weight: 600;
-  background: #dcfce7;
+  background: #D4EAE0;
   padding: 2px 8px;
   border-radius: 99px;
 }
@@ -567,13 +568,13 @@
 
 .review-date {
   font-size: 12px;
-  color: #94a3b8;
+  color: #7FA090;
 }
 
 .review-comment {
   margin: 0;
   font-size: 14px;
-  color: #475569;
+  color: #3C3C3B;
   line-height: 1.6;
 }
 

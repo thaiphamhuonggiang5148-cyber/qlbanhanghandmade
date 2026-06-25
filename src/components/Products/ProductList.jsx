@@ -8,10 +8,11 @@ const PRODUCTS_PER_PAGE = 9;
 const jsonBase = import.meta.env.BASE_URL || "/";
 
 const BRANDS = [
-  "Vicem", "Hà Tiên", "Holcim", "INSEE", "Nghi Sơn",
-  "Hòa Phát", "Pomina", "VAS", "Dulux", "Jotun",
-  "Nippon", "Kova", "Sika", "Cadivi", "Sino Schneider",
-  "Tiền Phong", "TOTO", "Inax", "Caesar", "Hafele", "Grohe", "Teka",
+  "SoulMade", "Ceramics Art", "Handy Knits", "Nature Wood", "Pure Cotton",
+  "Vintage Clay", "Dreamy Crochet", "Simple Life", "Boho Decor", "Artisan Glass",
+  "Eco Friendly", "Slow Living", "Warm Home", "Crafty Hands", "Minimal Style",
+  "Lovely Beads", "Rustic Vibes", "Petal Paper", "Soft Touch", "Cozy Corner", 
+  "Handmade Joy", "Zen Craft",
 ];
 
 const ProductList = () => {
@@ -50,7 +51,7 @@ const ProductList = () => {
     const loadData = async () => {
       try {
         const [productsRes, categoriesRes] = await Promise.all([
-          fetch(`${jsonBase}ProductS.json`),
+          fetch(`${jsonBase}Products.json`),
           fetch(`${jsonBase}Category.json`),
         ]);
         if (!productsRes.ok) throw new Error("Không thể tải dữ liệu");

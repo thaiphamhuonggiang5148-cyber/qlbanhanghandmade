@@ -6,38 +6,38 @@ import { imageMap } from "../../utils/productImages";
 const SAMPLE_REVIEWS = [
   {
     id: 1,
-    name: "Nguyễn Văn Hùng",
-    avatar: "NH",
+    name: "Hạ An",
+    avatar: "HA",
     rating: 5,
-    date: "10/05/2025",
-    comment: "Sản phẩm chất lượng tốt, đúng như mô tả. Giao hàng nhanh, đóng gói chắc chắn. Sẽ ủng hộ shop lần sau!",
+    date: "10/05/2026",
+    comment: "Sản phẩm xinh xắn và tỉ mỉ từng chi tiết, đúng như những gì mình kỳ vọng. Đóng gói rất cẩn thận, cảm ơn SoulMade nhiều nha!",
     verified: true,
   },
   {
     id: 2,
-    name: "Trần Thị Mai",
-    avatar: "TM",
-    rating: 4,
-    date: "02/04/2025",
-    comment: "Hàng đúng chất lượng, tuy nhiên giao hơi trễ hơn dự kiến 1 ngày. Nhìn chung vẫn hài lòng.",
+    name: "Thảo Chi",
+    avatar: "TC",
+    rating: 5,
+    date: "02/04/2026",
+    comment: "Món đồ thủ công có chất lượng cực tốt, cảm giác cầm rất chắc tay và ấm áp. Shop gói hàng rất có tâm, chắc chắn sẽ ủng hộ thêm.",
     verified: true,
   },
   {
     id: 3,
-    name: "Lê Minh Tuấn",
-    avatar: "LT",
-    rating: 5,
-    date: "18/03/2025",
-    comment: "Mua về thi công rất ổn, không bị nứt sau khi khô. Nhân viên tư vấn nhiệt tình, hỗ trợ rất tốt.",
+    name: "Hoàng Nguyên",
+    avatar: "HN",
+    rating: 4,
+    date: "18/03/2026",
+    comment: "Decor góc học tập cực hợp ý mình. Sản phẩm handmade nên có nét độc đáo riêng, chỉ là màu sắc hơi khác ảnh một chút xíu thôi.",
     verified: false,
   },
   {
     id: 4,
-    name: "Phạm Quốc Duy",
-    avatar: "PD",
-    rating: 3,
-    date: "05/03/2025",
-    comment: "Chất lượng ổn, nhưng bao bì một vài gói hơi nhăn. Mong shop chú ý hơn phần đóng gói.",
+    name: "Minh Khuê",
+    avatar: "MK",
+    rating: 5,
+    date: "05/03/2026",
+    comment: "Cực kỳ ưng ý! Từng đường kim mũi chỉ đều thấy được sự chăm chút. Một món quà tuyệt vời cho chính mình và cả bạn bè.",
     verified: true,
   },
 ];
@@ -315,13 +315,13 @@ const DetailProduct = () => {
 
           <div className="detail-policies">
             <div className="policy-item">
-              <i className="fas fa-truck"></i> Giao hàng tận công trình
+              <i className="fas fa-truck"></i> Giao hàng tận nơi
             </div>
             <div className="policy-item">
               <i className="fas fa-box-open"></i> Kiểm tra hàng trước khi thanh toán
             </div>
             <div className="policy-item">
-              <i className="fas fa-undo"></i> Đổi trả 7 ngày nếu lỗi NSX
+              <i className="fas fa-undo"></i> Đổi trả 7 ngày nếu lỗi 
             </div>
           </div>
 
@@ -344,34 +344,37 @@ const DetailProduct = () => {
           </button>
         </div>
 
-        <div className="tab-content">
-          {activeTab === "desc" && (
-            <div className="content-desc">
-              <p style={{ fontSize: "16px", fontWeight: "500" }}>{product.description || "Sản phẩm chất lượng cao, phân phối chính hãng bởi Moon VLXD."}</p>
+       <div className="tab-content">
+  {activeTab === "desc" && (
+    <div className="content-desc">
+      <p style={{ fontSize: "16px", fontWeight: "500" }}>
+        {product.description || "Sản phẩm được làm thủ công tỉ mỉ, chăm chút trong từng chi tiết bởi SoulMade."}
+      </p>
 
-              <div className="generic-description" style={{ marginTop: "32px", paddingTop: "24px", borderTop: "1px dashed #e2e8f0" }}>
-                <h4 style={{ color: "#1e293b", marginBottom: "12px" }}>1. Đặc điểm nổi bật</h4>
-                <ul style={{ paddingLeft: "20px", marginBottom: "24px", display: "flex", flexDirection: "column", gap: "8px" }}>
-                  <li>Được sản xuất trên dây chuyền công nghệ hiện đại, đáp ứng các tiêu chuẩn khắt khe nhất về chất lượng tại Việt Nam.</li>
-                  <li>Độ bền cao, khả năng chống thấm và chịu lực tốt, phù hợp với điều kiện khí hậu nhiệt đới gió mùa.</li>
-                  <li>Đảm bảo an toàn cho sức khỏe người thi công và thân thiện với môi trường xung quanh.</li>
-                </ul>
+      <div className="generic-description" style={{ marginTop: "32px", paddingTop: "24px", borderTop: "1px dashed #d4cbb8" }}>
+        <h4 style={{ color: "#064e3b", marginBottom: "12px" }}>1. Đặc điểm nổi bật</h4>
+        <ul style={{ paddingLeft: "20px", marginBottom: "24px", display: "flex", flexDirection: "column", gap: "8px" }}>
+          <li>Được chế tác hoàn toàn bằng tay từ những nguyên liệu chọn lọc, mang đậm dấu ấn riêng biệt.</li>
+          <li>Sự kết hợp hoàn hảo giữa kỹ thuật truyền thống và thiết kế hiện đại, tạo nên vẻ đẹp bền vững theo thời gian.</li>
+          <li>Mỗi sản phẩm là một tác phẩm duy nhất, đảm bảo tính thẩm mỹ cao và an toàn cho người sử dụng.</li>
+        </ul>
 
-                <h4 style={{ color: "#1e293b", marginBottom: "12px" }}>2. Hướng dẫn bảo quản & Sử dụng</h4>
-                <ul style={{ paddingLeft: "20px", marginBottom: "24px", display: "flex", flexDirection: "column", gap: "8px" }}>
-                  <li>Bảo quản nơi khô ráo, thoáng mát, tuyệt đối tránh tiếp xúc trực tiếp với ánh nắng mặt trời và khu vực ngập nước.</li>
-                  <li>Sản phẩm dạng bao cần đặt trên pallet, cách mặt đất ít nhất 10cm và cách tường 20cm.</li>
-                  <li>Khi thi công cần tuân thủ đúng tỷ lệ pha trộn và hướng dẫn kỹ thuật in trên bao bì hoặc theo khuyến cáo của nhà sản xuất để đạt hiệu quả kết cấu tối đa.</li>
-                </ul>
+        <h4 style={{ color: "#064e3b", marginBottom: "12px" }}>2. Hướng dẫn bảo quản & Sử dụng</h4>
+        <ul style={{ paddingLeft: "20px", marginBottom: "24px", display: "flex", flexDirection: "column", gap: "8px" }}>
+          <li>Bảo quản ở nơi khô ráo, tránh những nơi có độ ẩm cao hoặc tiếp xúc trực tiếp với ánh nắng mặt trời gay gắt.</li>
+          <li>Sử dụng khăn mềm, ẩm để vệ sinh bề mặt sản phẩm nhẹ nhàng nhằm giữ gìn độ bền đẹp lâu dài.</li>
+          <li>Nên sử dụng đúng mục đích và bảo quản cẩn thận để các chi tiết thủ công giữ được vẻ nguyên vẹn ban đầu.</li>
+        </ul>
 
-                <h4 style={{ color: "#1e293b", marginBottom: "12px" }}>3. Cam kết từ Moon VLXD</h4>
-                <p style={{ textAlign: "justify", lineHeight: "1.6" }}>
-                  Chúng tôi tự hào là đơn vị cung cấp vật liệu xây dựng uy tín hàng đầu khu vực. Cam kết hàng chính hãng 100%, đền bù gấp 10 lần giá trị đơn hàng nếu phát hiện hàng giả, hàng nhái, hàng kém chất lượng. Hỗ trợ vận chuyển tận chân công trình với đội ngũ xe tải chuyên dụng, giao hàng
-                  nhanh chóng đúng tiến độ trong vòng 24h. Khách hàng được kiểm tra kỹ lưỡng số lượng và chất lượng trước khi thanh toán.
-                </p>
-              </div>
-            </div>
-          )}
+        <h4 style={{ color: "#064e3b", marginBottom: "12px" }}>3. Tâm tình từ SoulMade</h4>
+        <p style={{ textAlign: "justify", lineHeight: "1.6", color: "#475569" }}>
+          SoulMade không chỉ tạo ra sản phẩm, mà chúng tui đặt cả tâm huyết vào từng món đồ để gửi gắm sự an yên đến ngôi nhà của bạn. 
+          Cam kết sản phẩm thủ công chất lượng, đúng như mô tả và hình ảnh. Nếu có bất kỳ sự không hài lòng nào về sản phẩm, 
+          SoulMade sẵn sàng lắng nghe và hỗ trợ đổi trả tận tâm. Hy vọng những món đồ nhỏ xinh này sẽ mang đến niềm vui cho cuộc sống của bạn.
+        </p>
+      </div>
+    </div>
+  )}
           {activeTab === "specs" && (
             <div className="content-specs">
               {product.specs ? (

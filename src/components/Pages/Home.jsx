@@ -15,13 +15,13 @@ const features = [
   },
   {
     icon: "fas fa-leaf",
-    title: "Nguyên Liệu Tự Nhiên",
-    desc: "Ưu tiên vật liệu thân thiện với môi trường, an toàn cho sức khỏe và bền vững với thời gian.",
+    title: " Tự Nhiên",
+    desc: "Ưu tiên sản phẩm thân thiện với môi trường, an toàn cho sức khỏe và bền vững với thời gian.",
   },
   {
     icon: "fas fa-wand-magic-sparkles",
     title: "Cá Nhân Hóa Độc Bản",
-    desc: "Dịch vụ tùy chỉnh sản phẩm theo yêu cầu riêng, mang đậm dấu ấn cá nhân của bà.",
+    desc: "Dịch vụ tùy chỉnh sản phẩm theo yêu cầu riêng, mang đậm dấu ấn cá nhân của bạn.",
   },
   {
     icon: "fas fa-people-carry-box",
@@ -45,10 +45,10 @@ const categories = [
 ];
 
 const processSteps = [
-  { step: "01", icon: "fas fa-compass", title: "Khám Phá", desc: "Duyệt qua những bộ sưu tập thủ công đầy cảm hứng và chọn món đồ phù hợp với không gian của bà." },
-  { step: "02", icon: "fas fa-pen-nib", title: "Tùy Chỉnh", desc: "Chia sẻ ý tưởng, chúng mình sẽ giúp bà thiết kế món quà độc nhất vô nhị." },
+  { step: "01", icon: "fas fa-compass", title: "Khám Phá", desc: "Duyệt qua những bộ sưu tập thủ công đầy cảm hứng và chọn món đồ phù hợp với không gian của bạn." },
+  { step: "02", icon: "fas fa-pen-nib", title: "Tùy Chỉnh", desc: "Chia sẻ ý tưởng, chúng mình sẽ giúp bạn thiết kế món quà độc nhất vô nhị." },
   { step: "03", icon: "fas fa-heart", title: "Chế Tác", desc: "Các nghệ nhân bắt đầu thực hiện với sự tỉ mỉ, kiên nhẫn và trọn vẹn yêu thương." },
-  { step: "04", icon: "fas fa-box-open", title: "Gói Trọn Gửi Trao", desc: "Đóng gói bằng vật liệu bền vững và gửi đến tận tay bà trong sự nâng niu nhất." },
+  { step: "04", icon: "fas fa-box-open", title: "Gói Trọn Gửi Trao", desc: "Đóng gói bằng vật liệu bền vững và gửi đến tận tay bạn trong sự nâng niu nhất." },
 ];
 
 const testimonials = [
@@ -67,7 +67,7 @@ const Home = () => {
     window.scrollTo(0, 0);
     const fetchProducts = async () => {
       try {
-        const res = await fetch(`${jsonBase}Products.json`);
+const res = await fetch('/Products.json');
         if (res.ok) {
           const data = await res.json();
           setFeaturedProducts(data.map(item => ({ ...item, image: imageMap[item.imageKey] || item.image })).slice(0, 8));
@@ -116,8 +116,8 @@ const Home = () => {
       
       <div className="cta-section">
         <div className="cta-content">
-          <h2 className="cta-title">Bà Đã Sẵn Sàng <span>Sở Hữu</span> Món Đồ Thủ Công Riêng?</h2>
-          <p className="cta-desc">Liên hệ SoulMade để cùng chúng mình "thổi hồn" vào món quà tặng độc bản dành riêng cho bà.</p>
+          <h2 className="cta-title">Bạn Đã Sẵn Sàng <span>Sở Hữu</span> Món Đồ Thủ Công Riêng?</h2>
+          <p className="cta-desc">Liên hệ SoulMade để cùng chúng mình "thổi hồn" vào món quà tặng độc bản dành riêng cho bạn.</p>
           <div className="cta-buttons"><Link to="/quote" className="btn-primary-lg"><i className="fas fa-pen-nib"></i> Đặt Hàng</Link><Link to="/contact" className="btn-outline-lg"><i className="fas fa-heart"></i> Liên Hệ</Link></div>
         </div>
       </div>

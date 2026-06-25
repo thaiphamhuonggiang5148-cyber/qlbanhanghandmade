@@ -5,12 +5,12 @@ import './Admin.css';
 const jsonBase = import.meta.env.BASE_URL || '/';
 const emptyForm = () => ({
   id: '',
-  billId: '',      // Đổi từ bill_id → billId cho khớp JSON
-  productId: '',   // Đổi từ product_id → productId cho khớp JSON
+  billId: '',      
+  productId: '',  
   quantity: '',
   price: '',
 });
-// Đọc đúng camelCase field từ Invoicedetails.json
+
 function rowToForm(d) {
   return {
     id: String(d.id),
@@ -20,7 +20,7 @@ function rowToForm(d) {
     price: d.price != null ? String(d.price) : '',
   };
 }
-// Ghi lại đúng camelCase để khớp Invoicedetails.json
+
 function formToRow(form, nextId) {
   return {
     id: form.id ? Number(form.id) : nextId,
@@ -57,7 +57,6 @@ function AdminInvoiceDetails({ embedded = false }) {
   const displayedRows = useMemo(() => {
     const q = appliedSearchBill.trim().toLowerCase();
     if (!q) return rows;
-    // Tìm theo billId (camelCase)
     return rows.filter((r) => String(r.billId).toLowerCase().includes(q));
   }, [rows, appliedSearchBill]);
   const persist = useCallback(async (nextList) => {

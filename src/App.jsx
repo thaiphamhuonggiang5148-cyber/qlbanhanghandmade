@@ -9,7 +9,6 @@ import Cart from "./components/Pages/Cart";
 import Profile from "./components/Pages/Profile";
 import Favorites from "./components/Pages/Favorites";
 import Admin from "./components/Pages/Admin";
-import Quote from "./components/Pages/Quote";
 import About from "./components/Pages/About";
 import Checkout from "./components/Pages/Checkout";
 import News from "./components/Pages/News";
@@ -17,6 +16,8 @@ import NewsDetail from "./components/Pages/NewsDetail";
 import Contact from "./components/Pages/Contact";
 import Loading from "./components/Loading/Loading";
 import Banner from "./components/Banner/Banner";
+import Login from "./components/Pages/Login";
+import Signup from "./components/Pages/Signup";
 
 export default function App() {
   const location = useLocation();
@@ -42,13 +43,14 @@ export default function App() {
       <main style={{ flex: 1 }}>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
           <Route path="/product" element={<ProductList />} />
           <Route path="/product/:id" element={<DetailProduct />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/favorites" element={<Favorites />} />
           <Route path="/admin" element={<Admin />} />
-          <Route path="/quote" element={<Quote />} />
           <Route path="/about" element={<About />} />
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/news" element={<News />} />

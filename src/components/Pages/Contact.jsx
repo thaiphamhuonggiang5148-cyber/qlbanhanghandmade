@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Contact.css';
 
-// ── CONSTANTS ──────────────────────────────────────────────────────────────────
 const MAX_MSG = 500;
 
 const SUBJECT_OPTIONS = [
@@ -43,7 +42,6 @@ const HERO_STATS = [
   { num: '15 phút',  label: 'Phản hồi nhanh' },
 ];
 
-// ── VALIDATION ─────────────────────────────────────────────────────────────────
 const validate = (data) => {
   const errs = {};
   if (!data.name.trim())
@@ -61,7 +59,6 @@ const validate = (data) => {
   return errs;
 };
 
-// ── COMPONENT ──────────────────────────────────────────────────────────────────
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '', phone: '', email: '', subject: '', message: '',
@@ -102,7 +99,7 @@ const Contact = () => {
   return (
     <div className="contact-page">
 
-      {/* ── HERO ────────────────────────────────────────────── */}
+
       <section className="contact-hero">
         <div className="contact-hero-bar" />
 

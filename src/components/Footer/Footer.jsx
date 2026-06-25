@@ -2,12 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
 import logo from '../../img/logo.png';
-
 const Footer = () => {
   return (
     <footer className="highlands-footer">
       <div className="footer-green-strip"></div>
-
       <div className="footer-hotline-bar">
         <div className="footer-hotline-bar__inner">
           <div className="footer-hotline-item">
@@ -43,9 +41,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
       <div className="footer-content">
-
         <div className="footer-left">
           <div className="footer-logo">
             <img src={logo} alt="SMade" className="footer-logo-img" />
@@ -57,7 +53,6 @@ const Footer = () => {
           <p className="footer-copyright">
             ©2026 SoulMade .<br />All rights reserved.
           </p>
-
           <div className="footer-contact-block">
             <div className="footer-contact-row">
               <i className="fas fa-map-marker-alt"></i>
@@ -72,16 +67,13 @@ const Footer = () => {
               <span>MST: 0312345678 · Sở KHĐT TP.HCM cấp</span>
             </div>
           </div>
-
           <div className="footer-badges">
             <div className="footer-badge"><i className="fas fa-shield-alt"></i> Bảo hành chính hãng</div>
             <div className="footer-badge"><i className="fas fa-undo"></i> Đổi trả 7 ngày</div>
             <div className="footer-badge"><i className="fas fa-truck-fast"></i> Giao toàn quốc</div>
           </div>
         </div>
-
         <div className="footer-middle">
-
           <div className="footer-column">
             <h3 className="footer-column-title">VỀ SOULMADE</h3>
             <ul className="footer-links">
@@ -95,7 +87,6 @@ const Footer = () => {
               <li><Link to="/contact">Liên hệ hợp tác</Link></li>
             </ul>
           </div>
-
           <div className="footer-column">
             <h3 className="footer-column-title">DANH MỤC SẢN PHẨM</h3>
             <ul className="footer-links">
@@ -111,7 +102,6 @@ const Footer = () => {
               <li><Link to="/product?cat=my-pham-qua-tang">Mỹ phẩm & Quà tặng</Link></li>
             </ul>
           </div>
-
           <div className="footer-column">
             <h3 className="footer-column-title">HỆ THỐNG & DỊCH VỤ</h3>
             <ul className="footer-links">
@@ -134,7 +124,6 @@ const Footer = () => {
               <li><Link to="/return">Chính sách đổi trả</Link></li>
               <li><Link to="/membership">Ưu đãi thành viên</Link></li>
             </ul>
-
             <h3 className="footer-column-title" style={{ marginTop: '24px' }}>GÓC SOULMADE</h3>
             <ul className="footer-links">
               <li><Link to="/blog">Chuyện nhà SoulMade</Link></li>
@@ -142,7 +131,6 @@ const Footer = () => {
               <li><Link to="/diy">Hướng dẫn tự làm (DIY)</Link></li>
             </ul>
           </div>
-
         </div>
         <div className="footer-right">
           <h3 className="footer-column-title">KẾT NỐI VỚI SOULMADE</h3>
@@ -163,7 +151,6 @@ const Footer = () => {
               <span style={{ fontWeight: 700, fontSize: '12px', letterSpacing: '-0.5px' }}>Zalo</span>
             </a>
           </div>
-
           <div className="footer-map">
             <p className="footer-map__label"><i className="fas fa-location-dot"></i> Showroom SoulMade</p>
             <iframe
@@ -180,7 +167,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
       <div className="footer-bottom-bar">
         <div className="footer-bottom-bar__inner">
           <p className="footer-bottom-copy">
@@ -205,7 +191,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
       <a
         href="https://zalo.me/soulmade"
         target="_blank"
@@ -218,5 +203,4 @@ const Footer = () => {
     </footer>
   );
 };
-
 export default Footer;

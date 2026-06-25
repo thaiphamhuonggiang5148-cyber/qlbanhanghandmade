@@ -278,7 +278,7 @@ const Admin = () => {
           <span className="ruang-sidebar_brand-icon">
             <i className="fa-solid fa-layer-group" aria-hidden />
           </span>
-          <span>SoulNade</span>
+          <span>SoulMade</span>
         </div>
         <hr className="ruang-sidebar_divider" />
         <div className="ruang-sidebar_heading">Hệ thống</div>
@@ -307,7 +307,7 @@ const Admin = () => {
               className={`ruang-sidebar_link ${adminSection === "category" ? "is-active" : ""}`}
               onClick={() => { setAdminSection("category"); closeMobileNav(); }}
             >
-              <i className="fa-solid fa-tags" aria-hidden /> Danh mục Vật liệu
+              <i className="fa-solid fa-tags" aria-hidden /> Danh mục
             </button>
           </li>
           {/* NÚT THÊM VOUCHER */}
@@ -433,7 +433,7 @@ const Admin = () => {
                               </div>
                               <div className="ruang-stat-card ruang-stat-card--green">
                                 <div className="ruang-stat-card_body">
-                                  <div className="ruang-stat-card_label">Vật Liệu Đã Bán</div>
+                                  <div className="ruang-stat-card_label">Sản Phẩm Đã Bán</div>
                                   <div className="ruang-stat-card_value">{fmtNumber(stats.soldSum)}</div>
                                   <div className="ruang-stat-card_badge">Từ hệ thống hóa đơn</div>
                                 </div>
